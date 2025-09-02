@@ -1,0 +1,23 @@
+{
+  "timestamp": "2024-09-01T20:50:00",
+  "single_ops": {
+    "total_mlir": 4,
+    "total_ll": 4,
+    "success_count": 4,
+    "failed_cases": [],
+    "success_rate": 100.0
+  },
+  "pair_ops": {
+    "total_mlir": 6,
+    "total_ll": 6,
+    "success_count": 6,
+    "failed_cases": [],
+    "success_rate": 100.0
+  },
+  "overall": {
+    "total_mlir": 10,
+    "total_ll": 10,
+    "total_success": 10,
+    "overall_success_rate": 100.0
+  }
+}

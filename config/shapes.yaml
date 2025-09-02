@@ -1,0 +1,57 @@
+# 形状参数网格配置
+# 初始阶段使用小网格，后续可以扩展
+
+# 批次大小
+batch_sizes:
+  - 1
+  # - 2  # 后续扩展
+
+# 空间维度 (高度和宽度)
+spatial_dims:
+  - 8
+  # - 16  # 后续扩展
+  # - 32  # 后续扩展
+
+# 通道数
+channels:
+  - 8
+  # - 16  # 后续扩展
+  # - 32  # 后续扩展
+
+# 矩阵维度 (用于matmul，调整为与4D张量兼容)
+matrix_dims:
+  - 8
+  # - 16  # 后续扩展
+  # - 32  # 后续扩展
+
+# 卷积核大小
+kernel_sizes:
+  - 1
+  - 3
+  # - 5  # 后续扩展
+
+# 输出特征数 (卷积)
+output_features:
+  - 8
+  # - 16  # 后续扩展
+
+# 形状约束
+constraints:
+  # 卷积输出尺寸计算
+  conv_output_h: "floor((H - (dilation_h*(KH-1)+1) + p_top + p_bottom)/stride_h) + 1"
+  conv_output_w: "floor((W - (dilation_d*(KW-1)+1) + p_left + p_right)/stride_w) + 1"
+  
+  # 池化输出尺寸计算
+  pool_output_h: "floor((H - kernel_h)/stride_h) + 1"
+  pool_output_w: "floor((W - kernel_w)/stride_w) + 1"
+
+# 广播规则
+broadcasting:
+  # 支持的广播模式
+  supported:
+    - "scalar to tensor"
+    - "1x1xC to NxHxWxC"
+    - "Nx1x1xC to NxHxWxC"
+  
+  # 广播检查函数
+  check_function: "numpy_broadcast_compatible"

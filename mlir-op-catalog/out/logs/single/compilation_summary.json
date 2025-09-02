@@ -1,0 +1,1068 @@
+{
+  "total_files": 53,
+  "success_count": 53,
+  "error_count": 0,
+  "success_rate": 1.0,
+  "results": {
+    "out/single/exp/exp_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025818347930908203,
+        "output_file": "out/single_llvm/exp/exp_N1_H8_W8_C8/exp_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010356664657592773,
+        "output_file": "out/single_llvm/exp/exp_N1_H8_W8_C8/exp_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004549741744995117,
+        "output_file": "out/single_llvm/exp/exp_N1_H8_W8_C8/exp_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/mish/mish_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.0252993106842041,
+        "output_file": "out/single_llvm/mish/mish_N1_H8_W8_C8/mish_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010152101516723633,
+        "output_file": "out/single_llvm/mish/mish_N1_H8_W8_C8/mish_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004244327545166016,
+        "output_file": "out/single_llvm/mish/mish_N1_H8_W8_C8/mish_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/softsign/softsign_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02669692039489746,
+        "output_file": "out/single_llvm/softsign/softsign_N1_H8_W8_C8/softsign_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010652303695678711,
+        "output_file": "out/single_llvm/softsign/softsign_N1_H8_W8_C8/softsign_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004308223724365234,
+        "output_file": "out/single_llvm/softsign/softsign_N1_H8_W8_C8/softsign_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/add/add_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026694297790527344,
+        "output_file": "out/single_llvm/add/add_N1_H8_W8_C8/add_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011253118515014648,
+        "output_file": "out/single_llvm/add/add_N1_H8_W8_C8/add_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0045278072357177734,
+        "output_file": "out/single_llvm/add/add_N1_H8_W8_C8/add_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/log2/log2_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.028540372848510742,
+        "output_file": "out/single_llvm/log2/log2_N1_H8_W8_C8/log2_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011605501174926758,
+        "output_file": "out/single_llvm/log2/log2_N1_H8_W8_C8/log2_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0045244693756103516,
+        "output_file": "out/single_llvm/log2/log2_N1_H8_W8_C8/log2_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/greater/greater_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.027174711227416992,
+        "output_file": "out/single_llvm/greater/greater_N1_H8_W8_C8/greater_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011722564697265625,
+        "output_file": "out/single_llvm/greater/greater_N1_H8_W8_C8/greater_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005182743072509766,
+        "output_file": "out/single_llvm/greater/greater_N1_H8_W8_C8/greater_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/asin/asin_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026714086532592773,
+        "output_file": "out/single_llvm/asin/asin_N1_H8_W8_C8/asin_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.012068748474121094,
+        "output_file": "out/single_llvm/asin/asin_N1_H8_W8_C8/asin_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.006421089172363281,
+        "output_file": "out/single_llvm/asin/asin_N1_H8_W8_C8/asin_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/logical_xor/logical_xor_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025885820388793945,
+        "output_file": "out/single_llvm/logical_xor/logical_xor_N1_H8_W8_C8/logical_xor_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010482549667358398,
+        "output_file": "out/single_llvm/logical_xor/logical_xor_N1_H8_W8_C8/logical_xor_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004264116287231445,
+        "output_file": "out/single_llvm/logical_xor/logical_xor_N1_H8_W8_C8/logical_xor_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/cosh/cosh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025455236434936523,
+        "output_file": "out/single_llvm/cosh/cosh_N1_H8_W8_C8/cosh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010564327239990234,
+        "output_file": "out/single_llvm/cosh/cosh_N1_H8_W8_C8/cosh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004449129104614258,
+        "output_file": "out/single_llvm/cosh/cosh_N1_H8_W8_C8/cosh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/sinh/sinh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02644515037536621,
+        "output_file": "out/single_llvm/sinh/sinh_N1_H8_W8_C8/sinh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011072397232055664,
+        "output_file": "out/single_llvm/sinh/sinh_N1_H8_W8_C8/sinh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042133331298828125,
+        "output_file": "out/single_llvm/sinh/sinh_N1_H8_W8_C8/sinh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/log/log_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025620698928833008,
+        "output_file": "out/single_llvm/log/log_N1_H8_W8_C8/log_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010450363159179688,
+        "output_file": "out/single_llvm/log/log_N1_H8_W8_C8/log_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042018890380859375,
+        "output_file": "out/single_llvm/log/log_N1_H8_W8_C8/log_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/greater_equal/greater_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026296615600585938,
+        "output_file": "out/single_llvm/greater_equal/greater_equal_N1_H8_W8_C8/greater_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01059412956237793,
+        "output_file": "out/single_llvm/greater_equal/greater_equal_N1_H8_W8_C8/greater_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042798519134521484,
+        "output_file": "out/single_llvm/greater_equal/greater_equal_N1_H8_W8_C8/greater_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/equal/equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02618551254272461,
+        "output_file": "out/single_llvm/equal/equal_N1_H8_W8_C8/equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010962247848510742,
+        "output_file": "out/single_llvm/equal/equal_N1_H8_W8_C8/equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004382133483886719,
+        "output_file": "out/single_llvm/equal/equal_N1_H8_W8_C8/equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/sigmoid/sigmoid_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.027475357055664062,
+        "output_file": "out/single_llvm/sigmoid/sigmoid_N1_H8_W8_C8/sigmoid_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010808229446411133,
+        "output_file": "out/single_llvm/sigmoid/sigmoid_N1_H8_W8_C8/sigmoid_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004273891448974609,
+        "output_file": "out/single_llvm/sigmoid/sigmoid_N1_H8_W8_C8/sigmoid_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026443004608154297,
+        "output_file": "out/single_llvm/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8/conv2d_nhwc_hwcf_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010853767395019531,
+        "output_file": "out/single_llvm/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8/conv2d_nhwc_hwcf_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004448413848876953,
+        "output_file": "out/single_llvm/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8/conv2d_nhwc_hwcf_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/atan2/atan2_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02526712417602539,
+        "output_file": "out/single_llvm/atan2/atan2_N1_H8_W8_C8/atan2_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010111093521118164,
+        "output_file": "out/single_llvm/atan2/atan2_N1_H8_W8_C8/atan2_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004343509674072266,
+        "output_file": "out/single_llvm/atan2/atan2_N1_H8_W8_C8/atan2_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/asinh/asinh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026103734970092773,
+        "output_file": "out/single_llvm/asinh/asinh_N1_H8_W8_C8/asinh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010596990585327148,
+        "output_file": "out/single_llvm/asinh/asinh_N1_H8_W8_C8/asinh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00413060188293457,
+        "output_file": "out/single_llvm/asinh/asinh_N1_H8_W8_C8/asinh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/cos/cos_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.028326749801635742,
+        "output_file": "out/single_llvm/cos/cos_N1_H8_W8_C8/cos_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.014579296112060547,
+        "output_file": "out/single_llvm/cos/cos_N1_H8_W8_C8/cos_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005791902542114258,
+        "output_file": "out/single_llvm/cos/cos_N1_H8_W8_C8/cos_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/cbrt/cbrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025883913040161133,
+        "output_file": "out/single_llvm/cbrt/cbrt_N1_H8_W8_C8/cbrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010849952697753906,
+        "output_file": "out/single_llvm/cbrt/cbrt_N1_H8_W8_C8/cbrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0044422149658203125,
+        "output_file": "out/single_llvm/cbrt/cbrt_N1_H8_W8_C8/cbrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/matmul/matmul_M16_K16_N16.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026030302047729492,
+        "output_file": "out/single_llvm/matmul/matmul_M16_K16_N16/matmul_M16_K16_N16_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010481595993041992,
+        "output_file": "out/single_llvm/matmul/matmul_M16_K16_N16/matmul_M16_K16_N16.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0044744014739990234,
+        "output_file": "out/single_llvm/matmul/matmul_M16_K16_N16/matmul_M16_K16_N16.bc"
+      }
+    },
+    "out/single/sqrt/sqrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02639484405517578,
+        "output_file": "out/single_llvm/sqrt/sqrt_N1_H8_W8_C8/sqrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010443925857543945,
+        "output_file": "out/single_llvm/sqrt/sqrt_N1_H8_W8_C8/sqrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004143476486206055,
+        "output_file": "out/single_llvm/sqrt/sqrt_N1_H8_W8_C8/sqrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/atan/atan_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025203943252563477,
+        "output_file": "out/single_llvm/atan/atan_N1_H8_W8_C8/atan_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010272502899169922,
+        "output_file": "out/single_llvm/atan/atan_N1_H8_W8_C8/atan_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004206418991088867,
+        "output_file": "out/single_llvm/atan/atan_N1_H8_W8_C8/atan_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/clamp/clamp_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025450944900512695,
+        "output_file": "out/single_llvm/clamp/clamp_N1_H8_W8_C8/clamp_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010141611099243164,
+        "output_file": "out/single_llvm/clamp/clamp_N1_H8_W8_C8/clamp_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00446629524230957,
+        "output_file": "out/single_llvm/clamp/clamp_N1_H8_W8_C8/clamp_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/reduce_sum/reduce_sum_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026886701583862305,
+        "output_file": "out/single_llvm/reduce_sum/reduce_sum_N1_H8_W8_C8/reduce_sum_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010936498641967773,
+        "output_file": "out/single_llvm/reduce_sum/reduce_sum_N1_H8_W8_C8/reduce_sum_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004618167877197266,
+        "output_file": "out/single_llvm/reduce_sum/reduce_sum_N1_H8_W8_C8/reduce_sum_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/logical_not/logical_not_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02602410316467285,
+        "output_file": "out/single_llvm/logical_not/logical_not_N1_H8_W8_C8/logical_not_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010271549224853516,
+        "output_file": "out/single_llvm/logical_not/logical_not_N1_H8_W8_C8/logical_not_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004357814788818359,
+        "output_file": "out/single_llvm/logical_not/logical_not_N1_H8_W8_C8/logical_not_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/mul/mul_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02556777000427246,
+        "output_file": "out/single_llvm/mul/mul_N1_H8_W8_C8/mul_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010351419448852539,
+        "output_file": "out/single_llvm/mul/mul_N1_H8_W8_C8/mul_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004515171051025391,
+        "output_file": "out/single_llvm/mul/mul_N1_H8_W8_C8/mul_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/avgpool2d/avgpool2d_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025548934936523438,
+        "output_file": "out/single_llvm/avgpool2d/avgpool2d_N1_H8_W8_C8/avgpool2d_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010241031646728516,
+        "output_file": "out/single_llvm/avgpool2d/avgpool2d_N1_H8_W8_C8/avgpool2d_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004429817199707031,
+        "output_file": "out/single_llvm/avgpool2d/avgpool2d_N1_H8_W8_C8/avgpool2d_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/acosh/acosh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025256872177124023,
+        "output_file": "out/single_llvm/acosh/acosh_N1_H8_W8_C8/acosh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010388374328613281,
+        "output_file": "out/single_llvm/acosh/acosh_N1_H8_W8_C8/acosh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00452733039855957,
+        "output_file": "out/single_llvm/acosh/acosh_N1_H8_W8_C8/acosh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/less/less_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02558279037475586,
+        "output_file": "out/single_llvm/less/less_N1_H8_W8_C8/less_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010349273681640625,
+        "output_file": "out/single_llvm/less/less_N1_H8_W8_C8/less_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004334211349487305,
+        "output_file": "out/single_llvm/less/less_N1_H8_W8_C8/less_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/tanh/tanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02588486671447754,
+        "output_file": "out/single_llvm/tanh/tanh_N1_H8_W8_C8/tanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010159015655517578,
+        "output_file": "out/single_llvm/tanh/tanh_N1_H8_W8_C8/tanh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004243373870849609,
+        "output_file": "out/single_llvm/tanh/tanh_N1_H8_W8_C8/tanh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/less_equal/less_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02491307258605957,
+        "output_file": "out/single_llvm/less_equal/less_equal_N1_H8_W8_C8/less_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010032415390014648,
+        "output_file": "out/single_llvm/less_equal/less_equal_N1_H8_W8_C8/less_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0044100284576416016,
+        "output_file": "out/single_llvm/less_equal/less_equal_N1_H8_W8_C8/less_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02553081512451172,
+        "output_file": "out/single_llvm/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8/hard_sigmoid_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01058506965637207,
+        "output_file": "out/single_llvm/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8/hard_sigmoid_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043430328369140625,
+        "output_file": "out/single_llvm/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8/hard_sigmoid_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/atanh/atanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02597832679748535,
+        "output_file": "out/single_llvm/atanh/atanh_N1_H8_W8_C8/atanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010632991790771484,
+        "output_file": "out/single_llvm/atanh/atanh_N1_H8_W8_C8/atanh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004225015640258789,
+        "output_file": "out/single_llvm/atanh/atanh_N1_H8_W8_C8/atanh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/mod/mod_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025737524032592773,
+        "output_file": "out/single_llvm/mod/mod_N1_H8_W8_C8/mod_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011875391006469727,
+        "output_file": "out/single_llvm/mod/mod_N1_H8_W8_C8/mod_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004432201385498047,
+        "output_file": "out/single_llvm/mod/mod_N1_H8_W8_C8/mod_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/gelu/gelu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025684833526611328,
+        "output_file": "out/single_llvm/gelu/gelu_N1_H8_W8_C8/gelu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010609865188598633,
+        "output_file": "out/single_llvm/gelu/gelu_N1_H8_W8_C8/gelu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0041844844818115234,
+        "output_file": "out/single_llvm/gelu/gelu_N1_H8_W8_C8/gelu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/rsqrt/rsqrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025608062744140625,
+        "output_file": "out/single_llvm/rsqrt/rsqrt_N1_H8_W8_C8/rsqrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010496139526367188,
+        "output_file": "out/single_llvm/rsqrt/rsqrt_N1_H8_W8_C8/rsqrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004302501678466797,
+        "output_file": "out/single_llvm/rsqrt/rsqrt_N1_H8_W8_C8/rsqrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/softplus/softplus_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025804519653320312,
+        "output_file": "out/single_llvm/softplus/softplus_N1_H8_W8_C8/softplus_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010296106338500977,
+        "output_file": "out/single_llvm/softplus/softplus_N1_H8_W8_C8/softplus_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0041959285736083984,
+        "output_file": "out/single_llvm/softplus/softplus_N1_H8_W8_C8/softplus_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/tan/tan_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025877952575683594,
+        "output_file": "out/single_llvm/tan/tan_N1_H8_W8_C8/tan_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011300086975097656,
+        "output_file": "out/single_llvm/tan/tan_N1_H8_W8_C8/tan_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.006613016128540039,
+        "output_file": "out/single_llvm/tan/tan_N1_H8_W8_C8/tan_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/log10/log10_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02634716033935547,
+        "output_file": "out/single_llvm/log10/log10_N1_H8_W8_C8/log10_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01099395751953125,
+        "output_file": "out/single_llvm/log10/log10_N1_H8_W8_C8/log10_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042536258697509766,
+        "output_file": "out/single_llvm/log10/log10_N1_H8_W8_C8/log10_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/swish/swish_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02636575698852539,
+        "output_file": "out/single_llvm/swish/swish_N1_H8_W8_C8/swish_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010390758514404297,
+        "output_file": "out/single_llvm/swish/swish_N1_H8_W8_C8/swish_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004273176193237305,
+        "output_file": "out/single_llvm/swish/swish_N1_H8_W8_C8/swish_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/acos/acos_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025788068771362305,
+        "output_file": "out/single_llvm/acos/acos_N1_H8_W8_C8/acos_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011125802993774414,
+        "output_file": "out/single_llvm/acos/acos_N1_H8_W8_C8/acos_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004340171813964844,
+        "output_file": "out/single_llvm/acos/acos_N1_H8_W8_C8/acos_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/div/div_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02587413787841797,
+        "output_file": "out/single_llvm/div/div_N1_H8_W8_C8/div_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011036157608032227,
+        "output_file": "out/single_llvm/div/div_N1_H8_W8_C8/div_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004328250885009766,
+        "output_file": "out/single_llvm/div/div_N1_H8_W8_C8/div_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/sub/sub_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025548219680786133,
+        "output_file": "out/single_llvm/sub/sub_N1_H8_W8_C8/sub_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010729074478149414,
+        "output_file": "out/single_llvm/sub/sub_N1_H8_W8_C8/sub_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043447017669677734,
+        "output_file": "out/single_llvm/sub/sub_N1_H8_W8_C8/sub_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/pow/pow_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02505779266357422,
+        "output_file": "out/single_llvm/pow/pow_N1_H8_W8_C8/pow_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010217905044555664,
+        "output_file": "out/single_llvm/pow/pow_N1_H8_W8_C8/pow_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004260540008544922,
+        "output_file": "out/single_llvm/pow/pow_N1_H8_W8_C8/pow_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/hard_tanh/hard_tanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02546525001525879,
+        "output_file": "out/single_llvm/hard_tanh/hard_tanh_N1_H8_W8_C8/hard_tanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010405540466308594,
+        "output_file": "out/single_llvm/hard_tanh/hard_tanh_N1_H8_W8_C8/hard_tanh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042324066162109375,
+        "output_file": "out/single_llvm/hard_tanh/hard_tanh_N1_H8_W8_C8/hard_tanh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/not_equal/not_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025745391845703125,
+        "output_file": "out/single_llvm/not_equal/not_equal_N1_H8_W8_C8/not_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01045846939086914,
+        "output_file": "out/single_llvm/not_equal/not_equal_N1_H8_W8_C8/not_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004231929779052734,
+        "output_file": "out/single_llvm/not_equal/not_equal_N1_H8_W8_C8/not_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/sin/sin_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025376319885253906,
+        "output_file": "out/single_llvm/sin/sin_N1_H8_W8_C8/sin_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010667085647583008,
+        "output_file": "out/single_llvm/sin/sin_N1_H8_W8_C8/sin_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004239559173583984,
+        "output_file": "out/single_llvm/sin/sin_N1_H8_W8_C8/sin_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/relu/relu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026106834411621094,
+        "output_file": "out/single_llvm/relu/relu_N1_H8_W8_C8/relu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010659217834472656,
+        "output_file": "out/single_llvm/relu/relu_N1_H8_W8_C8/relu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004319906234741211,
+        "output_file": "out/single_llvm/relu/relu_N1_H8_W8_C8/relu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/leaky_relu/leaky_relu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02549004554748535,
+        "output_file": "out/single_llvm/leaky_relu/leaky_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010478973388671875,
+        "output_file": "out/single_llvm/leaky_relu/leaky_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004179477691650391,
+        "output_file": "out/single_llvm/leaky_relu/leaky_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/logical_and/logical_and_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025252342224121094,
+        "output_file": "out/single_llvm/logical_and/logical_and_N1_H8_W8_C8/logical_and_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01050567626953125,
+        "output_file": "out/single_llvm/logical_and/logical_and_N1_H8_W8_C8/logical_and_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004254817962646484,
+        "output_file": "out/single_llvm/logical_and/logical_and_N1_H8_W8_C8/logical_and_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/elu/elu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02522110939025879,
+        "output_file": "out/single_llvm/elu/elu_N1_H8_W8_C8/elu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010567188262939453,
+        "output_file": "out/single_llvm/elu/elu_N1_H8_W8_C8/elu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004160881042480469,
+        "output_file": "out/single_llvm/elu/elu_N1_H8_W8_C8/elu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/logical_or/logical_or_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025377511978149414,
+        "output_file": "out/single_llvm/logical_or/logical_or_N1_H8_W8_C8/logical_or_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010352611541748047,
+        "output_file": "out/single_llvm/logical_or/logical_or_N1_H8_W8_C8/logical_or_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004270076751708984,
+        "output_file": "out/single_llvm/logical_or/logical_or_N1_H8_W8_C8/logical_or_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/single/maxpool2d/maxpool2d_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025551319122314453,
+        "output_file": "out/single_llvm/maxpool2d/maxpool2d_N1_H8_W8_C8/maxpool2d_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010456323623657227,
+        "output_file": "out/single_llvm/maxpool2d/maxpool2d_N1_H8_W8_C8/maxpool2d_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00419163703918457,
+        "output_file": "out/single_llvm/maxpool2d/maxpool2d_N1_H8_W8_C8/maxpool2d_N1_H8_W8_C8.bc"
+      }
+    }
+  }
+}

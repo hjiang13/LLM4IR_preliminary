@@ -1,0 +1,442 @@
+2025-09-01 23:55:58,202 - INFO - 🔍 找到 53 个MLIR文件
+2025-09-01 23:55:58,202 - INFO - 🔧 步骤1: mlir-opt - exp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,230 - INFO - 🔧 步骤2: mlir-translate - exp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,242 - INFO - 🔧 步骤3: llvm-as - exp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,247 - INFO - ✅ 编译成功: exp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,247 - INFO - 🔧 步骤1: mlir-opt - mish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,273 - INFO - 🔧 步骤2: mlir-translate - mish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,284 - INFO - 🔧 步骤3: llvm-as - mish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,288 - INFO - ✅ 编译成功: mish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,289 - INFO - 🔧 步骤1: mlir-opt - softsign_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,315 - INFO - 🔧 步骤2: mlir-translate - softsign_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,325 - INFO - 🔧 步骤3: llvm-as - softsign_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,330 - INFO - ✅ 编译成功: softsign_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,330 - INFO - 🔧 步骤1: mlir-opt - add_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,356 - INFO - 🔧 步骤2: mlir-translate - add_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,367 - INFO - 🔧 步骤3: llvm-as - add_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,371 - INFO - ✅ 编译成功: add_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,371 - INFO - 🔧 步骤1: mlir-opt - log2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,397 - INFO - 🔧 步骤2: mlir-translate - log2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,407 - INFO - 🔧 步骤3: llvm-as - log2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,412 - INFO - ✅ 编译成功: log2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,412 - INFO - 🔧 步骤1: mlir-opt - greater_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,438 - INFO - 🔧 步骤2: mlir-translate - greater_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,449 - INFO - 🔧 步骤3: llvm-as - greater_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,453 - INFO - ✅ 编译成功: greater_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,454 - INFO - 🔧 步骤1: mlir-opt - asin_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,480 - INFO - 🔧 步骤2: mlir-translate - asin_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,490 - INFO - 🔧 步骤3: llvm-as - asin_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,494 - INFO - ✅ 编译成功: asin_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,495 - INFO - 🔧 步骤1: mlir-opt - logical_xor_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,521 - INFO - 🔧 步骤2: mlir-translate - logical_xor_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,532 - INFO - 🔧 步骤3: llvm-as - logical_xor_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,537 - INFO - ✅ 编译成功: logical_xor_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,537 - INFO - 🔧 步骤1: mlir-opt - cosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,569 - INFO - 🔧 步骤2: mlir-translate - cosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,580 - INFO - 🔧 步骤3: llvm-as - cosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,585 - INFO - ✅ 编译成功: cosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,585 - INFO - 🔧 步骤1: mlir-opt - sinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,611 - INFO - 🔧 步骤2: mlir-translate - sinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,622 - INFO - 🔧 步骤3: llvm-as - sinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,626 - INFO - ✅ 编译成功: sinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,626 - INFO - 🔧 步骤1: mlir-opt - log_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,652 - INFO - 🔧 步骤2: mlir-translate - log_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,662 - INFO - 🔧 步骤3: llvm-as - log_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,666 - INFO - ✅ 编译成功: log_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,667 - INFO - 🔧 步骤1: mlir-opt - greater_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,692 - INFO - 🔧 步骤2: mlir-translate - greater_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,702 - INFO - 🔧 步骤3: llvm-as - greater_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,706 - INFO - ✅ 编译成功: greater_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,707 - INFO - 🔧 步骤1: mlir-opt - equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,733 - INFO - 🔧 步骤2: mlir-translate - equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,744 - INFO - 🔧 步骤3: llvm-as - equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,749 - INFO - ✅ 编译成功: equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,750 - INFO - 🔧 步骤1: mlir-opt - sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,776 - INFO - 🔧 步骤2: mlir-translate - sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,787 - INFO - 🔧 步骤3: llvm-as - sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,792 - INFO - ✅ 编译成功: sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,792 - INFO - 🔧 步骤1: mlir-opt - conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,819 - INFO - 🔧 步骤2: mlir-translate - conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,830 - INFO - 🔧 步骤3: llvm-as - conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,835 - INFO - ✅ 编译成功: conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,835 - INFO - 🔧 步骤1: mlir-opt - atan2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,861 - INFO - 🔧 步骤2: mlir-translate - atan2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,871 - INFO - 🔧 步骤3: llvm-as - atan2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,876 - INFO - ✅ 编译成功: atan2_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,877 - INFO - 🔧 步骤1: mlir-opt - asinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,902 - INFO - 🔧 步骤2: mlir-translate - asinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,912 - INFO - 🔧 步骤3: llvm-as - asinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,916 - INFO - ✅ 编译成功: asinh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,917 - INFO - 🔧 步骤1: mlir-opt - cos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,942 - INFO - 🔧 步骤2: mlir-translate - cos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,952 - INFO - 🔧 步骤3: llvm-as - cos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,957 - INFO - ✅ 编译成功: cos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,958 - INFO - 🔧 步骤1: mlir-opt - cbrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,983 - INFO - 🔧 步骤2: mlir-translate - cbrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,994 - INFO - 🔧 步骤3: llvm-as - cbrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,998 - INFO - ✅ 编译成功: cbrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:58,999 - INFO - 🔧 步骤1: mlir-opt - matmul_M16_K16_N16.mlir
+2025-09-01 23:55:59,024 - INFO - 🔧 步骤2: mlir-translate - matmul_M16_K16_N16.mlir
+2025-09-01 23:55:59,035 - INFO - 🔧 步骤3: llvm-as - matmul_M16_K16_N16.mlir
+2025-09-01 23:55:59,039 - INFO - ✅ 编译成功: matmul_M16_K16_N16.mlir
+2025-09-01 23:55:59,040 - INFO - 🔧 步骤1: mlir-opt - sqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,066 - INFO - 🔧 步骤2: mlir-translate - sqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,076 - INFO - 🔧 步骤3: llvm-as - sqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,081 - INFO - ✅ 编译成功: sqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,081 - INFO - 🔧 步骤1: mlir-opt - atan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,107 - INFO - 🔧 步骤2: mlir-translate - atan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,118 - INFO - 🔧 步骤3: llvm-as - atan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,123 - INFO - ✅ 编译成功: atan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,123 - INFO - 🔧 步骤1: mlir-opt - clamp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,149 - INFO - 🔧 步骤2: mlir-translate - clamp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,160 - INFO - 🔧 步骤3: llvm-as - clamp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,165 - INFO - ✅ 编译成功: clamp_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,165 - INFO - 🔧 步骤1: mlir-opt - reduce_sum_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,184 - ERROR - ❌ mlir-opt失败: out/single/reduce_sum/reduce_sum_N1_H8_W8_C8.mlir:7:15: error: 'linalg.generic' op expected indexing_map #0 to have 2 dim(s) to match the number of loops
+    %output = linalg.generic {
+              ^
+out/single/reduce_sum/reduce_sum_N1_H8_W8_C8.mlir:7:15: note: see current operation: 
+%1 = "linalg.generic"(%arg0, %0) <{indexing_maps = [affine_map<(d0, d1, d2, d3) -> (d0, 0, 0, d3)>, affine_map<(d0, d1, d2, d3) -> (d0, d3)>], iterator_types = [#linalg.iterator_type<parallel>, #linalg.iterator_type<parallel>], operandSegmentSizes = array<i32: 1, 1>}> ({
+^bb0(%arg1: f32, %arg2: f32):
+  "linalg.yield"(%arg1) : (f32) -> ()
+}) : (tensor<1x8x8x8xf32>, tensor<1x8xf32>) -> tensor<1x8xf32>
+
+2025-09-01 23:55:59,185 - INFO - 🔧 步骤1: mlir-opt - logical_not_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,210 - INFO - 🔧 步骤2: mlir-translate - logical_not_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,221 - INFO - 🔧 步骤3: llvm-as - logical_not_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,226 - INFO - ✅ 编译成功: logical_not_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,226 - INFO - 🔧 步骤1: mlir-opt - mul_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,253 - INFO - 🔧 步骤2: mlir-translate - mul_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,263 - INFO - 🔧 步骤3: llvm-as - mul_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,268 - INFO - ✅ 编译成功: mul_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,268 - INFO - 🔧 步骤1: mlir-opt - avgpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,294 - INFO - 🔧 步骤2: mlir-translate - avgpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,304 - INFO - 🔧 步骤3: llvm-as - avgpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,309 - INFO - ✅ 编译成功: avgpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,309 - INFO - 🔧 步骤1: mlir-opt - acosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,335 - INFO - 🔧 步骤2: mlir-translate - acosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,346 - INFO - 🔧 步骤3: llvm-as - acosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,350 - INFO - ✅ 编译成功: acosh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,351 - INFO - 🔧 步骤1: mlir-opt - less_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,377 - INFO - 🔧 步骤2: mlir-translate - less_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,389 - INFO - 🔧 步骤3: llvm-as - less_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,393 - INFO - ✅ 编译成功: less_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,394 - INFO - 🔧 步骤1: mlir-opt - tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,421 - INFO - 🔧 步骤2: mlir-translate - tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,432 - INFO - 🔧 步骤3: llvm-as - tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,436 - INFO - ✅ 编译成功: tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,437 - INFO - 🔧 步骤1: mlir-opt - less_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,463 - INFO - 🔧 步骤2: mlir-translate - less_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,474 - INFO - 🔧 步骤3: llvm-as - less_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,478 - INFO - ✅ 编译成功: less_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,479 - INFO - 🔧 步骤1: mlir-opt - hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,505 - INFO - 🔧 步骤2: mlir-translate - hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,516 - INFO - 🔧 步骤3: llvm-as - hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,520 - INFO - ✅ 编译成功: hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,521 - INFO - 🔧 步骤1: mlir-opt - atanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,546 - INFO - 🔧 步骤2: mlir-translate - atanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,557 - INFO - 🔧 步骤3: llvm-as - atanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,561 - INFO - ✅ 编译成功: atanh_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,562 - INFO - 🔧 步骤1: mlir-opt - mod_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,587 - INFO - 🔧 步骤2: mlir-translate - mod_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,597 - INFO - 🔧 步骤3: llvm-as - mod_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,601 - INFO - ✅ 编译成功: mod_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,602 - INFO - 🔧 步骤1: mlir-opt - gelu_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,628 - INFO - 🔧 步骤2: mlir-translate - gelu_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,640 - INFO - 🔧 步骤3: llvm-as - gelu_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,644 - INFO - ✅ 编译成功: gelu_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,644 - INFO - 🔧 步骤1: mlir-opt - rsqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,670 - INFO - 🔧 步骤2: mlir-translate - rsqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,681 - INFO - 🔧 步骤3: llvm-as - rsqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,685 - INFO - ✅ 编译成功: rsqrt_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,686 - INFO - 🔧 步骤1: mlir-opt - softplus_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,711 - INFO - 🔧 步骤2: mlir-translate - softplus_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,721 - INFO - 🔧 步骤3: llvm-as - softplus_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,726 - INFO - ✅ 编译成功: softplus_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,726 - INFO - 🔧 步骤1: mlir-opt - tan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,752 - INFO - 🔧 步骤2: mlir-translate - tan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,762 - INFO - 🔧 步骤3: llvm-as - tan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,766 - INFO - ✅ 编译成功: tan_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,767 - INFO - 🔧 步骤1: mlir-opt - log10_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,792 - INFO - 🔧 步骤2: mlir-translate - log10_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,803 - INFO - 🔧 步骤3: llvm-as - log10_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,808 - INFO - ✅ 编译成功: log10_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,808 - INFO - 🔧 步骤1: mlir-opt - swish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,833 - INFO - 🔧 步骤2: mlir-translate - swish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,844 - INFO - 🔧 步骤3: llvm-as - swish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,848 - INFO - ✅ 编译成功: swish_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,849 - INFO - 🔧 步骤1: mlir-opt - acos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,873 - INFO - 🔧 步骤2: mlir-translate - acos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,884 - INFO - 🔧 步骤3: llvm-as - acos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,888 - INFO - ✅ 编译成功: acos_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,888 - INFO - 🔧 步骤1: mlir-opt - div_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,914 - INFO - 🔧 步骤2: mlir-translate - div_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,925 - INFO - 🔧 步骤3: llvm-as - div_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,929 - INFO - ✅ 编译成功: div_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,929 - INFO - 🔧 步骤1: mlir-opt - sub_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,954 - INFO - 🔧 步骤2: mlir-translate - sub_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,965 - INFO - 🔧 步骤3: llvm-as - sub_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,970 - INFO - ✅ 编译成功: sub_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,970 - INFO - 🔧 步骤1: mlir-opt - pow_N1_H8_W8_C8.mlir
+2025-09-01 23:55:59,997 - INFO - 🔧 步骤2: mlir-translate - pow_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,007 - INFO - 🔧 步骤3: llvm-as - pow_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,011 - INFO - ✅ 编译成功: pow_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,011 - INFO - 🔧 步骤1: mlir-opt - hard_tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,039 - INFO - 🔧 步骤2: mlir-translate - hard_tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,049 - INFO - 🔧 步骤3: llvm-as - hard_tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,054 - INFO - ✅ 编译成功: hard_tanh_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,055 - INFO - 🔧 步骤1: mlir-opt - not_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,081 - INFO - 🔧 步骤2: mlir-translate - not_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,092 - INFO - 🔧 步骤3: llvm-as - not_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,096 - INFO - ✅ 编译成功: not_equal_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,097 - INFO - 🔧 步骤1: mlir-opt - sin_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,123 - INFO - 🔧 步骤2: mlir-translate - sin_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,133 - INFO - 🔧 步骤3: llvm-as - sin_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,138 - INFO - ✅ 编译成功: sin_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,139 - INFO - 🔧 步骤1: mlir-opt - relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,164 - INFO - 🔧 步骤2: mlir-translate - relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,175 - INFO - 🔧 步骤3: llvm-as - relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,179 - INFO - ✅ 编译成功: relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,180 - INFO - 🔧 步骤1: mlir-opt - leaky_relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,208 - INFO - 🔧 步骤2: mlir-translate - leaky_relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,218 - INFO - 🔧 步骤3: llvm-as - leaky_relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,223 - INFO - ✅ 编译成功: leaky_relu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,224 - INFO - 🔧 步骤1: mlir-opt - logical_and_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,250 - INFO - 🔧 步骤2: mlir-translate - logical_and_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,260 - INFO - 🔧 步骤3: llvm-as - logical_and_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,265 - INFO - ✅ 编译成功: logical_and_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,265 - INFO - 🔧 步骤1: mlir-opt - elu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,291 - INFO - 🔧 步骤2: mlir-translate - elu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,302 - INFO - 🔧 步骤3: llvm-as - elu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,306 - INFO - ✅ 编译成功: elu_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,307 - INFO - 🔧 步骤1: mlir-opt - logical_or_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,332 - INFO - 🔧 步骤2: mlir-translate - logical_or_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,342 - INFO - 🔧 步骤3: llvm-as - logical_or_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,346 - INFO - ✅ 编译成功: logical_or_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,347 - INFO - 🔧 步骤1: mlir-opt - maxpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,372 - INFO - 🔧 步骤2: mlir-translate - maxpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,383 - INFO - 🔧 步骤3: llvm-as - maxpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,388 - INFO - ✅ 编译成功: maxpool2d_N1_H8_W8_C8.mlir
+2025-09-01 23:56:00,390 - INFO - 📊 编译完成:
+2025-09-01 23:56:00,390 - INFO -   总文件数: 53
+2025-09-01 23:56:00,390 - INFO -   成功: 52
+2025-09-01 23:56:00,390 - INFO -   失败: 1
+2025-09-01 23:56:00,390 - INFO -   成功率: 98.11%
+2025-09-02 00:01:39,274 - INFO - 🔍 找到 53 个MLIR文件
+2025-09-02 00:01:39,275 - INFO - 🔧 步骤1: mlir-opt - exp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,300 - INFO - 🔧 步骤2: mlir-translate - exp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,311 - INFO - 🔧 步骤3: llvm-as - exp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,316 - INFO - ✅ 编译成功: exp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,316 - INFO - 🔧 步骤1: mlir-opt - mish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,342 - INFO - 🔧 步骤2: mlir-translate - mish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,352 - INFO - 🔧 步骤3: llvm-as - mish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,356 - INFO - ✅ 编译成功: mish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,357 - INFO - 🔧 步骤1: mlir-opt - softsign_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,384 - INFO - 🔧 步骤2: mlir-translate - softsign_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,394 - INFO - 🔧 步骤3: llvm-as - softsign_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,399 - INFO - ✅ 编译成功: softsign_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,399 - INFO - 🔧 步骤1: mlir-opt - add_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,426 - INFO - 🔧 步骤2: mlir-translate - add_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,438 - INFO - 🔧 步骤3: llvm-as - add_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,442 - INFO - ✅ 编译成功: add_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,443 - INFO - 🔧 步骤1: mlir-opt - log2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,472 - INFO - 🔧 步骤2: mlir-translate - log2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,483 - INFO - 🔧 步骤3: llvm-as - log2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,488 - INFO - ✅ 编译成功: log2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,488 - INFO - 🔧 步骤1: mlir-opt - greater_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,516 - INFO - 🔧 步骤2: mlir-translate - greater_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,528 - INFO - 🔧 步骤3: llvm-as - greater_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,533 - INFO - ✅ 编译成功: greater_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,533 - INFO - 🔧 步骤1: mlir-opt - asin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,560 - INFO - 🔧 步骤2: mlir-translate - asin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,573 - INFO - 🔧 步骤3: llvm-as - asin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,579 - INFO - ✅ 编译成功: asin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,580 - INFO - 🔧 步骤1: mlir-opt - logical_xor_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,606 - INFO - 🔧 步骤2: mlir-translate - logical_xor_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,616 - INFO - 🔧 步骤3: llvm-as - logical_xor_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,621 - INFO - ✅ 编译成功: logical_xor_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,621 - INFO - 🔧 步骤1: mlir-opt - cosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,647 - INFO - 🔧 步骤2: mlir-translate - cosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,658 - INFO - 🔧 步骤3: llvm-as - cosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,662 - INFO - ✅ 编译成功: cosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,663 - INFO - 🔧 步骤1: mlir-opt - sinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,689 - INFO - 🔧 步骤2: mlir-translate - sinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,701 - INFO - 🔧 步骤3: llvm-as - sinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,705 - INFO - ✅ 编译成功: sinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,705 - INFO - 🔧 步骤1: mlir-opt - log_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,731 - INFO - 🔧 步骤2: mlir-translate - log_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,742 - INFO - 🔧 步骤3: llvm-as - log_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,746 - INFO - ✅ 编译成功: log_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,746 - INFO - 🔧 步骤1: mlir-opt - greater_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,773 - INFO - 🔧 步骤2: mlir-translate - greater_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,784 - INFO - 🔧 步骤3: llvm-as - greater_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,788 - INFO - ✅ 编译成功: greater_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,789 - INFO - 🔧 步骤1: mlir-opt - equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,815 - INFO - 🔧 步骤2: mlir-translate - equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,826 - INFO - 🔧 步骤3: llvm-as - equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,831 - INFO - ✅ 编译成功: equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,831 - INFO - 🔧 步骤1: mlir-opt - sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,859 - INFO - 🔧 步骤2: mlir-translate - sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,870 - INFO - 🔧 步骤3: llvm-as - sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,874 - INFO - ✅ 编译成功: sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,875 - INFO - 🔧 步骤1: mlir-opt - conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,901 - INFO - 🔧 步骤2: mlir-translate - conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,912 - INFO - 🔧 步骤3: llvm-as - conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,917 - INFO - ✅ 编译成功: conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,917 - INFO - 🔧 步骤1: mlir-opt - atan2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,943 - INFO - 🔧 步骤2: mlir-translate - atan2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,953 - INFO - 🔧 步骤3: llvm-as - atan2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,957 - INFO - ✅ 编译成功: atan2_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,958 - INFO - 🔧 步骤1: mlir-opt - asinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,984 - INFO - 🔧 步骤2: mlir-translate - asinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,995 - INFO - 🔧 步骤3: llvm-as - asinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,999 - INFO - ✅ 编译成功: asinh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:39,999 - INFO - 🔧 步骤1: mlir-opt - cos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,028 - INFO - 🔧 步骤2: mlir-translate - cos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,042 - INFO - 🔧 步骤3: llvm-as - cos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,048 - INFO - ✅ 编译成功: cos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,049 - INFO - 🔧 步骤1: mlir-opt - cbrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,075 - INFO - 🔧 步骤2: mlir-translate - cbrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,086 - INFO - 🔧 步骤3: llvm-as - cbrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,090 - INFO - ✅ 编译成功: cbrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,091 - INFO - 🔧 步骤1: mlir-opt - matmul_M16_K16_N16.mlir
+2025-09-02 00:01:40,117 - INFO - 🔧 步骤2: mlir-translate - matmul_M16_K16_N16.mlir
+2025-09-02 00:01:40,128 - INFO - 🔧 步骤3: llvm-as - matmul_M16_K16_N16.mlir
+2025-09-02 00:01:40,132 - INFO - ✅ 编译成功: matmul_M16_K16_N16.mlir
+2025-09-02 00:01:40,133 - INFO - 🔧 步骤1: mlir-opt - sqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,159 - INFO - 🔧 步骤2: mlir-translate - sqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,170 - INFO - 🔧 步骤3: llvm-as - sqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,174 - INFO - ✅ 编译成功: sqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,174 - INFO - 🔧 步骤1: mlir-opt - atan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,200 - INFO - 🔧 步骤2: mlir-translate - atan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,210 - INFO - 🔧 步骤3: llvm-as - atan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,215 - INFO - ✅ 编译成功: atan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,215 - INFO - 🔧 步骤1: mlir-opt - clamp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,241 - INFO - 🔧 步骤2: mlir-translate - clamp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,251 - INFO - 🔧 步骤3: llvm-as - clamp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,256 - INFO - ✅ 编译成功: clamp_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,256 - INFO - 🔧 步骤1: mlir-opt - reduce_sum_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,283 - INFO - 🔧 步骤2: mlir-translate - reduce_sum_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,294 - INFO - 🔧 步骤3: llvm-as - reduce_sum_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,299 - INFO - ✅ 编译成功: reduce_sum_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,299 - INFO - 🔧 步骤1: mlir-opt - logical_not_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,325 - INFO - 🔧 步骤2: mlir-translate - logical_not_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,336 - INFO - 🔧 步骤3: llvm-as - logical_not_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,340 - INFO - ✅ 编译成功: logical_not_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,341 - INFO - 🔧 步骤1: mlir-opt - mul_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,366 - INFO - 🔧 步骤2: mlir-translate - mul_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,377 - INFO - 🔧 步骤3: llvm-as - mul_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,382 - INFO - ✅ 编译成功: mul_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,382 - INFO - 🔧 步骤1: mlir-opt - avgpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,408 - INFO - 🔧 步骤2: mlir-translate - avgpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,418 - INFO - 🔧 步骤3: llvm-as - avgpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,423 - INFO - ✅ 编译成功: avgpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,423 - INFO - 🔧 步骤1: mlir-opt - acosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,448 - INFO - 🔧 步骤2: mlir-translate - acosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,459 - INFO - 🔧 步骤3: llvm-as - acosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,464 - INFO - ✅ 编译成功: acosh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,464 - INFO - 🔧 步骤1: mlir-opt - less_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,490 - INFO - 🔧 步骤2: mlir-translate - less_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,500 - INFO - 🔧 步骤3: llvm-as - less_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,505 - INFO - ✅ 编译成功: less_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,505 - INFO - 🔧 步骤1: mlir-opt - tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,531 - INFO - 🔧 步骤2: mlir-translate - tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,541 - INFO - 🔧 步骤3: llvm-as - tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,546 - INFO - ✅ 编译成功: tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,546 - INFO - 🔧 步骤1: mlir-opt - less_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,571 - INFO - 🔧 步骤2: mlir-translate - less_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,581 - INFO - 🔧 步骤3: llvm-as - less_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,586 - INFO - ✅ 编译成功: less_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,586 - INFO - 🔧 步骤1: mlir-opt - hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,612 - INFO - 🔧 步骤2: mlir-translate - hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,623 - INFO - 🔧 步骤3: llvm-as - hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,627 - INFO - ✅ 编译成功: hard_sigmoid_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,628 - INFO - 🔧 步骤1: mlir-opt - atanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,654 - INFO - 🔧 步骤2: mlir-translate - atanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,665 - INFO - 🔧 步骤3: llvm-as - atanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,669 - INFO - ✅ 编译成功: atanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,669 - INFO - 🔧 步骤1: mlir-opt - mod_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,695 - INFO - 🔧 步骤2: mlir-translate - mod_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,707 - INFO - 🔧 步骤3: llvm-as - mod_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,712 - INFO - ✅ 编译成功: mod_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,712 - INFO - 🔧 步骤1: mlir-opt - gelu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,738 - INFO - 🔧 步骤2: mlir-translate - gelu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,749 - INFO - 🔧 步骤3: llvm-as - gelu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,753 - INFO - ✅ 编译成功: gelu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,753 - INFO - 🔧 步骤1: mlir-opt - rsqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,779 - INFO - 🔧 步骤2: mlir-translate - rsqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,790 - INFO - 🔧 步骤3: llvm-as - rsqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,794 - INFO - ✅ 编译成功: rsqrt_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,795 - INFO - 🔧 步骤1: mlir-opt - softplus_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,821 - INFO - 🔧 步骤2: mlir-translate - softplus_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,831 - INFO - 🔧 步骤3: llvm-as - softplus_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,835 - INFO - ✅ 编译成功: softplus_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,836 - INFO - 🔧 步骤1: mlir-opt - tan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,862 - INFO - 🔧 步骤2: mlir-translate - tan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,873 - INFO - 🔧 步骤3: llvm-as - tan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,880 - INFO - ✅ 编译成功: tan_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,880 - INFO - 🔧 步骤1: mlir-opt - log10_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,907 - INFO - 🔧 步骤2: mlir-translate - log10_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,918 - INFO - 🔧 步骤3: llvm-as - log10_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,922 - INFO - ✅ 编译成功: log10_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,923 - INFO - 🔧 步骤1: mlir-opt - swish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,949 - INFO - 🔧 步骤2: mlir-translate - swish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,960 - INFO - 🔧 步骤3: llvm-as - swish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,964 - INFO - ✅ 编译成功: swish_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,965 - INFO - 🔧 步骤1: mlir-opt - acos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:40,990 - INFO - 🔧 步骤2: mlir-translate - acos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,002 - INFO - 🔧 步骤3: llvm-as - acos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,006 - INFO - ✅ 编译成功: acos_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,007 - INFO - 🔧 步骤1: mlir-opt - div_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,033 - INFO - 🔧 步骤2: mlir-translate - div_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,044 - INFO - 🔧 步骤3: llvm-as - div_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,048 - INFO - ✅ 编译成功: div_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,049 - INFO - 🔧 步骤1: mlir-opt - sub_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,074 - INFO - 🔧 步骤2: mlir-translate - sub_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,085 - INFO - 🔧 步骤3: llvm-as - sub_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,090 - INFO - ✅ 编译成功: sub_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,090 - INFO - 🔧 步骤1: mlir-opt - pow_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,115 - INFO - 🔧 步骤2: mlir-translate - pow_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,126 - INFO - 🔧 步骤3: llvm-as - pow_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,130 - INFO - ✅ 编译成功: pow_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,130 - INFO - 🔧 步骤1: mlir-opt - hard_tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,156 - INFO - 🔧 步骤2: mlir-translate - hard_tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,167 - INFO - 🔧 步骤3: llvm-as - hard_tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,171 - INFO - ✅ 编译成功: hard_tanh_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,171 - INFO - 🔧 步骤1: mlir-opt - not_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,197 - INFO - 🔧 步骤2: mlir-translate - not_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,208 - INFO - 🔧 步骤3: llvm-as - not_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,212 - INFO - ✅ 编译成功: not_equal_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,213 - INFO - 🔧 步骤1: mlir-opt - sin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,238 - INFO - 🔧 步骤2: mlir-translate - sin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,249 - INFO - 🔧 步骤3: llvm-as - sin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,253 - INFO - ✅ 编译成功: sin_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,254 - INFO - 🔧 步骤1: mlir-opt - relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,280 - INFO - 🔧 步骤2: mlir-translate - relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,291 - INFO - 🔧 步骤3: llvm-as - relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,295 - INFO - ✅ 编译成功: relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,296 - INFO - 🔧 步骤1: mlir-opt - leaky_relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,321 - INFO - 🔧 步骤2: mlir-translate - leaky_relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,332 - INFO - 🔧 步骤3: llvm-as - leaky_relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,336 - INFO - ✅ 编译成功: leaky_relu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,337 - INFO - 🔧 步骤1: mlir-opt - logical_and_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,362 - INFO - 🔧 步骤2: mlir-translate - logical_and_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,373 - INFO - 🔧 步骤3: llvm-as - logical_and_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,377 - INFO - ✅ 编译成功: logical_and_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,377 - INFO - 🔧 步骤1: mlir-opt - elu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,403 - INFO - 🔧 步骤2: mlir-translate - elu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,413 - INFO - 🔧 步骤3: llvm-as - elu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,418 - INFO - ✅ 编译成功: elu_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,418 - INFO - 🔧 步骤1: mlir-opt - logical_or_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,444 - INFO - 🔧 步骤2: mlir-translate - logical_or_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,454 - INFO - 🔧 步骤3: llvm-as - logical_or_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,459 - INFO - ✅ 编译成功: logical_or_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,459 - INFO - 🔧 步骤1: mlir-opt - maxpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,485 - INFO - 🔧 步骤2: mlir-translate - maxpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,495 - INFO - 🔧 步骤3: llvm-as - maxpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,499 - INFO - ✅ 编译成功: maxpool2d_N1_H8_W8_C8.mlir
+2025-09-02 00:01:41,502 - INFO - 📊 编译完成:
+2025-09-02 00:01:41,502 - INFO -   总文件数: 53
+2025-09-02 00:01:41,502 - INFO -   成功: 53
+2025-09-02 00:01:41,502 - INFO -   失败: 0
+2025-09-02 00:01:41,502 - INFO -   成功率: 100.00%

@@ -1,0 +1,12 @@
+# 形状参数网格配置
+batch_sizes:
+  - 1
+
+spatial_dims:
+  - 8
+
+channels:
+  - 8
+
+matrix_dims:
+  - 16

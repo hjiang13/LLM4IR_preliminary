@@ -1,0 +1,17 @@
+module {
+  func.func @main(
+    %A: tensor<{{M}}x{{K}}x{{dtype}}>, 
+    %B: tensor<{{K}}x{{N}}x{{dtype}}>
+  ) -> tensor<{{M}}x{{N}}x{{dtype}}> {
+    
+    %init = tensor.empty() : tensor<{{M}}x{{N}}x{{dtype}}>
+    
+    %C = linalg.matmul ins(%A, %B : 
+      tensor<{{M}}x{{K}}x{{dtype}}>, 
+      tensor<{{K}}x{{N}}x{{dtype}}>
+    ) outs(%init : tensor<{{M}}x{{N}}x{{dtype}}>) -> 
+      tensor<{{M}}x{{N}}x{{dtype}}>
+    
+    return %C : tensor<{{M}}x{{N}}x{{dtype}}>
+  }
+}

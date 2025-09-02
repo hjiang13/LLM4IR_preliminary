@@ -1,0 +1,19 @@
+module {
+  func.func @main(
+    %input: tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>
+  ) -> tensor<{{N}}x{{C}}xf32> {
+
+    %init = tensor.empty() : tensor<{{N}}x{{C}}xf32>
+
+    %output = linalg.reduce
+      ins(%input : tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>)
+      outs(%init : tensor<{{N}}x{{C}}xf32>)
+      dimensions = [1, 2]
+      (%in: f32, %out: f32) {
+        %result = arith.addf %in, %out : f32
+        linalg.yield %result : f32
+      } -> tensor<{{N}}x{{C}}xf32>
+
+    return %output : tensor<{{N}}x{{C}}xf32>
+  }
+}

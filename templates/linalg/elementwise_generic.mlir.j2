@@ -1,0 +1,32 @@
+module {
+  func.func @main(
+    %x: tensor<{{shape|join('x')}}x{{dtype}}>
+    {%- if y is defined %}, %y: tensor<{{shape_y|join('x')}}x{{dtype}}>{%- endif %}
+  ) -> tensor<{{shape_out|join('x')}}x{{dtype}}> {
+    
+    %init = tensor.empty() : tensor<{{shape_out|join('x')}}x{{dtype}}>
+    
+    %res = linalg.generic {
+      indexing_maps = [
+        affine_map<({{loop_vars}}) -> ({{x_indexing}})>
+        {%- if y is defined %}, affine_map<({{loop_vars}}) -> ({{y_indexing}}){% endif %},
+        affine_map<({{loop_vars}}) -> ({{out_indexing}})>
+      ],
+      iterator_types = [{{iterator_types}}]
+    } ins(
+      %x{% if y is defined %}, %y{% endif %} : 
+      tensor<{{shape|join('x')}}x{{dtype}}>
+      {%- if y is defined %}, tensor<{{shape_y|join('x')}}x{{dtype}}>{%- endif %}
+    ) outs(%init : tensor<{{shape_out|join('x')}}x{{dtype}}>) {
+      ^bb0(
+        {{a}}: {{dtype}}
+        {%- if y is defined %}, {{b}}: {{dtype}}{% endif %}, 
+        {{o}}: {{dtype}}
+      ):
+        {{expr_impl}}
+        linalg.yield %result : {{dtype}}
+    } -> tensor<{{shape_out|join('x')}}x{{dtype}}>
+    
+    return %res : tensor<{{shape_out|join('x')}}x{{dtype}}>
+  }
+}

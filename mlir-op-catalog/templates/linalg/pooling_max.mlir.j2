@@ -1,0 +1,17 @@
+module {
+  func.func @main(
+    %input: tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>
+  ) -> tensor<{{N}}x{{OH}}x{{OW}}x{{C}}xf32> {
+
+    %init = tensor.empty() : tensor<{{N}}x{{OH}}x{{OW}}x{{C}}xf32>
+
+    %output = linalg.pooling_nhwc_max
+      ins(%input : tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>)
+      outs(%init : tensor<{{N}}x{{OH}}x{{OW}}x{{C}}xf32>)
+      {dilations = dense<1> : vector<2xi64>,
+       strides = dense<{{stride_h}}> : vector<2xi64>,
+       windows = dense<{{kernel_h}}> : vector<2xi64>} -> tensor<{{N}}x{{OH}}x{{OW}}x{{C}}xf32>
+
+    return %output : tensor<{{N}}x{{OH}}x{{OW}}x{{C}}xf32>
+  }
+}

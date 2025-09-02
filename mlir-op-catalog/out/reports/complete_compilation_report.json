@@ -1,0 +1,229 @@
+{
+  "timestamp": "2025-09-02 00:29:02",
+  "summary": {
+    "total_operations": 142,
+    "total_llvm_files": 142,
+    "compilation_success_rate": 100.0
+  },
+  "dialect_statistics": {
+    "arith": {
+      "total": 28,
+      "compiled": 28,
+      "operations": [
+        "arith.constant",
+        "arith.addi",
+        "arith.subi",
+        "arith.muli",
+        "arith.divui",
+        "arith.divsi",
+        "arith.remui",
+        "arith.remsi",
+        "arith.addf",
+        "arith.subf",
+        "arith.mulf",
+        "arith.divf",
+        "arith.maxf",
+        "arith.minf",
+        "arith.maxsi",
+        "arith.minsi",
+        "arith.andi",
+        "arith.ori",
+        "arith.xori",
+        "arith.shli",
+        "arith.shrsi",
+        "arith.shrui",
+        "arith.cmpi",
+        "arith.cmpf",
+        "arith.bitcast",
+        "arith.index_cast",
+        "arith.fptosi",
+        "arith.sitofp"
+      ]
+    },
+    "math": {
+      "total": 14,
+      "compiled": 14,
+      "operations": [
+        "math.absf",
+        "math.copysign",
+        "math.ceil",
+        "math.floor",
+        "math.round",
+        "math.roundeven",
+        "math.sqrt",
+        "math.rsqrt",
+        "math.log",
+        "math.log1p",
+        "math.exp",
+        "math.exp2",
+        "math.powf",
+        "math.tanh"
+      ]
+    },
+    "memref": {
+      "total": 14,
+      "compiled": 14,
+      "operations": [
+        "memref.alloc",
+        "memref.alloca",
+        "memref.dealloc",
+        "memref.load",
+        "memref.store",
+        "memref.subview",
+        "memref.cast",
+        "memref.reinterpret_cast",
+        "memref.view",
+        "memref.reshape",
+        "memref.expand_shape",
+        "memref.collapse_shape",
+        "memref.copy",
+        "memref.global"
+      ]
+    },
+    "tensor": {
+      "total": 12,
+      "compiled": 12,
+      "operations": [
+        "tensor.extract",
+        "tensor.insert",
+        "tensor.extract_slice",
+        "tensor.insert_slice",
+        "tensor.cast",
+        "tensor.dim",
+        "tensor.generate",
+        "tensor.empty",
+        "tensor.from_elements",
+        "tensor.reshape",
+        "tensor.expand_shape",
+        "tensor.collapse_shape"
+      ]
+    },
+    "linalg": {
+      "total": 16,
+      "compiled": 16,
+      "operations": [
+        "linalg.generic",
+        "linalg.fill",
+        "linalg.copy",
+        "linalg.transpose",
+        "linalg.matmul",
+        "linalg.matvec",
+        "linalg.batch_matmul",
+        "linalg.conv_1d_nwc_wcf",
+        "linalg.conv_2d_nchw_fchw",
+        "linalg.conv_2d_nhwc_hwcf",
+        "linalg.conv_3d_ndhwc_dhwcf",
+        "linalg.depthwise_conv_2d_nhwc_hwc",
+        "linalg.pooling_nchw_max",
+        "linalg.pooling_nhwc_max",
+        "linalg.pooling_nchw_sum",
+        "linalg.pooling_nhwc_sum"
+      ]
+    },
+    "scf": {
+      "total": 10,
+      "compiled": 10,
+      "operations": [
+        "scf.for",
+        "scf.while",
+        "scf.if",
+        "scf.yield",
+        "scf.parallel",
+        "scf.forall",
+        "scf.foreach_thread",
+        "scf.in_parallel",
+        "scf.execute_region",
+        "scf.index_switch"
+      ]
+    },
+    "affine": {
+      "total": 10,
+      "compiled": 10,
+      "operations": [
+        "affine.for",
+        "affine.if",
+        "affine.parallel",
+        "affine.yield",
+        "affine.apply",
+        "affine.min",
+        "affine.max",
+        "affine.load",
+        "affine.store",
+        "affine.vector_load"
+      ]
+    },
+    "vector": {
+      "total": 14,
+      "compiled": 14,
+      "operations": [
+        "vector.broadcast",
+        "vector.splat",
+        "vector.extract",
+        "vector.insert",
+        "vector.extract_strided_slice",
+        "vector.insert_strided_slice",
+        "vector.shape_cast",
+        "vector.bitcast",
+        "vector.transfer_read",
+        "vector.transfer_write",
+        "vector.gather",
+        "vector.scatter",
+        "vector.reduction",
+        "vector.contract"
+      ]
+    },
+    "cf": {
+      "total": 5,
+      "compiled": 5,
+      "operations": [
+        "cf.br",
+        "cf.cond_br",
+        "cf.switch",
+        "cf.assert",
+        "cf.unreachable"
+      ]
+    },
+    "func": {
+      "total": 3,
+      "compiled": 3,
+      "operations": [
+        "func.func",
+        "func.call",
+        "func.return"
+      ]
+    },
+    "tosa": {
+      "total": 8,
+      "compiled": 8,
+      "operations": [
+        "tosa.add",
+        "tosa.mul",
+        "tosa.relu",
+        "tosa.clamp",
+        "tosa.conv2d",
+        "tosa.depthwise_conv2d",
+        "tosa.max_pool2d",
+        "tosa.reshape"
+      ]
+    },
+    "stablehlo": {
+      "total": 8,
+      "compiled": 8,
+      "operations": [
+        "stablehlo.add",
+        "stablehlo.multiply",
+        "stablehlo.maximum",
+        "stablehlo.compare",
+        "stablehlo.reshape",
+        "stablehlo.transpose",
+        "stablehlo.broadcast_in_dim",
+        "stablehlo.convolution"
+      ]
+    }
+  },
+  "compilation_details": {
+    "input_directory": "out/single_complete",
+    "output_directory": "out/single_complete_llvm",
+    "pipeline_used": "config/pipeline_linalg_to_llvm.txt"
+  }
+}

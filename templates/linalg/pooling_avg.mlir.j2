@@ -1,0 +1,18 @@
+module {
+  func.func @main(
+    %x: tensor<{{N}}x{{H}}x{{W}}x{{C}}x{{dtype}}>
+  ) -> tensor<{{N}}x{{OH}}x{{OW}}x{{C}}x{{dtype}}> {
+    
+    %init = tensor.empty() : tensor<{{N}}x{{OH}}x{{OW}}x{{C}}x{{dtype}}>
+    
+    %result = linalg.pooling_nhwc_sum {
+      kernel_size = [{{kernel_h}}, {{kernel_w}}],
+      stride = [{{stride_h}}, {{stride_w}}],
+      padding = [0, 0, 0, 0]
+    } ins(%x : tensor<{{N}}x{{H}}x{{W}}x{{C}}x{{dtype}}>) 
+      outs(%init : tensor<{{N}}x{{OH}}x{{OW}}x{{C}}x{{dtype}}>) -> 
+      tensor<{{N}}x{{OH}}x{{OW}}x{{C}}x{{dtype}}>
+    
+    return %result : tensor<{{N}}x{{OH}}x{{OW}}x{{C}}x{{dtype}}>
+  }
+}

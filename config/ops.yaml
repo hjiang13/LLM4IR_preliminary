@@ -1,0 +1,1022 @@
+# MLIR操作目录配置
+# 扩展版本：目标60-80个操作
+
+# 1. 激活函数 (Activation Functions)
+- id: relu
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "max(x, 0.0)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: leaky_relu
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x > 0 ? x : 0.01 * x"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: elu
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x > 0 ? x : exp(x) - 1"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: gelu
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "0.5 * x * (1 + tanh(sqrt(2/pi) * (x + 0.044715 * x^3)))"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: swish
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x * sigmoid(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: mish
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x * tanh(softplus(x))"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+# 2. 基本算术操作 (Basic Arithmetic)
+- id: add
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x + y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: sub
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x - y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: mul
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x * y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: div
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x / y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: mod
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x % y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: pow
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x^y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+# 3. 数学函数 (Mathematical Functions)
+- id: exp
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "exp(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: log
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "log(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: log2
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "log2(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: log10
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "log10(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: sqrt
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "sqrt(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: rsqrt
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "1/sqrt(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: cbrt
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "cbrt(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+# 4. 三角函数 (Trigonometric Functions)
+- id: sin
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "sin(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: cos
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "cos(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: tan
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "tan(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: asin
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "asin(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: acos
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "acos(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: atan
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "atan(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: atan2
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "atan2(y, x)"
+  inputs:
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+# 5. 双曲函数 (Hyperbolic Functions)
+- id: sinh
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "sinh(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: cosh
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "cosh(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: tanh
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "tanh(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: asinh
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "asinh(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: acosh
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "acosh(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: atanh
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "atanh(x)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+# 6. 比较操作 (Comparison Operations)
+- id: equal
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x == y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: not_equal
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x != y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: greater
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x > y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: greater_equal
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x >= y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: less
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x < y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: less_equal
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x <= y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+# 7. 逻辑操作 (Logical Operations)
+- id: logical_and
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x && y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: logical_or
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x || y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: logical_not
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "!x"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: logical_xor
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x ^ y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+# 8. 矩阵操作 (Matrix Operations)
+- id: matmul
+  dialect: linalg
+  kind: matmul
+  template: matmul_4d.mlir.j2
+  inputs:
+    - name: A
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: B
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+
+- id: batch_matmul
+  dialect: linalg
+  kind: matmul
+  template: batch_matmul.mlir.j2
+  inputs:
+    - name: A
+      type_pool: [f32]
+      rank: 4
+      shape: [B, M, K, N]
+    - name: B
+      type_pool: [f32]
+      rank: 4
+      shape: [B, K, N, P]
+  outputs:
+    - rank: 4
+      shape: [B, M, N, P]
+      type_pool: [f32]
+
+# 9. 卷积操作 (Convolution Operations)
+- id: conv2d_nhwc_hwcf
+  dialect: linalg
+  kind: conv
+  template: conv_2d_nhwc_hwcf.mlir.j2
+  attrs:
+    stride_h: 1
+    stride_w: 1
+    dilation_h: 1
+    dilation_w: 1
+    padding: VALID
+  inputs:
+    - name: I
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+    - name: K
+      rank: 4
+      shape: [KH, KW, C, F]
+      type_pool: [f32]
+  outputs:
+    - rank: 4
+      shape: [N, OH, OW, F]
+      type_pool: [f32]
+  constraints:
+    - "OH = floor((H - (dilation_h*(KH-1)+1) + p_top + p_bottom)/stride_h) + 1"
+    - "OW = floor((W - (dilation_w*(KW-1)+1) + p_left + p_right)/stride_w) + 1"
+
+- id: conv2d_nchw_fchw
+  dialect: linalg
+  kind: conv
+  template: conv_2d_nchw_fchw.mlir.j2
+  attrs:
+    stride_h: 1
+    stride_w: 1
+    dilation_h: 1
+    dilation_w: 1
+    padding: VALID
+  inputs:
+    - name: I
+      rank: 4
+      shape: [N, C, H, W]
+      type_pool: [f32]
+    - name: K
+      rank: 4
+      shape: [F, C, KH, KW]
+      type_pool: [f32]
+  outputs:
+    - rank: 4
+      shape: [N, F, OH, OW]
+      type_pool: [f32]
+
+- id: depthwise_conv2d
+  dialect: linalg
+  kind: conv
+  template: depthwise_conv2d.mlir.j2
+  attrs:
+    stride_h: 1
+    stride_w: 1
+    dilation_h: 1
+    dilation_w: 1
+    padding: VALID
+  inputs:
+    - name: I
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+    - name: K
+      rank: 4
+      shape: [KH, KW, C, 1]
+      type_pool: [f32]
+  outputs:
+    - rank: 4
+      shape: [N, OH, OW, C]
+      type_pool: [f32]
+
+# 10. 池化操作 (Pooling Operations)
+- id: avgpool2d
+  dialect: linalg
+  kind: pooling
+  template: pooling_avg.mlir.j2
+  attrs:
+    kernel_h: 2
+    kernel_w: 2
+    stride_h: 2
+    stride_w: 2
+    padding: VALID
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 4
+      shape: [N, OH, OW, C]
+      type_pool: [f32]
+
+- id: maxpool2d
+  dialect: linalg
+  kind: pooling
+  template: pooling_max.mlir.j2
+  attrs:
+    kernel_h: 2
+    kernel_w: 2
+    stride_h: 2
+    stride_w: 2
+    padding: VALID
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 4
+      shape: [N, OH, OW, C]
+      type_pool: [f32]
+
+- id: global_avgpool2d
+  dialect: linalg
+  kind: pooling
+  template: global_pooling_avg.mlir.j2
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 2
+      shape: [N, C]
+      type_pool: [f32]
+
+- id: global_maxpool2d
+  dialect: linalg
+  kind: pooling
+  template: global_pooling_max.mlir.j2
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 2
+      shape: [N, C]
+      type_pool: [f32]
+
+# 11. 归约操作 (Reduction Operations)
+- id: reduce_sum
+  dialect: linalg
+  kind: reduction
+  template: reduce_sum.mlir.j2
+  attrs:
+    axes: [1, 2]
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 2
+      shape: [N, C]
+      type_pool: [f32]
+
+- id: reduce_mean
+  dialect: linalg
+  kind: reduction
+  template: reduce_mean.mlir.j2
+  attrs:
+    axes: [1, 2]
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 2
+      shape: [N, C]
+      type_pool: [f32]
+
+- id: reduce_max
+  dialect: linalg
+  kind: reduction
+  template: reduce_max.mlir.j2
+  attrs:
+    axes: [1, 2]
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 2
+      shape: [N, C]
+      type_pool: [f32]
+
+- id: reduce_min
+  dialect: linalg
+  kind: reduction
+  template: reduce_min.mlir.j2
+  attrs:
+    axes: [1, 2]
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 2
+      shape: [N, C]
+      type_pool: [f32]
+
+- id: reduce_prod
+  dialect: linalg
+  kind: reduction
+  template: reduce_prod.mlir.j2
+  attrs:
+    axes: [1, 2]
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+  outputs:
+    - rank: 2
+      shape: [N, C]
+      type_pool: [f32]
+
+# 12. 归一化操作 (Normalization Operations)
+- id: batch_norm
+  dialect: linalg
+  kind: normalization
+  template: batch_norm.mlir.j2
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+    - name: scale
+      rank: 1
+      shape: [C]
+      type_pool: [f32]
+    - name: bias
+      rank: 1
+      shape: [C]
+      type_pool: [f32]
+    - name: mean
+      rank: 1
+      shape: [C]
+      type_pool: [f32]
+    - name: variance
+      rank: 1
+      shape: [C]
+      type_pool: [f32]
+  outputs:
+    - rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+
+- id: layer_norm
+  dialect: linalg
+  kind: normalization
+  template: layer_norm.mlir.j2
+  inputs:
+    - name: x
+      rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+    - name: scale
+      rank: 1
+      shape: [C]
+      type_pool: [f32]
+    - name: bias
+      rank: 1
+      shape: [C]
+      type_pool: [f32]
+  outputs:
+    - rank: 4
+      shape: [N, H, W, C]
+      type_pool: [f32]
+
+# 13. 其他操作 (Other Operations)
+- id: clamp
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "min(max(x, min_val), max_val)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: min_val
+      type_pool: [f32]
+      rank: 0
+      shape: []
+    - name: max_val
+      type_pool: [f32]
+      rank: 0
+      shape: []
+  outputs:
+    - type_from: x
+
+- id: sigmoid
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "1.0 / (1.0 + exp(-x))"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: softplus
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "log(1 + exp(x))"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: softsign
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x / (1 + abs(x))"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: hard_sigmoid
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "max(0, min(1, 0.2 * x + 0.5))"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: hard_tanh
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "max(-1, min(1, x))"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x

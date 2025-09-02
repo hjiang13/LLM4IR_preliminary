@@ -1,0 +1,6 @@
+# 支持的数据类型
+supported_dtypes:
+  - f32    # 32位浮点数
+
+# 默认数据类型
+default_dtype: f32

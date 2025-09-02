@@ -1,0 +1,10 @@
+输入文件: out/single/relu/relu_N1_H8_W8_C8.mlir
+输出文件: out/single/relu/relu_N1_H8_W8_C8.ll
+传递管道: linalg
+执行时间: 19ms
+返回码: -1
+成功: False
+标准输出:
+
+标准错误:
+'utf-8' codec can't decode byte 0x88 in position 65: invalid start byte

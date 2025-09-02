@@ -1,0 +1,234 @@
+{
+  "total_pairs": 20164,
+  "total_mlir_files": 20164,
+  "dialect_combinations": {
+    "arith → arith": 784,
+    "arith → math": 392,
+    "arith → memref": 392,
+    "arith → tensor": 336,
+    "arith → linalg": 448,
+    "arith → scf": 280,
+    "arith → affine": 280,
+    "arith → vector": 392,
+    "arith → cf": 140,
+    "arith → func": 84,
+    "arith → tosa": 224,
+    "arith → stablehlo": 224,
+    "math → arith": 392,
+    "math → math": 196,
+    "math → memref": 196,
+    "math → tensor": 168,
+    "math → linalg": 224,
+    "math → scf": 140,
+    "math → affine": 140,
+    "math → vector": 196,
+    "math → cf": 70,
+    "math → func": 42,
+    "math → tosa": 112,
+    "math → stablehlo": 112,
+    "memref → arith": 392,
+    "memref → math": 196,
+    "memref → memref": 196,
+    "memref → tensor": 168,
+    "memref → linalg": 224,
+    "memref → scf": 140,
+    "memref → affine": 140,
+    "memref → vector": 196,
+    "memref → cf": 70,
+    "memref → func": 42,
+    "memref → tosa": 112,
+    "memref → stablehlo": 112,
+    "tensor → arith": 336,
+    "tensor → math": 168,
+    "tensor → memref": 168,
+    "tensor → tensor": 144,
+    "tensor → linalg": 192,
+    "tensor → scf": 120,
+    "tensor → affine": 120,
+    "tensor → vector": 168,
+    "tensor → cf": 60,
+    "tensor → func": 36,
+    "tensor → tosa": 96,
+    "tensor → stablehlo": 96,
+    "linalg → arith": 448,
+    "linalg → math": 224,
+    "linalg → memref": 224,
+    "linalg → tensor": 192,
+    "linalg → linalg": 256,
+    "linalg → scf": 160,
+    "linalg → affine": 160,
+    "linalg → vector": 224,
+    "linalg → cf": 80,
+    "linalg → func": 48,
+    "linalg → tosa": 128,
+    "linalg → stablehlo": 128,
+    "scf → arith": 280,
+    "scf → math": 140,
+    "scf → memref": 140,
+    "scf → tensor": 120,
+    "scf → linalg": 160,
+    "scf → scf": 100,
+    "scf → affine": 100,
+    "scf → vector": 140,
+    "scf → cf": 50,
+    "scf → func": 30,
+    "scf → tosa": 80,
+    "scf → stablehlo": 80,
+    "affine → arith": 280,
+    "affine → math": 140,
+    "affine → memref": 140,
+    "affine → tensor": 120,
+    "affine → linalg": 160,
+    "affine → scf": 100,
+    "affine → affine": 100,
+    "affine → vector": 140,
+    "affine → cf": 50,
+    "affine → func": 30,
+    "affine → tosa": 80,
+    "affine → stablehlo": 80,
+    "vector → arith": 392,
+    "vector → math": 196,
+    "vector → memref": 196,
+    "vector → tensor": 168,
+    "vector → linalg": 224,
+    "vector → scf": 140,
+    "vector → affine": 140,
+    "vector → vector": 196,
+    "vector → cf": 70,
+    "vector → func": 42,
+    "vector → tosa": 112,
+    "vector → stablehlo": 112,
+    "cf → arith": 140,
+    "cf → math": 70,
+    "cf → memref": 70,
+    "cf → tensor": 60,
+    "cf → linalg": 80,
+    "cf → scf": 50,
+    "cf → affine": 50,
+    "cf → vector": 70,
+    "cf → cf": 25,
+    "cf → func": 15,
+    "cf → tosa": 40,
+    "cf → stablehlo": 40,
+    "func → arith": 84,
+    "func → math": 42,
+    "func → memref": 42,
+    "func → tensor": 36,
+    "func → linalg": 48,
+    "func → scf": 30,
+    "func → affine": 30,
+    "func → vector": 42,
+    "func → cf": 15,
+    "func → func": 9,
+    "func → tosa": 24,
+    "func → stablehlo": 24,
+    "tosa → arith": 224,
+    "tosa → math": 112,
+    "tosa → memref": 112,
+    "tosa → tensor": 96,
+    "tosa → linalg": 128,
+    "tosa → scf": 80,
+    "tosa → affine": 80,
+    "tosa → vector": 112,
+    "tosa → cf": 40,
+    "tosa → func": 24,
+    "tosa → tosa": 64,
+    "tosa → stablehlo": 64,
+    "stablehlo → arith": 224,
+    "stablehlo → math": 112,
+    "stablehlo → memref": 112,
+    "stablehlo → tensor": 96,
+    "stablehlo → linalg": 128,
+    "stablehlo → scf": 80,
+    "stablehlo → affine": 80,
+    "stablehlo → vector": 112,
+    "stablehlo → cf": 40,
+    "stablehlo → func": 24,
+    "stablehlo → tosa": 64,
+    "stablehlo → stablehlo": 64
+  },
+  "self_pairs": 142,
+  "cross_operation_pairs": 20022,
+  "top_combinations": [
+    [
+      "arith → arith",
+      784
+    ],
+    [
+      "arith → linalg",
+      448
+    ],
+    [
+      "linalg → arith",
+      448
+    ],
+    [
+      "arith → math",
+      392
+    ],
+    [
+      "arith → memref",
+      392
+    ],
+    [
+      "arith → vector",
+      392
+    ],
+    [
+      "math → arith",
+      392
+    ],
+    [
+      "memref → arith",
+      392
+    ],
+    [
+      "vector → arith",
+      392
+    ],
+    [
+      "arith → tensor",
+      336
+    ],
+    [
+      "tensor → arith",
+      336
+    ],
+    [
+      "arith → scf",
+      280
+    ],
+    [
+      "arith → affine",
+      280
+    ],
+    [
+      "scf → arith",
+      280
+    ],
+    [
+      "affine → arith",
+      280
+    ],
+    [
+      "linalg → linalg",
+      256
+    ],
+    [
+      "arith → tosa",
+      224
+    ],
+    [
+      "arith → stablehlo",
+      224
+    ],
+    [
+      "math → linalg",
+      224
+    ],
+    [
+      "memref → linalg",
+      224
+    ]
+  ]
+}

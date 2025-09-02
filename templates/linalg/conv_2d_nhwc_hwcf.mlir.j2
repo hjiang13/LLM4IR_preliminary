@@ -1,0 +1,17 @@
+module {
+  func.func @main(
+    %I: tensor<{{N}}x{{H}}x{{W}}x{{C}}x{{dtype}}>,
+    %K: tensor<{{KH}}x{{KW}}x{{C}}x{{F}}x{{dtype}}>
+  ) -> tensor<{{N}}x{{OH}}x{{OW}}x{{F}}x{{dtype}}> {
+    
+    %init = tensor.empty() : tensor<{{N}}x{{OH}}x{{OW}}x{{F}}x{{dtype}}>
+    
+    %Y = linalg.conv_2d_nhwc_hwcf ins(%I, %K : 
+      tensor<{{N}}x{{H}}x{{W}}x{{C}}x{{dtype}}>, 
+      tensor<{{KH}}x{{KW}}x{{C}}x{{F}}x{{dtype}}>
+    ) outs(%init : tensor<{{N}}x{{OH}}x{{OW}}x{{F}}x{{dtype}}>) -> 
+      tensor<{{N}}x{{OH}}x{{OW}}x{{F}}x{{dtype}}>
+    
+    return %Y : tensor<{{N}}x{{OH}}x{{OW}}x{{F}}x{{dtype}}>
+  }
+}

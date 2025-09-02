@@ -1,0 +1,1984 @@
+{
+  "total_files": 100,
+  "success_count": 96,
+  "error_count": 4,
+  "success_rate": 0.96,
+  "results": {
+    "out/pairs/leaky_relu_greater_equal/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025989294052124023,
+        "output_file": "out/pairs_llvm/leaky_relu_greater_equal/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01059412956237793,
+        "output_file": "out/pairs_llvm/leaky_relu_greater_equal/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0049114227294921875,
+        "output_file": "out/pairs_llvm/leaky_relu_greater_equal/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_tanh/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025022506713867188,
+        "output_file": "out/pairs_llvm/leaky_relu_tanh/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": false,
+        "error": "out/pairs_llvm/leaky_relu_tanh/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8_opt.mlir:118:11: error: Dialect `math' not found for custom op 'math.tanh' \n    %82 = math.tanh %81 : f32\n          ^\nout/pairs_llvm/leaky_relu_tanh/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8_opt.mlir:118:11: note: Registered dialects: acc, amx, arm_neon, arm_sme, arm_sve, builtin, dlti, func, gpu, llvm, nvvm, omp, rocdl, spirv, vcix, x86vector ; for more info on dialect registration see https://mlir.llvm.org/getting_started/Faq/#registered-loaded-dependent-whats-up-with-dialects-management\n",
+        "time": 0.008583545684814453,
+        "output_file": "out/pairs_llvm/leaky_relu_tanh/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8.ll"
+      }
+    },
+    "out/pairs/relu_softplus/relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.027135133743286133,
+        "output_file": "out/pairs_llvm/relu_softplus/relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010771512985229492,
+        "output_file": "out/pairs_llvm/relu_softplus/relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004549264907836914,
+        "output_file": "out/pairs_llvm/relu_softplus/relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024999141693115234,
+        "output_file": "out/pairs_llvm/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00988912582397461,
+        "output_file": "out/pairs_llvm/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004241228103637695,
+        "output_file": "out/pairs_llvm/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_logical_and/relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.0249631404876709,
+        "output_file": "out/pairs_llvm/relu_logical_and/relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00976419448852539,
+        "output_file": "out/pairs_llvm/relu_logical_and/relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004232168197631836,
+        "output_file": "out/pairs_llvm/relu_logical_and/relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_mish/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026204586029052734,
+        "output_file": "out/pairs_llvm/leaky_relu_mish/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009598493576049805,
+        "output_file": "out/pairs_llvm/leaky_relu_mish/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004133701324462891,
+        "output_file": "out/pairs_llvm/leaky_relu_mish/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_less_equal/relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02625417709350586,
+        "output_file": "out/pairs_llvm/relu_less_equal/relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010001897811889648,
+        "output_file": "out/pairs_llvm/relu_less_equal/relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004379749298095703,
+        "output_file": "out/pairs_llvm/relu_less_equal/relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_greater/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.0247042179107666,
+        "output_file": "out/pairs_llvm/leaky_relu_greater/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009543180465698242,
+        "output_file": "out/pairs_llvm/leaky_relu_greater/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004129171371459961,
+        "output_file": "out/pairs_llvm/leaky_relu_greater/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_equal/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024675369262695312,
+        "output_file": "out/pairs_llvm/relu_equal/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009675741195678711,
+        "output_file": "out/pairs_llvm/relu_equal/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004294157028198242,
+        "output_file": "out/pairs_llvm/relu_equal/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_asinh/leaky_relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025357723236083984,
+        "output_file": "out/pairs_llvm/leaky_relu_asinh/leaky_relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009811162948608398,
+        "output_file": "out/pairs_llvm/leaky_relu_asinh/leaky_relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004307985305786133,
+        "output_file": "out/pairs_llvm/leaky_relu_asinh/leaky_relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_equal/leaky_relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.028453826904296875,
+        "output_file": "out/pairs_llvm/leaky_relu_equal/leaky_relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010303974151611328,
+        "output_file": "out/pairs_llvm/leaky_relu_equal/leaky_relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043792724609375,
+        "output_file": "out/pairs_llvm/leaky_relu_equal/leaky_relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_atan2/leaky_relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02564525604248047,
+        "output_file": "out/pairs_llvm/leaky_relu_atan2/leaky_relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009927988052368164,
+        "output_file": "out/pairs_llvm/leaky_relu_atan2/leaky_relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004221439361572266,
+        "output_file": "out/pairs_llvm/leaky_relu_atan2/leaky_relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_asin/relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025047779083251953,
+        "output_file": "out/pairs_llvm/relu_asin/relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009925127029418945,
+        "output_file": "out/pairs_llvm/relu_asin/relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004286289215087891,
+        "output_file": "out/pairs_llvm/relu_asin/relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_softplus/leaky_relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02488994598388672,
+        "output_file": "out/pairs_llvm/leaky_relu_softplus/leaky_relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009612560272216797,
+        "output_file": "out/pairs_llvm/leaky_relu_softplus/leaky_relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004481792449951172,
+        "output_file": "out/pairs_llvm/leaky_relu_softplus/leaky_relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_softplus_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_log2/leaky_relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026131868362426758,
+        "output_file": "out/pairs_llvm/leaky_relu_log2/leaky_relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009968757629394531,
+        "output_file": "out/pairs_llvm/leaky_relu_log2/leaky_relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004385232925415039,
+        "output_file": "out/pairs_llvm/leaky_relu_log2/leaky_relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_logical_xor/leaky_relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025052309036254883,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_xor/leaky_relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009953737258911133,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_xor/leaky_relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004375457763671875,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_xor/leaky_relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_leaky_relu/relu_N1_H8_W8_C8_then_leaky_relu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02506709098815918,
+        "output_file": "out/pairs_llvm/relu_leaky_relu/relu_N1_H8_W8_C8_then_leaky_relu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_leaky_relu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009757757186889648,
+        "output_file": "out/pairs_llvm/relu_leaky_relu/relu_N1_H8_W8_C8_then_leaky_relu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_leaky_relu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004778385162353516,
+        "output_file": "out/pairs_llvm/relu_leaky_relu/relu_N1_H8_W8_C8_then_leaky_relu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_leaky_relu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_less_equal/leaky_relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02489781379699707,
+        "output_file": "out/pairs_llvm/leaky_relu_less_equal/leaky_relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009971857070922852,
+        "output_file": "out/pairs_llvm/leaky_relu_less_equal/leaky_relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004305124282836914,
+        "output_file": "out/pairs_llvm/leaky_relu_less_equal/leaky_relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_less_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_sigmoid/leaky_relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02512836456298828,
+        "output_file": "out/pairs_llvm/leaky_relu_sigmoid/leaky_relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009947061538696289,
+        "output_file": "out/pairs_llvm/leaky_relu_sigmoid/leaky_relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004397153854370117,
+        "output_file": "out/pairs_llvm/leaky_relu_sigmoid/leaky_relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_log10/relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025958538055419922,
+        "output_file": "out/pairs_llvm/relu_log10/relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00987553596496582,
+        "output_file": "out/pairs_llvm/relu_log10/relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042133331298828125,
+        "output_file": "out/pairs_llvm/relu_log10/relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_maxpool2d/leaky_relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02493429183959961,
+        "output_file": "out/pairs_llvm/leaky_relu_maxpool2d/leaky_relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009594440460205078,
+        "output_file": "out/pairs_llvm/leaky_relu_maxpool2d/leaky_relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004148244857788086,
+        "output_file": "out/pairs_llvm/leaky_relu_maxpool2d/leaky_relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_logical_xor/relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024707555770874023,
+        "output_file": "out/pairs_llvm/relu_logical_xor/relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009804010391235352,
+        "output_file": "out/pairs_llvm/relu_logical_xor/relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004282236099243164,
+        "output_file": "out/pairs_llvm/relu_logical_xor/relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_xor_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_tan/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025044679641723633,
+        "output_file": "out/pairs_llvm/leaky_relu_tan/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": false,
+        "error": "out/pairs_llvm/leaky_relu_tan/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8_opt.mlir:118:11: error: Dialect `math' not found for custom op 'math.tan' \n    %82 = math.tan %81 : f32\n          ^\nout/pairs_llvm/leaky_relu_tan/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8_opt.mlir:118:11: note: Registered dialects: acc, amx, arm_neon, arm_sme, arm_sve, builtin, dlti, func, gpu, llvm, nvvm, omp, rocdl, spirv, vcix, x86vector ; for more info on dialect registration see https://mlir.llvm.org/getting_started/Faq/#registered-loaded-dependent-whats-up-with-dialects-management\n",
+        "time": 0.008501291275024414,
+        "output_file": "out/pairs_llvm/leaky_relu_tan/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8.ll"
+      }
+    },
+    "out/pairs/leaky_relu_softsign/leaky_relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02558445930480957,
+        "output_file": "out/pairs_llvm/leaky_relu_softsign/leaky_relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009795904159545898,
+        "output_file": "out/pairs_llvm/leaky_relu_softsign/leaky_relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0052852630615234375,
+        "output_file": "out/pairs_llvm/leaky_relu_softsign/leaky_relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_log10/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026916980743408203,
+        "output_file": "out/pairs_llvm/leaky_relu_log10/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009613037109375,
+        "output_file": "out/pairs_llvm/leaky_relu_log10/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0046291351318359375,
+        "output_file": "out/pairs_llvm/leaky_relu_log10/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_less/leaky_relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024824142456054688,
+        "output_file": "out/pairs_llvm/leaky_relu_less/leaky_relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009677410125732422,
+        "output_file": "out/pairs_llvm/leaky_relu_less/leaky_relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005777120590209961,
+        "output_file": "out/pairs_llvm/leaky_relu_less/leaky_relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_add/relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025393962860107422,
+        "output_file": "out/pairs_llvm/relu_add/relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010320425033569336,
+        "output_file": "out/pairs_llvm/relu_add/relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005016803741455078,
+        "output_file": "out/pairs_llvm/relu_add/relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_cbrt/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02524852752685547,
+        "output_file": "out/pairs_llvm/leaky_relu_cbrt/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009007692337036133,
+        "output_file": "out/pairs_llvm/leaky_relu_cbrt/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004644632339477539,
+        "output_file": "out/pairs_llvm/leaky_relu_cbrt/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_tan/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025351524353027344,
+        "output_file": "out/pairs_llvm/relu_tan/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": false,
+        "error": "out/pairs_llvm/relu_tan/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8_opt.mlir:120:11: error: Dialect `math' not found for custom op 'math.tan' \n    %84 = math.tan %83 : f32\n          ^\nout/pairs_llvm/relu_tan/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8_opt.mlir:120:11: note: Registered dialects: acc, amx, arm_neon, arm_sme, arm_sve, builtin, dlti, func, gpu, llvm, nvvm, omp, rocdl, spirv, vcix, x86vector ; for more info on dialect registration see https://mlir.llvm.org/getting_started/Faq/#registered-loaded-dependent-whats-up-with-dialects-management\n",
+        "time": 0.0076978206634521484,
+        "output_file": "out/pairs_llvm/relu_tan/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tan_N1_H8_W8_C8.ll"
+      }
+    },
+    "out/pairs/relu_sin/relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025710105895996094,
+        "output_file": "out/pairs_llvm/relu_sin/relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010619640350341797,
+        "output_file": "out/pairs_llvm/relu_sin/relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0045244693756103516,
+        "output_file": "out/pairs_llvm/relu_sin/relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_swish/leaky_relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025074481964111328,
+        "output_file": "out/pairs_llvm/leaky_relu_swish/leaky_relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009661674499511719,
+        "output_file": "out/pairs_llvm/leaky_relu_swish/leaky_relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042569637298583984,
+        "output_file": "out/pairs_llvm/leaky_relu_swish/leaky_relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_asinh/relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024989604949951172,
+        "output_file": "out/pairs_llvm/relu_asinh/relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009913444519042969,
+        "output_file": "out/pairs_llvm/relu_asinh/relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004442691802978516,
+        "output_file": "out/pairs_llvm/relu_asinh/relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_asinh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_elu/relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025254011154174805,
+        "output_file": "out/pairs_llvm/relu_elu/relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009915590286254883,
+        "output_file": "out/pairs_llvm/relu_elu/relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00437474250793457,
+        "output_file": "out/pairs_llvm/relu_elu/relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_add/leaky_relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02514815330505371,
+        "output_file": "out/pairs_llvm/leaky_relu_add/leaky_relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009876489639282227,
+        "output_file": "out/pairs_llvm/leaky_relu_add/leaky_relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004262447357177734,
+        "output_file": "out/pairs_llvm/leaky_relu_add/leaky_relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_add_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_acosh/relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.0251009464263916,
+        "output_file": "out/pairs_llvm/relu_acosh/relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010139942169189453,
+        "output_file": "out/pairs_llvm/relu_acosh/relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0044367313385009766,
+        "output_file": "out/pairs_llvm/relu_acosh/relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_cosh/leaky_relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02558135986328125,
+        "output_file": "out/pairs_llvm/leaky_relu_cosh/leaky_relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00963139533996582,
+        "output_file": "out/pairs_llvm/leaky_relu_cosh/leaky_relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004421710968017578,
+        "output_file": "out/pairs_llvm/leaky_relu_cosh/leaky_relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_logical_not/leaky_relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024456501007080078,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_not/leaky_relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00921177864074707,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_not/leaky_relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004102230072021484,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_not/leaky_relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_relu/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025272607803344727,
+        "output_file": "out/pairs_llvm/leaky_relu_relu/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009810924530029297,
+        "output_file": "out/pairs_llvm/leaky_relu_relu/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004358530044555664,
+        "output_file": "out/pairs_llvm/leaky_relu_relu/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_atan2/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025071144104003906,
+        "output_file": "out/pairs_llvm/relu_atan2/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009901046752929688,
+        "output_file": "out/pairs_llvm/relu_atan2/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004396200180053711,
+        "output_file": "out/pairs_llvm/relu_atan2/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_sub/relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025299072265625,
+        "output_file": "out/pairs_llvm/relu_sub/relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010052919387817383,
+        "output_file": "out/pairs_llvm/relu_sub/relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004393815994262695,
+        "output_file": "out/pairs_llvm/relu_sub/relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_conv2d_nhwc_hwcf/relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02488422393798828,
+        "output_file": "out/pairs_llvm/relu_conv2d_nhwc_hwcf/relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009764671325683594,
+        "output_file": "out/pairs_llvm/relu_conv2d_nhwc_hwcf/relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004355430603027344,
+        "output_file": "out/pairs_llvm/relu_conv2d_nhwc_hwcf/relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_not_equal/relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025084733963012695,
+        "output_file": "out/pairs_llvm/relu_not_equal/relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00995182991027832,
+        "output_file": "out/pairs_llvm/relu_not_equal/relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004295825958251953,
+        "output_file": "out/pairs_llvm/relu_not_equal/relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_hard_sigmoid/relu_N1_H8_W8_C8_then_hard_sigmoid_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02459263801574707,
+        "output_file": "out/pairs_llvm/relu_hard_sigmoid/relu_N1_H8_W8_C8_then_hard_sigmoid_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_hard_sigmoid_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009607791900634766,
+        "output_file": "out/pairs_llvm/relu_hard_sigmoid/relu_N1_H8_W8_C8_then_hard_sigmoid_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_hard_sigmoid_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004305124282836914,
+        "output_file": "out/pairs_llvm/relu_hard_sigmoid/relu_N1_H8_W8_C8_then_hard_sigmoid_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_hard_sigmoid_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_atan/leaky_relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024380922317504883,
+        "output_file": "out/pairs_llvm/leaky_relu_atan/leaky_relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009641170501708984,
+        "output_file": "out/pairs_llvm/leaky_relu_atan/leaky_relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00416874885559082,
+        "output_file": "out/pairs_llvm/leaky_relu_atan/leaky_relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_rsqrt/relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025341272354125977,
+        "output_file": "out/pairs_llvm/relu_rsqrt/relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010068178176879883,
+        "output_file": "out/pairs_llvm/relu_rsqrt/relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043947696685791016,
+        "output_file": "out/pairs_llvm/relu_rsqrt/relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_rsqrt/leaky_relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025007247924804688,
+        "output_file": "out/pairs_llvm/leaky_relu_rsqrt/leaky_relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009882450103759766,
+        "output_file": "out/pairs_llvm/leaky_relu_rsqrt/leaky_relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004326820373535156,
+        "output_file": "out/pairs_llvm/leaky_relu_rsqrt/leaky_relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_rsqrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_asin/leaky_relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02501821517944336,
+        "output_file": "out/pairs_llvm/leaky_relu_asin/leaky_relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009966373443603516,
+        "output_file": "out/pairs_llvm/leaky_relu_asin/leaky_relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004415035247802734,
+        "output_file": "out/pairs_llvm/leaky_relu_asin/leaky_relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_asin_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_greater/relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025213241577148438,
+        "output_file": "out/pairs_llvm/relu_greater/relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010034561157226562,
+        "output_file": "out/pairs_llvm/relu_greater/relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0044252872467041016,
+        "output_file": "out/pairs_llvm/relu_greater/relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_logical_not/relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025376081466674805,
+        "output_file": "out/pairs_llvm/relu_logical_not/relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01048731803894043,
+        "output_file": "out/pairs_llvm/relu_logical_not/relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0046617984771728516,
+        "output_file": "out/pairs_llvm/relu_logical_not/relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_not_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_sinh/relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.027245283126831055,
+        "output_file": "out/pairs_llvm/relu_sinh/relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009591817855834961,
+        "output_file": "out/pairs_llvm/relu_sinh/relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00415349006652832,
+        "output_file": "out/pairs_llvm/relu_sinh/relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_clamp/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024697065353393555,
+        "output_file": "out/pairs_llvm/relu_clamp/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010772228240966797,
+        "output_file": "out/pairs_llvm/relu_clamp/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004407405853271484,
+        "output_file": "out/pairs_llvm/relu_clamp/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_atan/relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024187564849853516,
+        "output_file": "out/pairs_llvm/relu_atan/relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009784698486328125,
+        "output_file": "out/pairs_llvm/relu_atan/relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0044057369232177734,
+        "output_file": "out/pairs_llvm/relu_atan/relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_softsign/relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025707006454467773,
+        "output_file": "out/pairs_llvm/relu_softsign/relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010164499282836914,
+        "output_file": "out/pairs_llvm/relu_softsign/relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0046465396881103516,
+        "output_file": "out/pairs_llvm/relu_softsign/relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_softsign_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_acosh/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025102853775024414,
+        "output_file": "out/pairs_llvm/leaky_relu_acosh/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00999593734741211,
+        "output_file": "out/pairs_llvm/leaky_relu_acosh/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0050318241119384766,
+        "output_file": "out/pairs_llvm/leaky_relu_acosh/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_cos/leaky_relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025398969650268555,
+        "output_file": "out/pairs_llvm/leaky_relu_cos/leaky_relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.012491941452026367,
+        "output_file": "out/pairs_llvm/leaky_relu_cos/leaky_relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005585670471191406,
+        "output_file": "out/pairs_llvm/leaky_relu_cos/leaky_relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_maxpool2d/relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02579522132873535,
+        "output_file": "out/pairs_llvm/relu_maxpool2d/relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010831117630004883,
+        "output_file": "out/pairs_llvm/relu_maxpool2d/relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005129575729370117,
+        "output_file": "out/pairs_llvm/relu_maxpool2d/relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_maxpool2d_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_sub/leaky_relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.029904842376708984,
+        "output_file": "out/pairs_llvm/leaky_relu_sub/leaky_relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009530305862426758,
+        "output_file": "out/pairs_llvm/leaky_relu_sub/leaky_relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004454612731933594,
+        "output_file": "out/pairs_llvm/leaky_relu_sub/leaky_relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sub_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_reduce_sum/relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025556087493896484,
+        "output_file": "out/pairs_llvm/relu_reduce_sum/relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010933399200439453,
+        "output_file": "out/pairs_llvm/relu_reduce_sum/relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004906892776489258,
+        "output_file": "out/pairs_llvm/relu_reduce_sum/relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_mod/relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025505781173706055,
+        "output_file": "out/pairs_llvm/relu_mod/relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011404275894165039,
+        "output_file": "out/pairs_llvm/relu_mod/relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00494694709777832,
+        "output_file": "out/pairs_llvm/relu_mod/relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_pow/leaky_relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026799440383911133,
+        "output_file": "out/pairs_llvm/leaky_relu_pow/leaky_relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010279178619384766,
+        "output_file": "out/pairs_llvm/leaky_relu_pow/leaky_relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00507044792175293,
+        "output_file": "out/pairs_llvm/leaky_relu_pow/leaky_relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_avgpool2d/relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02565741539001465,
+        "output_file": "out/pairs_llvm/relu_avgpool2d/relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010190963745117188,
+        "output_file": "out/pairs_llvm/relu_avgpool2d/relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004420757293701172,
+        "output_file": "out/pairs_llvm/relu_avgpool2d/relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_reduce_sum/leaky_relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024853229522705078,
+        "output_file": "out/pairs_llvm/leaky_relu_reduce_sum/leaky_relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010030031204223633,
+        "output_file": "out/pairs_llvm/leaky_relu_reduce_sum/leaky_relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005038261413574219,
+        "output_file": "out/pairs_llvm/leaky_relu_reduce_sum/leaky_relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_reduce_sum_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_atanh/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026241540908813477,
+        "output_file": "out/pairs_llvm/leaky_relu_atanh/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009139537811279297,
+        "output_file": "out/pairs_llvm/leaky_relu_atanh/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004540443420410156,
+        "output_file": "out/pairs_llvm/leaky_relu_atanh/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_pow/relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024363040924072266,
+        "output_file": "out/pairs_llvm/relu_pow/relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010826349258422852,
+        "output_file": "out/pairs_llvm/relu_pow/relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0044825077056884766,
+        "output_file": "out/pairs_llvm/relu_pow/relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_pow_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_acos/relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02490997314453125,
+        "output_file": "out/pairs_llvm/relu_acos/relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009343624114990234,
+        "output_file": "out/pairs_llvm/relu_acos/relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004757404327392578,
+        "output_file": "out/pairs_llvm/relu_acos/relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_sinh/leaky_relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.0245361328125,
+        "output_file": "out/pairs_llvm/leaky_relu_sinh/leaky_relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009183883666992188,
+        "output_file": "out/pairs_llvm/leaky_relu_sinh/leaky_relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004746437072753906,
+        "output_file": "out/pairs_llvm/leaky_relu_sinh/leaky_relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sinh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_sin/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025777339935302734,
+        "output_file": "out/pairs_llvm/leaky_relu_sin/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009825468063354492,
+        "output_file": "out/pairs_llvm/leaky_relu_sin/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00531768798828125,
+        "output_file": "out/pairs_llvm/leaky_relu_sin/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_avgpool2d/leaky_relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024861812591552734,
+        "output_file": "out/pairs_llvm/leaky_relu_avgpool2d/leaky_relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.00956416130065918,
+        "output_file": "out/pairs_llvm/leaky_relu_avgpool2d/leaky_relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004571199417114258,
+        "output_file": "out/pairs_llvm/leaky_relu_avgpool2d/leaky_relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_avgpool2d_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_log2/relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02453899383544922,
+        "output_file": "out/pairs_llvm/relu_log2/relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009522676467895508,
+        "output_file": "out/pairs_llvm/relu_log2/relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004523515701293945,
+        "output_file": "out/pairs_llvm/relu_log2/relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log2_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_logical_or/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024890899658203125,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_or/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009615182876586914,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_or/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0045261383056640625,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_or/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_sqrt/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025238752365112305,
+        "output_file": "out/pairs_llvm/relu_sqrt/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010006189346313477,
+        "output_file": "out/pairs_llvm/relu_sqrt/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004190921783447266,
+        "output_file": "out/pairs_llvm/relu_sqrt/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_logical_and/leaky_relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02502584457397461,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_and/leaky_relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009371042251586914,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_and/leaky_relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.003919839859008789,
+        "output_file": "out/pairs_llvm/leaky_relu_logical_and/leaky_relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_and_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_less/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025011539459228516,
+        "output_file": "out/pairs_llvm/relu_less/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009799957275390625,
+        "output_file": "out/pairs_llvm/relu_less/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043947696685791016,
+        "output_file": "out/pairs_llvm/relu_less/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_not_equal/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02426767349243164,
+        "output_file": "out/pairs_llvm/leaky_relu_not_equal/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009447574615478516,
+        "output_file": "out/pairs_llvm/leaky_relu_not_equal/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043125152587890625,
+        "output_file": "out/pairs_llvm/leaky_relu_not_equal/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_tanh/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02430438995361328,
+        "output_file": "out/pairs_llvm/relu_tanh/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": false,
+        "error": "out/pairs_llvm/relu_tanh/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8_opt.mlir:120:11: error: Dialect `math' not found for custom op 'math.tanh' \n    %84 = math.tanh %83 : f32\n          ^\nout/pairs_llvm/relu_tanh/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8_opt.mlir:120:11: note: Registered dialects: acc, amx, arm_neon, arm_sme, arm_sve, builtin, dlti, func, gpu, llvm, nvvm, omp, rocdl, spirv, vcix, x86vector ; for more info on dialect registration see https://mlir.llvm.org/getting_started/Faq/#registered-loaded-dependent-whats-up-with-dialects-management\n",
+        "time": 0.008593320846557617,
+        "output_file": "out/pairs_llvm/relu_tanh/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_tanh_N1_H8_W8_C8.ll"
+      }
+    },
+    "out/pairs/leaky_relu_gelu/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025122642517089844,
+        "output_file": "out/pairs_llvm/leaky_relu_gelu/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009857654571533203,
+        "output_file": "out/pairs_llvm/leaky_relu_gelu/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004336833953857422,
+        "output_file": "out/pairs_llvm/leaky_relu_gelu/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_mod/leaky_relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024796485900878906,
+        "output_file": "out/pairs_llvm/leaky_relu_mod/leaky_relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010029315948486328,
+        "output_file": "out/pairs_llvm/leaky_relu_mod/leaky_relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004816770553588867,
+        "output_file": "out/pairs_llvm/leaky_relu_mod/leaky_relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mod_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_mish/relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026426076889038086,
+        "output_file": "out/pairs_llvm/relu_mish/relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010564804077148438,
+        "output_file": "out/pairs_llvm/relu_mish/relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00465846061706543,
+        "output_file": "out/pairs_llvm/relu_mish/relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_sqrt/leaky_relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026098966598510742,
+        "output_file": "out/pairs_llvm/leaky_relu_sqrt/leaky_relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009305953979492188,
+        "output_file": "out/pairs_llvm/leaky_relu_sqrt/leaky_relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004336357116699219,
+        "output_file": "out/pairs_llvm/leaky_relu_sqrt/leaky_relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_hard_tanh/relu_N1_H8_W8_C8_then_hard_tanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024909019470214844,
+        "output_file": "out/pairs_llvm/relu_hard_tanh/relu_N1_H8_W8_C8_then_hard_tanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_hard_tanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009661436080932617,
+        "output_file": "out/pairs_llvm/relu_hard_tanh/relu_N1_H8_W8_C8_then_hard_tanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_hard_tanh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043146610260009766,
+        "output_file": "out/pairs_llvm/relu_hard_tanh/relu_N1_H8_W8_C8_then_hard_tanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_hard_tanh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_div/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02492523193359375,
+        "output_file": "out/pairs_llvm/leaky_relu_div/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009863615036010742,
+        "output_file": "out/pairs_llvm/leaky_relu_div/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00421142578125,
+        "output_file": "out/pairs_llvm/leaky_relu_div/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_mul/relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.0257413387298584,
+        "output_file": "out/pairs_llvm/relu_mul/relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010360479354858398,
+        "output_file": "out/pairs_llvm/relu_mul/relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004413604736328125,
+        "output_file": "out/pairs_llvm/relu_mul/relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_greater_equal/relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02465367317199707,
+        "output_file": "out/pairs_llvm/relu_greater_equal/relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009713411331176758,
+        "output_file": "out/pairs_llvm/relu_greater_equal/relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0043070316314697266,
+        "output_file": "out/pairs_llvm/relu_greater_equal/relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_log/leaky_relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.024813175201416016,
+        "output_file": "out/pairs_llvm/leaky_relu_log/leaky_relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009722709655761719,
+        "output_file": "out/pairs_llvm/leaky_relu_log/leaky_relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004217386245727539,
+        "output_file": "out/pairs_llvm/leaky_relu_log/leaky_relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_cosh/relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02493143081665039,
+        "output_file": "out/pairs_llvm/relu_cosh/relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009866714477539062,
+        "output_file": "out/pairs_llvm/relu_cosh/relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004288673400878906,
+        "output_file": "out/pairs_llvm/relu_cosh/relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cosh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_exp/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025215625762939453,
+        "output_file": "out/pairs_llvm/leaky_relu_exp/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011019706726074219,
+        "output_file": "out/pairs_llvm/leaky_relu_exp/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004476308822631836,
+        "output_file": "out/pairs_llvm/leaky_relu_exp/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_logical_or/relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025856971740722656,
+        "output_file": "out/pairs_llvm/relu_logical_or/relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010254859924316406,
+        "output_file": "out/pairs_llvm/relu_logical_or/relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004804849624633789,
+        "output_file": "out/pairs_llvm/relu_logical_or/relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_mul/leaky_relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026859045028686523,
+        "output_file": "out/pairs_llvm/leaky_relu_mul/leaky_relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.011759042739868164,
+        "output_file": "out/pairs_llvm/leaky_relu_mul/leaky_relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005142927169799805,
+        "output_file": "out/pairs_llvm/leaky_relu_mul/leaky_relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mul_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_atanh/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026933670043945312,
+        "output_file": "out/pairs_llvm/relu_atanh/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01094365119934082,
+        "output_file": "out/pairs_llvm/relu_atanh/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.00486302375793457,
+        "output_file": "out/pairs_llvm/relu_atanh/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_sigmoid/relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.0271608829498291,
+        "output_file": "out/pairs_llvm/relu_sigmoid/relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010890483856201172,
+        "output_file": "out/pairs_llvm/relu_sigmoid/relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004834413528442383,
+        "output_file": "out/pairs_llvm/relu_sigmoid/relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sigmoid_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_exp/relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025043249130249023,
+        "output_file": "out/pairs_llvm/relu_exp/relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010321617126464844,
+        "output_file": "out/pairs_llvm/relu_exp/relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.005143880844116211,
+        "output_file": "out/pairs_llvm/relu_exp/relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_conv2d_nhwc_hwcf/leaky_relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02530956268310547,
+        "output_file": "out/pairs_llvm/leaky_relu_conv2d_nhwc_hwcf/leaky_relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009963512420654297,
+        "output_file": "out/pairs_llvm/leaky_relu_conv2d_nhwc_hwcf/leaky_relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0042018890380859375,
+        "output_file": "out/pairs_llvm/leaky_relu_conv2d_nhwc_hwcf/leaky_relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_conv2d_nhwc_hwcf_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_cos/relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02557539939880371,
+        "output_file": "out/pairs_llvm/relu_cos/relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009859800338745117,
+        "output_file": "out/pairs_llvm/relu_cos/relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004446506500244141,
+        "output_file": "out/pairs_llvm/relu_cos/relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cos_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_clamp/leaky_relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02427530288696289,
+        "output_file": "out/pairs_llvm/leaky_relu_clamp/leaky_relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009569883346557617,
+        "output_file": "out/pairs_llvm/leaky_relu_clamp/leaky_relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004167318344116211,
+        "output_file": "out/pairs_llvm/leaky_relu_clamp/leaky_relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_swish/relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026273727416992188,
+        "output_file": "out/pairs_llvm/relu_swish/relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.01070713996887207,
+        "output_file": "out/pairs_llvm/relu_swish/relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.0045697689056396484,
+        "output_file": "out/pairs_llvm/relu_swish/relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_swish_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_div/relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.026404857635498047,
+        "output_file": "out/pairs_llvm/relu_div/relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010647058486938477,
+        "output_file": "out/pairs_llvm/relu_div/relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004780292510986328,
+        "output_file": "out/pairs_llvm/relu_div/relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_elu/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025676965713500977,
+        "output_file": "out/pairs_llvm/leaky_relu_elu/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010108709335327148,
+        "output_file": "out/pairs_llvm/leaky_relu_elu/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004459857940673828,
+        "output_file": "out/pairs_llvm/leaky_relu_elu/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_cbrt/relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025258541107177734,
+        "output_file": "out/pairs_llvm/relu_cbrt/relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009854555130004883,
+        "output_file": "out/pairs_llvm/relu_cbrt/relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004322052001953125,
+        "output_file": "out/pairs_llvm/relu_cbrt/relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/relu_log/relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.02515101432800293,
+        "output_file": "out/pairs_llvm/relu_log/relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.009923934936523438,
+        "output_file": "out/pairs_llvm/relu_log/relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004279136657714844,
+        "output_file": "out/pairs_llvm/relu_log/relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_log_N1_H8_W8_C8.bc"
+      }
+    },
+    "out/pairs/leaky_relu_acos/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.mlir": {
+      "mlir_opt": {
+        "success": true,
+        "error": "",
+        "time": 0.025802135467529297,
+        "output_file": "out/pairs_llvm/leaky_relu_acos/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8_opt.mlir"
+      },
+      "mlir_translate": {
+        "success": true,
+        "error": "",
+        "time": 0.010447025299072266,
+        "output_file": "out/pairs_llvm/leaky_relu_acos/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.ll"
+      },
+      "llvm_as": {
+        "success": true,
+        "error": "",
+        "time": 0.004446983337402344,
+        "output_file": "out/pairs_llvm/leaky_relu_acos/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.bc"
+      }
+    }
+  }
+}

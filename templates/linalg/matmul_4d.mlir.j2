@@ -1,0 +1,26 @@
+module {
+  func.func @main(
+    %A: tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>,
+    %B: tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>
+  ) -> tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32> {
+
+    %init = tensor.empty() : tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>
+
+    %C = linalg.generic {
+      indexing_maps = [
+        affine_map<(i, j, k, l) -> (i, j, k, l)>,
+        affine_map<(i, j, k, l) -> (i, j, k, l)>,
+        affine_map<(i, j, k, l) -> (i, j, k, l)>
+      ],
+      iterator_types = ["parallel", "parallel", "parallel", "parallel"]
+    } ins(
+      %A, %B : tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>, tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>
+    ) outs(%init : tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>) {
+      ^bb0(%a: f32, %b: f32, %o: f32):
+        %result = arith.mulf %a, %b : f32
+        linalg.yield %result : f32
+    } -> tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>
+
+    return %C : tensor<{{N}}x{{H}}x{{W}}x{{C}}xf32>
+  }
+}

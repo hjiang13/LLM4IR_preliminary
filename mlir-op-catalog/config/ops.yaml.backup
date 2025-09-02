@@ -1,0 +1,67 @@
+# MLIR High-Level Op Catalog
+# 种子集操作配置 (Milestone A)
+
+- id: relu
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "max(x, 0.0)"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: add
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x + y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: mul
+  dialect: linalg
+  kind: elementwise
+  template: elementwise_generic.mlir.j2
+  expr: "x * y"
+  inputs:
+    - name: x
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+    - name: y
+      type_pool: [f32]
+      rank: 4
+      shape: [N, H, W, C]
+  outputs:
+    - type_from: x
+
+- id: matmul
+  dialect: linalg
+  kind: matmul
+  template: matmul.mlir.j2
+  inputs:
+    - name: A
+      type_pool: [f32]
+      rank: 2
+      shape: [M, K]
+    - name: B
+      type_pool: [f32]
+      rank: 2
+      shape: [K, N]
+  outputs:
+    - rank: 2
+      shape: [M, N]
+      type_pool: [f32]

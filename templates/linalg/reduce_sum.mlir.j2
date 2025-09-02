@@ -1,0 +1,17 @@
+module {
+  func.func @main(
+    %x: tensor<{{N}}x{{H}}x{{W}}x{{C}}x{{dtype}}>
+  ) -> tensor<{{N}}x{{C}}x{{dtype}}> {
+    
+    %init = tensor.empty() : tensor<{{N}}x{{C}}x{{dtype}}>
+    
+    %result = linalg.reduce ins(%x : tensor<{{N}}x{{H}}x{{W}}x{{C}}x{{dtype}}>) 
+      outs(%init : tensor<{{N}}x{{C}}x{{dtype}}>) dimensions = [1, 2] {
+      ^bb0(%in: {{dtype}}, %out: {{dtype}}):
+        %sum = arith.addf %in, %out : {{dtype}}
+        linalg.yield %sum : {{dtype}}
+    } -> tensor<{{N}}x{{C}}x{{dtype}}>
+    
+    return %result : tensor<{{N}}x{{C}}x{{dtype}}>
+  }
+}

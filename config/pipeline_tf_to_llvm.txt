@@ -1,0 +1,13 @@
+# TF → (MHLO/StableHLO) → Linalg → LLVM IR 传递管道
+# 仅在tf-mlir-translate工具存在时使用
+
+--tf-standard-pipeline
+--tf-shape-inference
+--tf-optimize
+--mhlo-legalize-tf
+--mhlo-canonicalize
+--mhlo-inliner
+--mhlo-legalize-to-linalg
+--canonicalize
+--cse
+@config/pipeline_linalg_to_llvm.txt

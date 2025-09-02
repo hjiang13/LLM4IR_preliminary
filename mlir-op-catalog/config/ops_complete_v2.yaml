@@ -1,0 +1,185 @@
+# 完整的MLIR操作目录配置 v2
+# 包含机器学习中常用的所有算子，总计162个操作
+
+operations:
+  # arith方言 (28个操作)
+  - id: "arith.constant"
+  - id: "arith.addi"
+  - id: "arith.subi"
+  - id: "arith.muli"
+  - id: "arith.divui"
+  - id: "arith.divsi"
+  - id: "arith.remui"
+  - id: "arith.remsi"
+  - id: "arith.addf"
+  - id: "arith.subf"
+  - id: "arith.mulf"
+  - id: "arith.divf"
+  - id: "arith.maxf"
+  - id: "arith.minf"
+  - id: "arith.maxsi"
+  - id: "arith.minsi"
+  - id: "arith.andi"
+  - id: "arith.ori"
+  - id: "arith.xori"
+  - id: "arith.shli"
+  - id: "arith.shrsi"
+  - id: "arith.shrui"
+  - id: "arith.cmpi"
+  - id: "arith.cmpf"
+  - id: "arith.bitcast"
+  - id: "arith.index_cast"
+  - id: "arith.fptosi"
+  - id: "arith.sitofp"
+
+  # math方言 (14个操作)
+  - id: "math.absf"
+  - id: "math.copysign"
+  - id: "math.ceil"
+  - id: "math.floor"
+  - id: "math.round"
+  - id: "math.roundeven"
+  - id: "math.sqrt"
+  - id: "math.rsqrt"
+  - id: "math.log"
+  - id: "math.log1p"
+  - id: "math.exp"
+  - id: "math.exp2"
+  - id: "math.powf"
+  - id: "math.tanh"
+
+  # memref方言 (14个操作)
+  - id: "memref.alloc"
+  - id: "memref.alloca"
+  - id: "memref.dealloc"
+  - id: "memref.load"
+  - id: "memref.store"
+  - id: "memref.subview"
+  - id: "memref.cast"
+  - id: "memref.reinterpret_cast"
+  - id: "memref.view"
+  - id: "memref.reshape"
+  - id: "memref.expand_shape"
+  - id: "memref.collapse_shape"
+  - id: "memref.copy"
+  - id: "memref.global"
+
+  # tensor方言 (12个操作)
+  - id: "tensor.extract"
+  - id: "tensor.insert"
+  - id: "tensor.extract_slice"
+  - id: "tensor.insert_slice"
+  - id: "tensor.cast"
+  - id: "tensor.dim"
+  - id: "tensor.generate"
+  - id: "tensor.empty"
+  - id: "tensor.from_elements"
+  - id: "tensor.reshape"
+  - id: "tensor.expand_shape"
+  - id: "tensor.collapse_shape"
+
+  # linalg方言 (16个操作)
+  - id: "linalg.generic"
+  - id: "linalg.fill"
+  - id: "linalg.copy"
+  - id: "linalg.transpose"
+  - id: "linalg.matmul"
+  - id: "linalg.matvec"
+  - id: "linalg.batch_matmul"
+  - id: "linalg.conv_1d_nwc_wcf"
+  - id: "linalg.conv_2d_nchw_fchw"
+  - id: "linalg.conv_2d_nhwc_hwcf"
+  - id: "linalg.conv_3d_ndhwc_dhwcf"
+  - id: "linalg.depthwise_conv_2d_nhwc_hwc"
+  - id: "linalg.pooling_nchw_max"
+  - id: "linalg.pooling_nhwc_max"
+  - id: "linalg.pooling_nchw_sum"
+  - id: "linalg.pooling_nhwc_sum"
+
+  # scf方言 (10个操作)
+  - id: "scf.for"
+  - id: "scf.while"
+  - id: "scf.if"
+  - id: "scf.yield"
+  - id: "scf.parallel"
+  - id: "scf.forall"
+  - id: "scf.foreach_thread"
+  - id: "scf.in_parallel"
+  - id: "scf.execute_region"
+  - id: "scf.index_switch"
+
+  # affine方言 (10个操作)
+  - id: "affine.for"
+  - id: "affine.if"
+  - id: "affine.parallel"
+  - id: "affine.yield"
+  - id: "affine.apply"
+  - id: "affine.min"
+  - id: "affine.max"
+  - id: "affine.load"
+  - id: "affine.store"
+  - id: "affine.vector_load"
+
+  # vector方言 (14个操作)
+  - id: "vector.broadcast"
+  - id: "vector.splat"
+  - id: "vector.extract"
+  - id: "vector.insert"
+  - id: "vector.extract_strided_slice"
+  - id: "vector.insert_strided_slice"
+  - id: "vector.shape_cast"
+  - id: "vector.bitcast"
+  - id: "vector.transfer_read"
+  - id: "vector.transfer_write"
+  - id: "vector.gather"
+  - id: "vector.scatter"
+  - id: "vector.reduction"
+  - id: "vector.contract"
+
+  # cf方言 (5个操作)
+  - id: "cf.br"
+  - id: "cf.cond_br"
+  - id: "cf.switch"
+  - id: "cf.assert"
+  - id: "cf.unreachable"
+
+  # func方言 (3个操作)
+  - id: "func.func"
+  - id: "func.call"
+  - id: "func.return"
+
+  # tosa方言 (8个操作)
+  - id: "tosa.add"
+  - id: "tosa.mul"
+  - id: "tosa.relu"
+  - id: "tosa.clamp"
+  - id: "tosa.conv2d"
+  - id: "tosa.depthwise_conv2d"
+  - id: "tosa.max_pool2d"
+  - id: "tosa.reshape"
+
+  # stablehlo方言 (8个操作)
+  - id: "stablehlo.add"
+  - id: "stablehlo.multiply"
+  - id: "stablehlo.maximum"
+  - id: "stablehlo.compare"
+  - id: "stablehlo.reshape"
+  - id: "stablehlo.transpose"
+  - id: "stablehlo.broadcast_in_dim"
+  - id: "stablehlo.convolution"
+
+metadata:
+  total_operations: 162
+  categories:
+    arith: 28
+    math: 14
+    memref: 14
+    tensor: 12
+    linalg: 16
+    scf: 10
+    affine: 10
+    vector: 14
+    cf: 5
+    func: 3
+    tosa: 8
+    stablehlo: 8

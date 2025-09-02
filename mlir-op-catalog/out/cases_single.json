@@ -1,0 +1,4972 @@
+[
+  {
+    "case_id": "arith.constant_N1_H8_W8_C8",
+    "op_id": "arith.constant",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.addi_N1_H8_W8_C8",
+    "op_id": "arith.addi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.subi_N1_H8_W8_C8",
+    "op_id": "arith.subi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.muli_N1_H8_W8_C8",
+    "op_id": "arith.muli",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.divui_N1_H8_W8_C8",
+    "op_id": "arith.divui",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.divsi_N1_H8_W8_C8",
+    "op_id": "arith.divsi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.remui_N1_H8_W8_C8",
+    "op_id": "arith.remui",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.remsi_N1_H8_W8_C8",
+    "op_id": "arith.remsi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.addf_N1_H8_W8_C8",
+    "op_id": "arith.addf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.subf_N1_H8_W8_C8",
+    "op_id": "arith.subf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.mulf_N1_H8_W8_C8",
+    "op_id": "arith.mulf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.divf_N1_H8_W8_C8",
+    "op_id": "arith.divf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.maxf_N1_H8_W8_C8",
+    "op_id": "arith.maxf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.minf_N1_H8_W8_C8",
+    "op_id": "arith.minf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.maxsi_N1_H8_W8_C8",
+    "op_id": "arith.maxsi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.minsi_N1_H8_W8_C8",
+    "op_id": "arith.minsi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.andi_N1_H8_W8_C8",
+    "op_id": "arith.andi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.ori_N1_H8_W8_C8",
+    "op_id": "arith.ori",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.xori_N1_H8_W8_C8",
+    "op_id": "arith.xori",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.shli_N1_H8_W8_C8",
+    "op_id": "arith.shli",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.shrsi_N1_H8_W8_C8",
+    "op_id": "arith.shrsi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.shrui_N1_H8_W8_C8",
+    "op_id": "arith.shrui",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.cmpi_N1_H8_W8_C8",
+    "op_id": "arith.cmpi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.cmpf_N1_H8_W8_C8",
+    "op_id": "arith.cmpf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.bitcast_N1_H8_W8_C8",
+    "op_id": "arith.bitcast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.index_cast_N1_H8_W8_C8",
+    "op_id": "arith.index_cast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.fptosi_N1_H8_W8_C8",
+    "op_id": "arith.fptosi",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "arith.sitofp_N1_H8_W8_C8",
+    "op_id": "arith.sitofp",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.absf_N1_H8_W8_C8",
+    "op_id": "math.absf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.copysign_N1_H8_W8_C8",
+    "op_id": "math.copysign",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.ceil_N1_H8_W8_C8",
+    "op_id": "math.ceil",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.floor_N1_H8_W8_C8",
+    "op_id": "math.floor",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.round_N1_H8_W8_C8",
+    "op_id": "math.round",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.roundeven_N1_H8_W8_C8",
+    "op_id": "math.roundeven",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.sqrt_N1_H8_W8_C8",
+    "op_id": "math.sqrt",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.rsqrt_N1_H8_W8_C8",
+    "op_id": "math.rsqrt",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.log_N1_H8_W8_C8",
+    "op_id": "math.log",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.log1p_N1_H8_W8_C8",
+    "op_id": "math.log1p",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.exp_N1_H8_W8_C8",
+    "op_id": "math.exp",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.exp2_N1_H8_W8_C8",
+    "op_id": "math.exp2",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.powf_N1_H8_W8_C8",
+    "op_id": "math.powf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "math.tanh_N1_H8_W8_C8",
+    "op_id": "math.tanh",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.alloc_N1_H8_W8_C8",
+    "op_id": "memref.alloc",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.alloca_N1_H8_W8_C8",
+    "op_id": "memref.alloca",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.dealloc_N1_H8_W8_C8",
+    "op_id": "memref.dealloc",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.load_N1_H8_W8_C8",
+    "op_id": "memref.load",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.store_N1_H8_W8_C8",
+    "op_id": "memref.store",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.subview_N1_H8_W8_C8",
+    "op_id": "memref.subview",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.cast_N1_H8_W8_C8",
+    "op_id": "memref.cast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.reinterpret_cast_N1_H8_W8_C8",
+    "op_id": "memref.reinterpret_cast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.view_N1_H8_W8_C8",
+    "op_id": "memref.view",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.reshape_N1_H8_W8_C8",
+    "op_id": "memref.reshape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.expand_shape_N1_H8_W8_C8",
+    "op_id": "memref.expand_shape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.collapse_shape_N1_H8_W8_C8",
+    "op_id": "memref.collapse_shape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.copy_N1_H8_W8_C8",
+    "op_id": "memref.copy",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "memref.global_N1_H8_W8_C8",
+    "op_id": "memref.global",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.extract_N1_H8_W8_C8",
+    "op_id": "tensor.extract",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.insert_N1_H8_W8_C8",
+    "op_id": "tensor.insert",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.extract_slice_N1_H8_W8_C8",
+    "op_id": "tensor.extract_slice",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.insert_slice_N1_H8_W8_C8",
+    "op_id": "tensor.insert_slice",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.cast_N1_H8_W8_C8",
+    "op_id": "tensor.cast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.dim_N1_H8_W8_C8",
+    "op_id": "tensor.dim",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.generate_N1_H8_W8_C8",
+    "op_id": "tensor.generate",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.empty_N1_H8_W8_C8",
+    "op_id": "tensor.empty",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.from_elements_N1_H8_W8_C8",
+    "op_id": "tensor.from_elements",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.reshape_N1_H8_W8_C8",
+    "op_id": "tensor.reshape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.expand_shape_N1_H8_W8_C8",
+    "op_id": "tensor.expand_shape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tensor.collapse_shape_N1_H8_W8_C8",
+    "op_id": "tensor.collapse_shape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.generic_N1_H8_W8_C8",
+    "op_id": "linalg.generic",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.fill_N1_H8_W8_C8",
+    "op_id": "linalg.fill",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.copy_N1_H8_W8_C8",
+    "op_id": "linalg.copy",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.transpose_N1_H8_W8_C8",
+    "op_id": "linalg.transpose",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.matmul_N1_H8_W8_C8",
+    "op_id": "linalg.matmul",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.matvec_N1_H8_W8_C8",
+    "op_id": "linalg.matvec",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.batch_matmul_N1_H8_W8_C8",
+    "op_id": "linalg.batch_matmul",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.conv_1d_nwc_wcf_N1_H8_W8_C8",
+    "op_id": "linalg.conv_1d_nwc_wcf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.conv_2d_nchw_fchw_N1_H8_W8_C8",
+    "op_id": "linalg.conv_2d_nchw_fchw",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.conv_2d_nhwc_hwcf_N1_H8_W8_C8",
+    "op_id": "linalg.conv_2d_nhwc_hwcf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.conv_3d_ndhwc_dhwcf_N1_H8_W8_C8",
+    "op_id": "linalg.conv_3d_ndhwc_dhwcf",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.depthwise_conv_2d_nhwc_hwc_N1_H8_W8_C8",
+    "op_id": "linalg.depthwise_conv_2d_nhwc_hwc",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.pooling_nchw_max_N1_H8_W8_C8",
+    "op_id": "linalg.pooling_nchw_max",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.pooling_nhwc_max_N1_H8_W8_C8",
+    "op_id": "linalg.pooling_nhwc_max",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.pooling_nchw_sum_N1_H8_W8_C8",
+    "op_id": "linalg.pooling_nchw_sum",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "linalg.pooling_nhwc_sum_N1_H8_W8_C8",
+    "op_id": "linalg.pooling_nhwc_sum",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.for_N1_H8_W8_C8",
+    "op_id": "scf.for",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.while_N1_H8_W8_C8",
+    "op_id": "scf.while",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.if_N1_H8_W8_C8",
+    "op_id": "scf.if",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.yield_N1_H8_W8_C8",
+    "op_id": "scf.yield",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.parallel_N1_H8_W8_C8",
+    "op_id": "scf.parallel",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.forall_N1_H8_W8_C8",
+    "op_id": "scf.forall",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.foreach_thread_N1_H8_W8_C8",
+    "op_id": "scf.foreach_thread",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.in_parallel_N1_H8_W8_C8",
+    "op_id": "scf.in_parallel",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.execute_region_N1_H8_W8_C8",
+    "op_id": "scf.execute_region",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "scf.index_switch_N1_H8_W8_C8",
+    "op_id": "scf.index_switch",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.for_N1_H8_W8_C8",
+    "op_id": "affine.for",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.if_N1_H8_W8_C8",
+    "op_id": "affine.if",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.parallel_N1_H8_W8_C8",
+    "op_id": "affine.parallel",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.yield_N1_H8_W8_C8",
+    "op_id": "affine.yield",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.apply_N1_H8_W8_C8",
+    "op_id": "affine.apply",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.min_N1_H8_W8_C8",
+    "op_id": "affine.min",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.max_N1_H8_W8_C8",
+    "op_id": "affine.max",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.load_N1_H8_W8_C8",
+    "op_id": "affine.load",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.store_N1_H8_W8_C8",
+    "op_id": "affine.store",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "affine.vector_load_N1_H8_W8_C8",
+    "op_id": "affine.vector_load",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.broadcast_N1_H8_W8_C8",
+    "op_id": "vector.broadcast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.splat_N1_H8_W8_C8",
+    "op_id": "vector.splat",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.extract_N1_H8_W8_C8",
+    "op_id": "vector.extract",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.insert_N1_H8_W8_C8",
+    "op_id": "vector.insert",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.extract_strided_slice_N1_H8_W8_C8",
+    "op_id": "vector.extract_strided_slice",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.insert_strided_slice_N1_H8_W8_C8",
+    "op_id": "vector.insert_strided_slice",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.shape_cast_N1_H8_W8_C8",
+    "op_id": "vector.shape_cast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.bitcast_N1_H8_W8_C8",
+    "op_id": "vector.bitcast",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.transfer_read_N1_H8_W8_C8",
+    "op_id": "vector.transfer_read",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.transfer_write_N1_H8_W8_C8",
+    "op_id": "vector.transfer_write",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.gather_N1_H8_W8_C8",
+    "op_id": "vector.gather",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.scatter_N1_H8_W8_C8",
+    "op_id": "vector.scatter",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.reduction_N1_H8_W8_C8",
+    "op_id": "vector.reduction",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "vector.contract_N1_H8_W8_C8",
+    "op_id": "vector.contract",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "cf.br_N1_H8_W8_C8",
+    "op_id": "cf.br",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "cf.cond_br_N1_H8_W8_C8",
+    "op_id": "cf.cond_br",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "cf.switch_N1_H8_W8_C8",
+    "op_id": "cf.switch",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "cf.assert_N1_H8_W8_C8",
+    "op_id": "cf.assert",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "cf.unreachable_N1_H8_W8_C8",
+    "op_id": "cf.unreachable",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "func.func_N1_H8_W8_C8",
+    "op_id": "func.func",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "func.call_N1_H8_W8_C8",
+    "op_id": "func.call",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "func.return_N1_H8_W8_C8",
+    "op_id": "func.return",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.add_N1_H8_W8_C8",
+    "op_id": "tosa.add",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.mul_N1_H8_W8_C8",
+    "op_id": "tosa.mul",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.relu_N1_H8_W8_C8",
+    "op_id": "tosa.relu",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.clamp_N1_H8_W8_C8",
+    "op_id": "tosa.clamp",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.conv2d_N1_H8_W8_C8",
+    "op_id": "tosa.conv2d",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.depthwise_conv2d_N1_H8_W8_C8",
+    "op_id": "tosa.depthwise_conv2d",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.max_pool2d_N1_H8_W8_C8",
+    "op_id": "tosa.max_pool2d",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "tosa.reshape_N1_H8_W8_C8",
+    "op_id": "tosa.reshape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.add_N1_H8_W8_C8",
+    "op_id": "stablehlo.add",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.multiply_N1_H8_W8_C8",
+    "op_id": "stablehlo.multiply",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.maximum_N1_H8_W8_C8",
+    "op_id": "stablehlo.maximum",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.compare_N1_H8_W8_C8",
+    "op_id": "stablehlo.compare",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.reshape_N1_H8_W8_C8",
+    "op_id": "stablehlo.reshape",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.transpose_N1_H8_W8_C8",
+    "op_id": "stablehlo.transpose",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.broadcast_in_dim_N1_H8_W8_C8",
+    "op_id": "stablehlo.broadcast_in_dim",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  },
+  {
+    "case_id": "stablehlo.convolution_N1_H8_W8_C8",
+    "op_id": "stablehlo.convolution",
+    "template": "generic",
+    "params": {
+      "N": 1,
+      "H": 8,
+      "W": 8,
+      "C": 8,
+      "dtype": "f32"
+    },
+    "inputs": [
+      {
+        "name": "x",
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ],
+    "outputs": [
+      {
+        "shape": [
+          1,
+          8,
+          8,
+          8
+        ],
+        "dtype": "f32"
+      }
+    ]
+  }
+]
