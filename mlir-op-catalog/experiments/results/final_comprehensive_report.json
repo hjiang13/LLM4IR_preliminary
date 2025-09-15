@@ -1,0 +1,2863 @@
+{
+  "executive_summary": {
+    "project_name": "LLM4IR Preliminary Study",
+    "timestamp": "2025-09-14T23:16:33.870345",
+    "total_ir_files": 43006,
+    "experiments_completed": 4,
+    "key_findings": [
+      "基线测试成功率: 98.4% (62/63)",
+      "平均编译时间: 20.42ms",
+      "最佳优化传递: minimal",
+      "成对操作兼容率: 93.3% (14/15)"
+    ],
+    "recommendations": [
+      "使用basic优化传递进行开发阶段测试",
+      "使用advanced优化传递进行生产环境部署",
+      "重点关注高兼容性操作组合",
+      "避免使用问题操作进行配对"
+    ],
+    "next_steps": [
+      "扩展LLM集成测试",
+      "实现自动化IR生成",
+      "开发性能基准测试套件",
+      "建立持续集成流程"
+    ]
+  },
+  "detailed_analysis": {
+    "ir_catalog_analysis": {
+      "total_operations": 53,
+      "successful_operations": 52,
+      "failed_operations": 1
+    },
+    "performance_insights": {
+      "fastest_operation": "avgpool2d",
+      "slowest_operation": "log10",
+      "average_compilation_time": 0,
+      "file_size_distribution": {}
+    },
+    "optimization_insights": {
+      "best_pass_combination": "minimal",
+      "optimization_effectiveness": {},
+      "pass_ranking": [
+        "minimal",
+        "basic",
+        "intermediate",
+        "advanced",
+        "full"
+      ]
+    },
+    "compatibility_insights": {
+      "overall_compatibility_rate": 0.9333333333333333,
+      "most_compatible_operations": [
+        {
+          "operation": "relu",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "sqrt",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "leaky",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_gelu",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_exp",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_elu",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_log10",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "atan2",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_sin",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_relu",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_logical_or",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_atanh",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "gelu",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "equal",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_cbrt",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        },
+        {
+          "operation": "relu_div",
+          "compatibility_rate": 1.0,
+          "avg_score": 1.0
+        }
+      ],
+      "problematic_operations": [
+        {
+          "operation": "add_N1_H8_W8_C8",
+          "compatibility_rate": 0.0,
+          "avg_score": 0.0
+        },
+        {
+          "operation": "mul_N1_H8_W8_C8",
+          "compatibility_rate": 0.0,
+          "avg_score": 0.0
+        }
+      ]
+    },
+    "technical_metrics": {}
+  },
+  "technical_metrics": {
+    "code_quality": {
+      "syntax_validity_rate": 0.9811320754716981,
+      "compilation_success_rate": 0.9811320754716981,
+      "total_operations": 53
+    },
+    "performance_metrics": {
+      "average_compilation_time": 0.020415550867716473,
+      "compilation_time_std": 0,
+      "file_size_efficiency": {
+        "mlir": {
+          "mean": 624.6666666666666,
+          "median": 632,
+          "min": 390,
+          "max": 745
+        },
+        "llvm": {
+          "mean": 5140.4,
+          "median": 4788,
+          "min": 4788,
+          "max": 8036
+        }
+      }
+    },
+    "reliability_metrics": {
+      "pair_compatibility_rate": 0.9333333333333333,
+      "error_rate": 0.06666666666666665,
+      "tested_pairs": 15
+    },
+    "maintainability_metrics": {}
+  },
+  "experiment_reports": {
+    "baseline": {
+      "test_info": {
+        "timestamp": "2025-09-14T23:12:05.421648",
+        "test_type": "baseline_validation",
+        "total_tests": 63,
+        "passed_tests": 62,
+        "failed_tests": 1
+      },
+      "single_operations": {
+        "exp": {
+          "operation": "exp",
+          "mlir_file": "out/single/exp/exp_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/exp/exp_N1_H8_W8_C8/exp_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "mish": {
+          "operation": "mish",
+          "mlir_file": "out/single/mish/mish_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/mish/mish_N1_H8_W8_C8/mish_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "softsign": {
+          "operation": "softsign",
+          "mlir_file": "out/single/softsign/softsign_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/softsign/softsign_N1_H8_W8_C8/softsign_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "add": {
+          "operation": "add",
+          "mlir_file": "out/single/add/add_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/add/add_N1_H8_W8_C8/add_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "log2": {
+          "operation": "log2",
+          "mlir_file": "out/single/log2/log2_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/log2/log2_N1_H8_W8_C8/log2_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "greater": {
+          "operation": "greater",
+          "mlir_file": "out/single/greater/greater_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/greater/greater_N1_H8_W8_C8/greater_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "asin": {
+          "operation": "asin",
+          "mlir_file": "out/single/asin/asin_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/asin/asin_N1_H8_W8_C8/asin_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "logical_xor": {
+          "operation": "logical_xor",
+          "mlir_file": "out/single/logical_xor/logical_xor_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/logical_xor/logical_xor_N1_H8_W8_C8/logical_xor_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "cosh": {
+          "operation": "cosh",
+          "mlir_file": "out/single/cosh/cosh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/cosh/cosh_N1_H8_W8_C8/cosh_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "sinh": {
+          "operation": "sinh",
+          "mlir_file": "out/single/sinh/sinh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/sinh/sinh_N1_H8_W8_C8/sinh_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "log": {
+          "operation": "log",
+          "mlir_file": "out/single/log/log_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/log/log_N1_H8_W8_C8/log_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "greater_equal": {
+          "operation": "greater_equal",
+          "mlir_file": "out/single/greater_equal/greater_equal_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/greater_equal/greater_equal_N1_H8_W8_C8/greater_equal_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "equal": {
+          "operation": "equal",
+          "mlir_file": "out/single/equal/equal_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/equal/equal_N1_H8_W8_C8/equal_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "sigmoid": {
+          "operation": "sigmoid",
+          "mlir_file": "out/single/sigmoid/sigmoid_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/sigmoid/sigmoid_N1_H8_W8_C8/sigmoid_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "conv2d_nhwc_hwcf": {
+          "operation": "conv2d_nhwc_hwcf",
+          "mlir_file": "out/single/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8/conv2d_nhwc_hwcf_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "atan2": {
+          "operation": "atan2",
+          "mlir_file": "out/single/atan2/atan2_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/atan2/atan2_N1_H8_W8_C8/atan2_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "asinh": {
+          "operation": "asinh",
+          "mlir_file": "out/single/asinh/asinh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/asinh/asinh_N1_H8_W8_C8/asinh_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "cos": {
+          "operation": "cos",
+          "mlir_file": "out/single/cos/cos_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/cos/cos_N1_H8_W8_C8/cos_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "cbrt": {
+          "operation": "cbrt",
+          "mlir_file": "out/single/cbrt/cbrt_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/cbrt/cbrt_N1_H8_W8_C8/cbrt_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "matmul": {
+          "operation": "matmul",
+          "mlir_file": "out/single/matmul/matmul_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/matmul/matmul_N1_H8_W8_C8/matmul_N1_H8_W8_C8.ll",
+          "mlir_valid": false,
+          "llvm_valid": false,
+          "optimization_valid": false,
+          "errors": [
+            "MLIR文件不存在",
+            "LLVM文件不存在"
+          ]
+        },
+        "sqrt": {
+          "operation": "sqrt",
+          "mlir_file": "out/single/sqrt/sqrt_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/sqrt/sqrt_N1_H8_W8_C8/sqrt_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "atan": {
+          "operation": "atan",
+          "mlir_file": "out/single/atan/atan_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/atan/atan_N1_H8_W8_C8/atan_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "clamp": {
+          "operation": "clamp",
+          "mlir_file": "out/single/clamp/clamp_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/clamp/clamp_N1_H8_W8_C8/clamp_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "reduce_sum": {
+          "operation": "reduce_sum",
+          "mlir_file": "out/single/reduce_sum/reduce_sum_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/reduce_sum/reduce_sum_N1_H8_W8_C8/reduce_sum_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "logical_not": {
+          "operation": "logical_not",
+          "mlir_file": "out/single/logical_not/logical_not_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/logical_not/logical_not_N1_H8_W8_C8/logical_not_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "mul": {
+          "operation": "mul",
+          "mlir_file": "out/single/mul/mul_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/mul/mul_N1_H8_W8_C8/mul_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "avgpool2d": {
+          "operation": "avgpool2d",
+          "mlir_file": "out/single/avgpool2d/avgpool2d_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/avgpool2d/avgpool2d_N1_H8_W8_C8/avgpool2d_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "acosh": {
+          "operation": "acosh",
+          "mlir_file": "out/single/acosh/acosh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/acosh/acosh_N1_H8_W8_C8/acosh_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "less": {
+          "operation": "less",
+          "mlir_file": "out/single/less/less_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/less/less_N1_H8_W8_C8/less_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "tanh": {
+          "operation": "tanh",
+          "mlir_file": "out/single/tanh/tanh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/tanh/tanh_N1_H8_W8_C8/tanh_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "less_equal": {
+          "operation": "less_equal",
+          "mlir_file": "out/single/less_equal/less_equal_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/less_equal/less_equal_N1_H8_W8_C8/less_equal_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "hard_sigmoid": {
+          "operation": "hard_sigmoid",
+          "mlir_file": "out/single/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8/hard_sigmoid_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "atanh": {
+          "operation": "atanh",
+          "mlir_file": "out/single/atanh/atanh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/atanh/atanh_N1_H8_W8_C8/atanh_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "mod": {
+          "operation": "mod",
+          "mlir_file": "out/single/mod/mod_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/mod/mod_N1_H8_W8_C8/mod_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "gelu": {
+          "operation": "gelu",
+          "mlir_file": "out/single/gelu/gelu_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/gelu/gelu_N1_H8_W8_C8/gelu_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "rsqrt": {
+          "operation": "rsqrt",
+          "mlir_file": "out/single/rsqrt/rsqrt_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/rsqrt/rsqrt_N1_H8_W8_C8/rsqrt_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "softplus": {
+          "operation": "softplus",
+          "mlir_file": "out/single/softplus/softplus_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/softplus/softplus_N1_H8_W8_C8/softplus_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "tan": {
+          "operation": "tan",
+          "mlir_file": "out/single/tan/tan_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/tan/tan_N1_H8_W8_C8/tan_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "log10": {
+          "operation": "log10",
+          "mlir_file": "out/single/log10/log10_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/log10/log10_N1_H8_W8_C8/log10_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "swish": {
+          "operation": "swish",
+          "mlir_file": "out/single/swish/swish_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/swish/swish_N1_H8_W8_C8/swish_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "acos": {
+          "operation": "acos",
+          "mlir_file": "out/single/acos/acos_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/acos/acos_N1_H8_W8_C8/acos_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "div": {
+          "operation": "div",
+          "mlir_file": "out/single/div/div_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/div/div_N1_H8_W8_C8/div_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "sub": {
+          "operation": "sub",
+          "mlir_file": "out/single/sub/sub_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/sub/sub_N1_H8_W8_C8/sub_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "pow": {
+          "operation": "pow",
+          "mlir_file": "out/single/pow/pow_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/pow/pow_N1_H8_W8_C8/pow_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "hard_tanh": {
+          "operation": "hard_tanh",
+          "mlir_file": "out/single/hard_tanh/hard_tanh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/hard_tanh/hard_tanh_N1_H8_W8_C8/hard_tanh_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "not_equal": {
+          "operation": "not_equal",
+          "mlir_file": "out/single/not_equal/not_equal_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/not_equal/not_equal_N1_H8_W8_C8/not_equal_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "sin": {
+          "operation": "sin",
+          "mlir_file": "out/single/sin/sin_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/sin/sin_N1_H8_W8_C8/sin_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "relu": {
+          "operation": "relu",
+          "mlir_file": "out/single/relu/relu_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/relu/relu_N1_H8_W8_C8/relu_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "leaky_relu": {
+          "operation": "leaky_relu",
+          "mlir_file": "out/single/leaky_relu/leaky_relu_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/leaky_relu/leaky_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "logical_and": {
+          "operation": "logical_and",
+          "mlir_file": "out/single/logical_and/logical_and_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/logical_and/logical_and_N1_H8_W8_C8/logical_and_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "elu": {
+          "operation": "elu",
+          "mlir_file": "out/single/elu/elu_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/elu/elu_N1_H8_W8_C8/elu_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "logical_or": {
+          "operation": "logical_or",
+          "mlir_file": "out/single/logical_or/logical_or_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/logical_or/logical_or_N1_H8_W8_C8/logical_or_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        },
+        "maxpool2d": {
+          "operation": "maxpool2d",
+          "mlir_file": "out/single/maxpool2d/maxpool2d_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/maxpool2d/maxpool2d_N1_H8_W8_C8/maxpool2d_N1_H8_W8_C8.ll",
+          "mlir_valid": true,
+          "llvm_valid": true,
+          "optimization_valid": true,
+          "errors": []
+        }
+      },
+      "pair_operations": {
+        "relu_less": {
+          "operation": "relu_less",
+          "llvm_files": [
+            "out/pairs_llvm/relu_less/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "leaky_relu_mish": {
+          "operation": "leaky_relu_mish",
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_mish/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "leaky_relu_acos": {
+          "operation": "leaky_relu_acos",
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_acos/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "leaky_relu_greater_equal": {
+          "operation": "leaky_relu_greater_equal",
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_greater_equal/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "leaky_relu_acosh": {
+          "operation": "leaky_relu_acosh",
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_acosh/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "relu_clamp": {
+          "operation": "relu_clamp",
+          "llvm_files": [
+            "out/pairs_llvm/relu_clamp/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "relu_atanh": {
+          "operation": "relu_atanh",
+          "llvm_files": [
+            "out/pairs_llvm/relu_atanh/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "leaky_relu_not_equal": {
+          "operation": "leaky_relu_not_equal",
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_not_equal/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "relu_gelu": {
+          "operation": "relu_gelu",
+          "llvm_files": [
+            "out/pairs_llvm/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        },
+        "leaky_relu_greater": {
+          "operation": "leaky_relu_greater",
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_greater/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.ll"
+          ],
+          "valid_files": 1,
+          "total_files": 1,
+          "errors": []
+        }
+      },
+      "errors": [
+        "MLIR文件不存在",
+        "LLVM文件不存在"
+      ]
+    },
+    "performance": {
+      "analysis_info": {
+        "timestamp": "2025-09-14T23:13:13.592687",
+        "analysis_type": "performance_analysis",
+        "total_operations": 0,
+        "analyzed_operations": 15
+      },
+      "single_operations": {
+        "hard_tanh": {
+          "operation": "hard_tanh",
+          "mlir_file": "out/single/hard_tanh/hard_tanh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/hard_tanh/hard_tanh_N1_H8_W8_C8/hard_tanh_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.020464658737182617,
+              "median": 0.020472049713134766,
+              "min": 0.019296884536743164,
+              "max": 0.021732330322265625,
+              "std": 0.001043891197210796,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.022119760513305664,
+              "median": 0.021945476531982422,
+              "min": 0.020632266998291016,
+              "max": 0.023546695709228516,
+              "std": 0.0011777266059849385,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.00426483154296875,
+              "median": 0.004472255706787109,
+              "min": 0.003747701644897461,
+              "max": 0.004644155502319336,
+              "std": 0.0003897538925632924,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "avgpool2d": {
+          "operation": "avgpool2d",
+          "mlir_file": "out/single/avgpool2d/avgpool2d_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/avgpool2d/avgpool2d_N1_H8_W8_C8/avgpool2d_N1_H8_W8_C8.ll",
+          "mlir_size": 611,
+          "llvm_size": 4814,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.0192779541015625,
+              "median": 0.019202232360839844,
+              "min": 0.018921613693237305,
+              "max": 0.019899845123291016,
+              "std": 0.00036689608371677756,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021738433837890626,
+              "median": 0.021840333938598633,
+              "min": 0.021037817001342773,
+              "max": 0.022624731063842773,
+              "std": 0.0006170034588219331,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004107332229614258,
+              "median": 0.003890514373779297,
+              "min": 0.0038018226623535156,
+              "max": 0.004681587219238281,
+              "std": 0.0003960708005649014,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "relu": {
+          "operation": "relu",
+          "mlir_file": "out/single/relu/relu_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/relu/relu_N1_H8_W8_C8/relu_N1_H8_W8_C8.ll",
+          "mlir_size": 672,
+          "llvm_size": 5059,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.01955523490905762,
+              "median": 0.01955270767211914,
+              "min": 0.0189211368560791,
+              "max": 0.020450830459594727,
+              "std": 0.0006126250313576452,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021480655670166014,
+              "median": 0.021598339080810547,
+              "min": 0.020848989486694336,
+              "max": 0.021903276443481445,
+              "std": 0.000411458788507657,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.0041523933410644535,
+              "median": 0.0037870407104492188,
+              "min": 0.003699779510498047,
+              "max": 0.004786014556884766,
+              "std": 0.0005520103410557285,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "sqrt": {
+          "operation": "sqrt",
+          "mlir_file": "out/single/sqrt/sqrt_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/sqrt/sqrt_N1_H8_W8_C8/sqrt_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.020155572891235353,
+              "median": 0.019173622131347656,
+              "min": 0.018742084503173828,
+              "max": 0.024009227752685547,
+              "std": 0.0021845090412016955,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021106958389282227,
+              "median": 0.02072453498840332,
+              "min": 0.02028512954711914,
+              "max": 0.023086071014404297,
+              "std": 0.001145739502362426,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004170894622802734,
+              "median": 0.0039751529693603516,
+              "min": 0.0038635730743408203,
+              "max": 0.004848480224609375,
+              "std": 0.00041932599200933943,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "tanh": {
+          "operation": "tanh",
+          "mlir_file": "out/single/tanh/tanh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/tanh/tanh_N1_H8_W8_C8/tanh_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.02263813018798828,
+              "median": 0.020903825759887695,
+              "min": 0.01925802230834961,
+              "max": 0.031334877014160156,
+              "std": 0.004920824018659185,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021531295776367188,
+              "median": 0.02156233787536621,
+              "min": 0.02102351188659668,
+              "max": 0.021924972534179688,
+              "std": 0.00032515108521493166,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004410409927368164,
+              "median": 0.00393986701965332,
+              "min": 0.0037755966186523438,
+              "max": 0.0060634613037109375,
+              "std": 0.000956239359175857,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "conv2d_nhwc_hwcf": {
+          "operation": "conv2d_nhwc_hwcf",
+          "mlir_file": "out/single/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8/conv2d_nhwc_hwcf_N1_H8_W8_C8.ll",
+          "mlir_size": 390,
+          "llvm_size": 8036,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.02039175033569336,
+              "median": 0.02025747299194336,
+              "min": 0.01994466781616211,
+              "max": 0.0212249755859375,
+              "std": 0.0005124507010346507,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.02136402130126953,
+              "median": 0.021085500717163086,
+              "min": 0.02071213722229004,
+              "max": 0.022438764572143555,
+              "std": 0.0006751869019602512,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004479455947875977,
+              "median": 0.004682302474975586,
+              "min": 0.0039708614349365234,
+              "max": 0.004943132400512695,
+              "std": 0.0004495060454484798,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "asinh": {
+          "operation": "asinh",
+          "mlir_file": "out/single/asinh/asinh_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/asinh/asinh_N1_H8_W8_C8/asinh_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.020090055465698243,
+              "median": 0.019678115844726562,
+              "min": 0.019436120986938477,
+              "max": 0.02132439613342285,
+              "std": 0.0008147866148140456,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021398591995239257,
+              "median": 0.021318674087524414,
+              "min": 0.021219491958618164,
+              "max": 0.021673917770385742,
+              "std": 0.00020699521084301004,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004174423217773437,
+              "median": 0.003977298736572266,
+              "min": 0.003779888153076172,
+              "max": 0.004699230194091797,
+              "std": 0.0004352527684236604,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "pow": {
+          "operation": "pow",
+          "mlir_file": "out/single/pow/pow_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/pow/pow_N1_H8_W8_C8/pow_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.01937413215637207,
+              "median": 0.01941370964050293,
+              "min": 0.01884913444519043,
+              "max": 0.019706010818481445,
+              "std": 0.000325913575731949,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.02133493423461914,
+              "median": 0.02144455909729004,
+              "min": 0.02036881446838379,
+              "max": 0.022096633911132812,
+              "std": 0.0007219487481711139,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004067659378051758,
+              "median": 0.0038652420043945312,
+              "min": 0.003823995590209961,
+              "max": 0.00456690788269043,
+              "std": 0.00033096384877024114,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "clamp": {
+          "operation": "clamp",
+          "mlir_file": "out/single/clamp/clamp_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/clamp/clamp_N1_H8_W8_C8/clamp_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.019653129577636718,
+              "median": 0.019840240478515625,
+              "min": 0.018883228302001953,
+              "max": 0.02022242546081543,
+              "std": 0.0005977075651972156,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021896839141845703,
+              "median": 0.021765470504760742,
+              "min": 0.021204710006713867,
+              "max": 0.022946834564208984,
+              "std": 0.000692795368109005,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004097843170166015,
+              "median": 0.0038809776306152344,
+              "min": 0.0038199424743652344,
+              "max": 0.004655361175537109,
+              "std": 0.0003711364313457929,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "greater_equal": {
+          "operation": "greater_equal",
+          "mlir_file": "out/single/greater_equal/greater_equal_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/greater_equal/greater_equal_N1_H8_W8_C8/greater_equal_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.019816493988037108,
+              "median": 0.019789934158325195,
+              "min": 0.018734455108642578,
+              "max": 0.02099299430847168,
+              "std": 0.0008456354373175824,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021053218841552736,
+              "median": 0.020910263061523438,
+              "min": 0.02062821388244629,
+              "max": 0.021838903427124023,
+              "std": 0.0005073929009119571,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004208087921142578,
+              "median": 0.004023551940917969,
+              "min": 0.0038046836853027344,
+              "max": 0.004979610443115234,
+              "std": 0.0004654786791382126,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "swish": {
+          "operation": "swish",
+          "mlir_file": "out/single/swish/swish_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/swish/swish_N1_H8_W8_C8/swish_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.01957669258117676,
+              "median": 0.01961660385131836,
+              "min": 0.01899552345275879,
+              "max": 0.019980907440185547,
+              "std": 0.0003860742462781435,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.023110675811767577,
+              "median": 0.022949695587158203,
+              "min": 0.022063493728637695,
+              "max": 0.0247957706451416,
+              "std": 0.0010308817586339226,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004640007019042968,
+              "median": 0.004290342330932617,
+              "min": 0.003692150115966797,
+              "max": 0.006682395935058594,
+              "std": 0.001217570707312712,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "log10": {
+          "operation": "log10",
+          "mlir_file": "out/single/log10/log10_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/log10/log10_N1_H8_W8_C8/log10_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.023372697830200195,
+              "median": 0.02002239227294922,
+              "min": 0.018780946731567383,
+              "max": 0.03031015396118164,
+              "std": 0.005564946110076987,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.022481632232666016,
+              "median": 0.02251911163330078,
+              "min": 0.021747112274169922,
+              "max": 0.022979736328125,
+              "std": 0.0004922578234898897,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004119777679443359,
+              "median": 0.003885984420776367,
+              "min": 0.003755807876586914,
+              "max": 0.004609823226928711,
+              "std": 0.0004255289964104627,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "hard_sigmoid": {
+          "operation": "hard_sigmoid",
+          "mlir_file": "out/single/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8/hard_sigmoid_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.02258639335632324,
+              "median": 0.020432710647583008,
+              "min": 0.019988536834716797,
+              "max": 0.031212329864501953,
+              "std": 0.004845489439871976,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.022567176818847658,
+              "median": 0.021904706954956055,
+              "min": 0.021010875701904297,
+              "max": 0.025751352310180664,
+              "std": 0.001839846326791777,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004137182235717773,
+              "median": 0.004049777984619141,
+              "min": 0.003881216049194336,
+              "max": 0.004472494125366211,
+              "std": 0.0002583099220386979,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "atan": {
+          "operation": "atan",
+          "mlir_file": "out/single/atan/atan_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/atan/atan_N1_H8_W8_C8/atan_N1_H8_W8_C8.ll",
+          "mlir_size": 632,
+          "llvm_size": 4788,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.019477415084838866,
+              "median": 0.019167661666870117,
+              "min": 0.0188143253326416,
+              "max": 0.020218372344970703,
+              "std": 0.0006383555698207073,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.02115459442138672,
+              "median": 0.02127695083618164,
+              "min": 0.020138978958129883,
+              "max": 0.022161245346069336,
+              "std": 0.0007733168156295004,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004153251647949219,
+              "median": 0.0040357112884521484,
+              "min": 0.0037741661071777344,
+              "max": 0.004595756530761719,
+              "std": 0.0003746767882992989,
+              "samples": 5
+            }
+          },
+          "errors": []
+        },
+        "div": {
+          "operation": "div",
+          "mlir_file": "out/single/div/div_N1_H8_W8_C8.mlir",
+          "llvm_file": "out/single_llvm/div/div_N1_H8_W8_C8/div_N1_H8_W8_C8.ll",
+          "mlir_size": 745,
+          "llvm_size": 6529,
+          "compilation_times": {
+            "basic": {
+              "mean": 0.019802951812744142,
+              "median": 0.01972341537475586,
+              "min": 0.018915414810180664,
+              "max": 0.021265506744384766,
+              "std": 0.0008892333929045188,
+              "samples": 5
+            },
+            "advanced": {
+              "mean": 0.021070146560668947,
+              "median": 0.021052122116088867,
+              "min": 0.02006053924560547,
+              "max": 0.021831989288330078,
+              "std": 0.00072658957952306,
+              "samples": 5
+            },
+            "llvm": {
+              "mean": 0.004190397262573242,
+              "median": 0.00403141975402832,
+              "min": 0.003775358200073242,
+              "max": 0.00465083122253418,
+              "std": 0.00039784243983274567,
+              "samples": 5
+            }
+          },
+          "errors": []
+        }
+      },
+      "pair_operations": {},
+      "optimization_comparison": {
+        "basic_vs_advanced": {
+          "basic_mean": 0.020415550867716473,
+          "advanced_mean": 0.021693929036458334,
+          "improvement": -6.261786307041984
+        },
+        "file_size_impact": {},
+        "compilation_time_impact": {}
+      },
+      "summary_stats": {
+        "compilation_times": {
+          "basic": {
+            "mean": 0.020415550867716473,
+            "median": 0.019816493988037108,
+            "min": 0.0192779541015625,
+            "max": 0.023372697830200195
+          },
+          "advanced": {
+            "mean": 0.021693929036458334,
+            "median": 0.021480655670166014,
+            "min": 0.021053218841552736,
+            "max": 0.023110675811767577
+          },
+          "llvm": {
+            "mean": 0.004224929809570312,
+            "median": 0.004170894622802734,
+            "min": 0.004067659378051758,
+            "max": 0.004640007019042968
+          }
+        },
+        "file_sizes": {
+          "mlir": {
+            "mean": 624.6666666666666,
+            "median": 632,
+            "min": 390,
+            "max": 745
+          },
+          "llvm": {
+            "mean": 5140.4,
+            "median": 4788,
+            "min": 4788,
+            "max": 8036
+          }
+        }
+      }
+    },
+    "optimization": {
+      "study_info": {
+        "timestamp": "2025-09-14T23:14:18.204169",
+        "study_type": "optimization_effectiveness",
+        "total_operations": 12,
+        "analyzed_operations": 12
+      },
+      "pass_combinations": {
+        "minimal": {
+          "mean_time": 0.019503368271721735,
+          "median_time": 0.019360820452372234,
+          "mean_success_rate": 1.0,
+          "mean_output_size": 13.583333333333334,
+          "operations_tested": 12
+        },
+        "basic": {
+          "mean_time": 0.02013099855846829,
+          "median_time": 0.019892096519470215,
+          "mean_success_rate": 1.0,
+          "mean_output_size": 13.583333333333334,
+          "operations_tested": 12
+        },
+        "intermediate": {
+          "mean_time": 0.021797491444481742,
+          "median_time": 0.021632115046183266,
+          "mean_success_rate": 1.0,
+          "mean_output_size": 13.583333333333334,
+          "operations_tested": 12
+        },
+        "advanced": {
+          "mean_time": 0.022222359975179035,
+          "median_time": 0.02156233787536621,
+          "mean_success_rate": 1.0,
+          "mean_output_size": 13.583333333333334,
+          "operations_tested": 12
+        },
+        "full": {
+          "mean_time": 0.024481594562530518,
+          "median_time": 0.023855209350585938,
+          "mean_success_rate": 1.0,
+          "mean_output_size": 73.33333333333333,
+          "operations_tested": 12
+        }
+      },
+      "operation_results": {
+        "conv2d_nhwc_hwcf": {
+          "operation": "conv2d_nhwc_hwcf",
+          "mlir_file": "out/single/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.019464651743570965,
+              "median_time": 0.01939558982849121,
+              "min_time": 0.019110441207885742,
+              "max_time": 0.019887924194335938,
+              "std_time": 0.000393315534451337,
+              "mean_output_size": 9,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.02010488510131836,
+              "median_time": 0.019870758056640625,
+              "min_time": 0.019840002059936523,
+              "max_time": 0.02060389518737793,
+              "std_time": 0.000432428933265572,
+              "mean_output_size": 9,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.02150583267211914,
+              "median_time": 0.02131032943725586,
+              "min_time": 0.021284103393554688,
+              "max_time": 0.021923065185546875,
+              "std_time": 0.00036157181726176107,
+              "mean_output_size": 9,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.02202741305033366,
+              "median_time": 0.02229619026184082,
+              "min_time": 0.02148914337158203,
+              "max_time": 0.022296905517578125,
+              "std_time": 0.0004661553530693686,
+              "mean_output_size": 9,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.024857123692830402,
+              "median_time": 0.024773120880126953,
+              "min_time": 0.02436351776123047,
+              "max_time": 0.02543473243713379,
+              "std_time": 0.0005405252768134272,
+              "mean_output_size": 121,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -27.70392206498394,
+            "output_size_change": 112
+          }
+        },
+        "sqrt": {
+          "operation": "sqrt",
+          "mlir_file": "out/single/sqrt/sqrt_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.01926112174987793,
+              "median_time": 0.019570112228393555,
+              "min_time": 0.018494844436645508,
+              "max_time": 0.019718408584594727,
+              "std_time": 0.0006677451930913921,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.020067771275838215,
+              "median_time": 0.01998162269592285,
+              "min_time": 0.019771099090576172,
+              "max_time": 0.020450592041015625,
+              "std_time": 0.0003478417036387439,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.021843433380126953,
+              "median_time": 0.021900415420532227,
+              "min_time": 0.021648883819580078,
+              "max_time": 0.021981000900268555,
+              "std_time": 0.00017323583208395476,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.021906534830729168,
+              "median_time": 0.021990537643432617,
+              "min_time": 0.021578311920166016,
+              "max_time": 0.022150754928588867,
+              "std_time": 0.0002953220341925395,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.023480971654256184,
+              "median_time": 0.023583650588989258,
+              "min_time": 0.023189306259155273,
+              "max_time": 0.023669958114624023,
+              "std_time": 0.00025624943759904533,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -21.908640416568666,
+            "output_size_change": 55
+          }
+        },
+        "acosh": {
+          "operation": "acosh",
+          "mlir_file": "out/single/acosh/acosh_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.01957861582438151,
+              "median_time": 0.0195159912109375,
+              "min_time": 0.01912713050842285,
+              "max_time": 0.02009272575378418,
+              "std_time": 0.00048583425787284665,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.019600629806518555,
+              "median_time": 0.019440650939941406,
+              "min_time": 0.019009828567504883,
+              "max_time": 0.020351409912109375,
+              "std_time": 0.0006849489428863885,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.02112897237141927,
+              "median_time": 0.021091699600219727,
+              "min_time": 0.02060413360595703,
+              "max_time": 0.021691083908081055,
+              "std_time": 0.0005444329016752631,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.021277666091918945,
+              "median_time": 0.021305084228515625,
+              "min_time": 0.02085399627685547,
+              "max_time": 0.021673917770385742,
+              "std_time": 0.00041064781692960967,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.023211320241292317,
+              "median_time": 0.023124217987060547,
+              "min_time": 0.022907733917236328,
+              "max_time": 0.023602008819580078,
+              "std_time": 0.0003552386691019123,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -18.554449658218175,
+            "output_size_change": 55
+          }
+        },
+        "atan": {
+          "operation": "atan",
+          "mlir_file": "out/single/atan/atan_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.019449154535929363,
+              "median_time": 0.01907062530517578,
+              "min_time": 0.01870894432067871,
+              "max_time": 0.020567893981933594,
+              "std_time": 0.0009855895416810612,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.019397179285685223,
+              "median_time": 0.01923227310180664,
+              "min_time": 0.01912546157836914,
+              "max_time": 0.019833803176879883,
+              "std_time": 0.000381880206552049,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.02110004425048828,
+              "median_time": 0.021150827407836914,
+              "min_time": 0.02049708366394043,
+              "max_time": 0.0216522216796875,
+              "std_time": 0.0005792410168994783,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.02140156428019206,
+              "median_time": 0.021596193313598633,
+              "min_time": 0.020631074905395508,
+              "max_time": 0.02197742462158203,
+              "std_time": 0.0006939558595850794,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.023168166478474934,
+              "median_time": 0.023273944854736328,
+              "min_time": 0.022616863250732422,
+              "max_time": 0.023613691329956055,
+              "std_time": 0.0005067626205093879,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "basic",
+          "optimization_effectiveness": {
+            "time_improvement": -19.121715217364642,
+            "output_size_change": 55
+          }
+        },
+        "exp": {
+          "operation": "exp",
+          "mlir_file": "out/single/exp/exp_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.019272486368815105,
+              "median_time": 0.019618749618530273,
+              "min_time": 0.018539905548095703,
+              "max_time": 0.019658803939819336,
+              "std_time": 0.0006347496209750072,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.018966118494669598,
+              "median_time": 0.019084453582763672,
+              "min_time": 0.01869368553161621,
+              "max_time": 0.019120216369628906,
+              "std_time": 0.0002366105106490992,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.02117753028869629,
+              "median_time": 0.021244049072265625,
+              "min_time": 0.020873069763183594,
+              "max_time": 0.02141547203063965,
+              "std_time": 0.00027725190055439744,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.021021922429402668,
+              "median_time": 0.020917415618896484,
+              "min_time": 0.020650863647460938,
+              "max_time": 0.021497488021850586,
+              "std_time": 0.0004328792705931963,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.02427053451538086,
+              "median_time": 0.02403712272644043,
+              "min_time": 0.023722171783447266,
+              "max_time": 0.025052309036254883,
+              "std_time": 0.0006951093980366885,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "basic",
+          "optimization_effectiveness": {
+            "time_improvement": -25.93359284795302,
+            "output_size_change": 55
+          }
+        },
+        "cosh": {
+          "operation": "cosh",
+          "mlir_file": "out/single/cosh/cosh_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.02054460843404134,
+              "median_time": 0.020459413528442383,
+              "min_time": 0.020357131958007812,
+              "max_time": 0.020817279815673828,
+              "std_time": 0.000241614655357798,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.020830313364664715,
+              "median_time": 0.020289182662963867,
+              "min_time": 0.020190954208374023,
+              "max_time": 0.02201080322265625,
+              "std_time": 0.0010235132807826363,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.022231181462605793,
+              "median_time": 0.02172708511352539,
+              "min_time": 0.021718740463256836,
+              "max_time": 0.023247718811035156,
+              "std_time": 0.0008803570547572585,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.022070010503133137,
+              "median_time": 0.022280454635620117,
+              "min_time": 0.021460771560668945,
+              "max_time": 0.02246880531311035,
+              "std_time": 0.000535955279094183,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.023277839024861652,
+              "median_time": 0.023229598999023438,
+              "min_time": 0.022774934768676758,
+              "max_time": 0.023828983306884766,
+              "std_time": 0.0005286775059469273,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -13.30388262008193,
+            "output_size_change": 55
+          }
+        },
+        "sinh": {
+          "operation": "sinh",
+          "mlir_file": "out/single/sinh/sinh_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.019546349843343098,
+              "median_time": 0.019729137420654297,
+              "min_time": 0.018596649169921875,
+              "max_time": 0.020313262939453125,
+              "std_time": 0.0008727824369512397,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.02007007598876953,
+              "median_time": 0.019483089447021484,
+              "min_time": 0.019191265106201172,
+              "max_time": 0.021535873413085938,
+              "std_time": 0.0012777761651882776,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.021911223729451496,
+              "median_time": 0.02197885513305664,
+              "min_time": 0.020956754684448242,
+              "max_time": 0.02279806137084961,
+              "std_time": 0.0009225145437399873,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.02152736981709798,
+              "median_time": 0.021030426025390625,
+              "min_time": 0.020996570587158203,
+              "max_time": 0.022555112838745117,
+              "std_time": 0.0008902125232677675,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.023749272028605144,
+              "median_time": 0.023214340209960938,
+              "min_time": 0.022977590560913086,
+              "max_time": 0.025055885314941406,
+              "std_time": 0.0011377351665057677,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -21.502337873551546,
+            "output_size_change": 55
+          }
+        },
+        "mod": {
+          "operation": "mod",
+          "mlir_file": "out/single/mod/mod_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.019124507904052734,
+              "median_time": 0.019083261489868164,
+              "min_time": 0.018600940704345703,
+              "max_time": 0.019689321517944336,
+              "std_time": 0.0005453614845812998,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.019522666931152344,
+              "median_time": 0.019184112548828125,
+              "min_time": 0.01907515525817871,
+              "max_time": 0.020308732986450195,
+              "std_time": 0.0006829295756262566,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.021921237309773762,
+              "median_time": 0.02157735824584961,
+              "min_time": 0.02120494842529297,
+              "max_time": 0.02298140525817871,
+              "std_time": 0.0009368240644489362,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.02159730593363444,
+              "median_time": 0.021837711334228516,
+              "min_time": 0.020935773849487305,
+              "max_time": 0.0220184326171875,
+              "std_time": 0.0005799858354267152,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.02396114667256673,
+              "median_time": 0.023593425750732422,
+              "min_time": 0.023533344268798828,
+              "max_time": 0.024756669998168945,
+              "std_time": 0.0006895980476340825,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -25.2902652072373,
+            "output_size_change": 55
+          }
+        },
+        "elu": {
+          "operation": "elu",
+          "mlir_file": "out/single/elu/elu_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.01915852228800456,
+              "median_time": 0.01891040802001953,
+              "min_time": 0.01829695701599121,
+              "max_time": 0.02026820182800293,
+              "std_time": 0.0010087725435915117,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.0203857421875,
+              "median_time": 0.02010798454284668,
+              "min_time": 0.020076751708984375,
+              "max_time": 0.020972490310668945,
+              "std_time": 0.000508378690062317,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.025463104248046875,
+              "median_time": 0.021736621856689453,
+              "min_time": 0.020946741104125977,
+              "max_time": 0.033705949783325195,
+              "std_time": 0.007149430382181567,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.029742081960042317,
+              "median_time": 0.032944440841674805,
+              "min_time": 0.022166728973388672,
+              "max_time": 0.03411507606506348,
+              "std_time": 0.0065865071442200145,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.02365533510843913,
+              "median_time": 0.02364659309387207,
+              "min_time": 0.02331995964050293,
+              "max_time": 0.023999452590942383,
+              "std_time": 0.00033983081752284657,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -23.471605757663745,
+            "output_size_change": 55
+          }
+        },
+        "not_equal": {
+          "operation": "not_equal",
+          "mlir_file": "out/single/not_equal/not_equal_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.020763238271077473,
+              "median_time": 0.020315170288085938,
+              "min_time": 0.01966071128845215,
+              "max_time": 0.022313833236694336,
+              "std_time": 0.0013821496684866233,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.02383534113566081,
+              "median_time": 0.02040553092956543,
+              "min_time": 0.01992011070251465,
+              "max_time": 0.031180381774902344,
+              "std_time": 0.006365620526962772,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.021758397420247395,
+              "median_time": 0.021778106689453125,
+              "min_time": 0.021401166915893555,
+              "max_time": 0.022095918655395508,
+              "std_time": 0.00034779496309566557,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.021183252334594727,
+              "median_time": 0.021291017532348633,
+              "min_time": 0.02088141441345215,
+              "max_time": 0.0213773250579834,
+              "std_time": 0.00026493743643557407,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.02783648173014323,
+              "median_time": 0.024775981903076172,
+              "min_time": 0.023032188415527344,
+              "max_time": 0.03570127487182617,
+              "std_time": 0.006866690054378581,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -34.06618643354182,
+            "output_size_change": 55
+          }
+        },
+        "atanh": {
+          "operation": "atanh",
+          "mlir_file": "out/single/atanh/atanh_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.018938779830932617,
+              "median_time": 0.018799543380737305,
+              "min_time": 0.018674135208129883,
+              "max_time": 0.019342660903930664,
+              "std_time": 0.00035534735581360877,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.019716421763102215,
+              "median_time": 0.01976156234741211,
+              "min_time": 0.019492387771606445,
+              "max_time": 0.019895315170288086,
+              "std_time": 0.00020522153009849516,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.020955006281534832,
+              "median_time": 0.020993471145629883,
+              "min_time": 0.020715713500976562,
+              "max_time": 0.021155834197998047,
+              "std_time": 0.00022256732984438088,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.02111498514811198,
+              "median_time": 0.021127700805664062,
+              "min_time": 0.021041393280029297,
+              "max_time": 0.021175861358642578,
+              "std_time": 6.812989066278682e-05,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.027071158091227215,
+              "median_time": 0.022437334060668945,
+              "min_time": 0.02205681800842285,
+              "max_time": 0.036719322204589844,
+              "std_time": 0.008357721052134255,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -42.94034955204465,
+            "output_size_change": 55
+          }
+        },
+        "log2": {
+          "operation": "log2",
+          "mlir_file": "out/single/log2/log2_N1_H8_W8_C8.mlir",
+          "pass_results": {
+            "minimal": {
+              "success_rate": 1.0,
+              "mean_time": 0.018938382466634113,
+              "median_time": 0.0188446044921875,
+              "min_time": 0.018459796905517578,
+              "max_time": 0.019510746002197266,
+              "std_time": 0.000531713487059944,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "basic": {
+              "success_rate": 1.0,
+              "mean_time": 0.01907483736673991,
+              "median_time": 0.019100189208984375,
+              "min_time": 0.01881694793701172,
+              "max_time": 0.019307374954223633,
+              "std_time": 0.00024619443887247935,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "intermediate": {
+              "success_rate": 1.0,
+              "mean_time": 0.020573933919270832,
+              "median_time": 0.020442724227905273,
+              "min_time": 0.020374059677124023,
+              "max_time": 0.020905017852783203,
+              "std_time": 0.0002887752299038392,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "advanced": {
+              "success_rate": 1.0,
+              "mean_time": 0.021798213322957356,
+              "median_time": 0.022009611129760742,
+              "min_time": 0.021070241928100586,
+              "max_time": 0.022314786911010742,
+              "std_time": 0.0006486446085204682,
+              "mean_output_size": 14,
+              "samples": 3
+            },
+            "full": {
+              "success_rate": 1.0,
+              "mean_time": 0.02523978551228841,
+              "median_time": 0.025418519973754883,
+              "min_time": 0.024430513381958008,
+              "max_time": 0.025870323181152344,
+              "std_time": 0.0007363576374634751,
+              "mean_output_size": 69,
+              "samples": 3
+            }
+          },
+          "best_pass": "minimal",
+          "optimization_effectiveness": {
+            "time_improvement": -33.27318506084767,
+            "output_size_change": 55
+          }
+        }
+      },
+      "optimization_metrics": {
+        "time_efficiency": {
+          "minimal": 1,
+          "basic": 2,
+          "intermediate": 3,
+          "advanced": 4,
+          "full": 5
+        },
+        "success_reliability": {
+          "minimal": 1,
+          "basic": 2,
+          "intermediate": 3,
+          "advanced": 4,
+          "full": 5
+        },
+        "output_quality": {},
+        "overall_ranking": [
+          "minimal",
+          "basic",
+          "intermediate",
+          "advanced",
+          "full"
+        ]
+      },
+      "recommendations": {
+        "best_overall": "minimal",
+        "fastest": "minimal",
+        "most_reliable": "minimal",
+        "use_cases": {
+          "development": "basic",
+          "production": "advanced",
+          "maximum_optimization": "full",
+          "quick_testing": "minimal"
+        },
+        "operation_specific": {
+          "conv2d_nhwc_hwcf": "minimal",
+          "sqrt": "minimal",
+          "acosh": "minimal",
+          "atan": "basic",
+          "exp": "basic",
+          "cosh": "minimal",
+          "sinh": "minimal",
+          "mod": "minimal",
+          "elu": "minimal",
+          "not_equal": "minimal",
+          "atanh": "minimal",
+          "log2": "minimal"
+        }
+      }
+    },
+    "compatibility": {
+      "test_info": {
+        "timestamp": "2025-09-14T23:15:28.345321",
+        "test_type": "pair_compatibility",
+        "total_pairs": 15,
+        "tested_pairs": 15,
+        "compatible_pairs": 14,
+        "incompatible_pairs": 1
+      },
+      "pair_results": {
+        "relu_sqrt": {
+          "pair_name": "relu_sqrt",
+          "structure": {
+            "operation1": "relu",
+            "operation2": "sqrt",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/relu_sqrt/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.005024433135986328
+          ]
+        },
+        "leaky_relu_gelu": {
+          "pair_name": "leaky_relu_gelu",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_gelu",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_gelu/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.003998994827270508
+          ]
+        },
+        "leaky_relu_exp": {
+          "pair_name": "leaky_relu_exp",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_exp",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_exp/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.003916501998901367
+          ]
+        },
+        "leaky_relu_elu": {
+          "pair_name": "leaky_relu_elu",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_elu",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_elu/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.004840850830078125
+          ]
+        },
+        "leaky_relu_log10": {
+          "pair_name": "leaky_relu_log10",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_log10",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_log10/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.004078388214111328
+          ]
+        },
+        "relu_atan2": {
+          "pair_name": "relu_atan2",
+          "structure": {
+            "operation1": "relu",
+            "operation2": "atan2",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/relu_atan2/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.004080057144165039
+          ]
+        },
+        "leaky_relu_sin": {
+          "pair_name": "leaky_relu_sin",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_sin",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_sin/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.004219532012939453
+          ]
+        },
+        "leaky_relu_relu": {
+          "pair_name": "leaky_relu_relu",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_relu",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_relu/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.0039670467376708984
+          ]
+        },
+        "leaky_relu_logical_or": {
+          "pair_name": "leaky_relu_logical_or",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_logical_or",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_logical_or/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.003946065902709961
+          ]
+        },
+        "leaky_relu_atanh": {
+          "pair_name": "leaky_relu_atanh",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_atanh",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_atanh/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.003835439682006836
+          ]
+        },
+        "relu_gelu": {
+          "pair_name": "relu_gelu",
+          "structure": {
+            "operation1": "relu",
+            "operation2": "gelu",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.0038361549377441406
+          ]
+        },
+        "add_N1_H8_W8_C8_then_mul_N1_H8_W8_C8": {
+          "pair_name": "add_N1_H8_W8_C8_then_mul_N1_H8_W8_C8",
+          "structure": {
+            "operation1": "add_N1_H8_W8_C8",
+            "operation2": "mul_N1_H8_W8_C8",
+            "pair_type": "sequential"
+          },
+          "llvm_files": [],
+          "total_files": 0,
+          "valid_files": 0,
+          "invalid_files": 0,
+          "compatibility_score": 0.0,
+          "errors": [],
+          "test_times": []
+        },
+        "relu_equal": {
+          "pair_name": "relu_equal",
+          "structure": {
+            "operation1": "relu",
+            "operation2": "equal",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/relu_equal/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.004101753234863281
+          ]
+        },
+        "leaky_relu_cbrt": {
+          "pair_name": "leaky_relu_cbrt",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_cbrt",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_cbrt/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.004135608673095703
+          ]
+        },
+        "leaky_relu_div": {
+          "pair_name": "leaky_relu_div",
+          "structure": {
+            "operation1": "leaky",
+            "operation2": "relu_div",
+            "pair_type": "combined"
+          },
+          "llvm_files": [
+            "out/pairs_llvm/leaky_relu_div/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.ll"
+          ],
+          "total_files": 1,
+          "valid_files": 1,
+          "invalid_files": 0,
+          "compatibility_score": 1.0,
+          "errors": [],
+          "test_times": [
+            0.003847837448120117
+          ]
+        }
+      },
+      "compatibility_matrix": {
+        "relu": {
+          "total_pairs": 4,
+          "compatible_pairs": 4,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "sqrt": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "leaky": {
+          "total_pairs": 10,
+          "compatible_pairs": 10,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_gelu": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_exp": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_elu": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_log10": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "atan2": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_sin": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_relu": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_logical_or": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_atanh": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "gelu": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "add_N1_H8_W8_C8": {
+          "total_pairs": 1,
+          "compatible_pairs": 0,
+          "avg_score": 0.0,
+          "compatibility_rate": 0.0
+        },
+        "mul_N1_H8_W8_C8": {
+          "total_pairs": 1,
+          "compatible_pairs": 0,
+          "avg_score": 0.0,
+          "compatibility_rate": 0.0
+        },
+        "equal": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_cbrt": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        },
+        "relu_div": {
+          "total_pairs": 1,
+          "compatible_pairs": 1,
+          "avg_score": 1.0,
+          "compatibility_rate": 1.0
+        }
+      },
+      "operation_affinity": {
+        "relu": {
+          "sqrt": 1.0,
+          "atan2": 1.0,
+          "gelu": 1.0,
+          "equal": 1.0
+        },
+        "sqrt": {
+          "relu": 1.0
+        },
+        "leaky": {
+          "relu_gelu": 1.0,
+          "relu_exp": 1.0,
+          "relu_elu": 1.0,
+          "relu_log10": 1.0,
+          "relu_sin": 1.0,
+          "relu_relu": 1.0,
+          "relu_logical_or": 1.0,
+          "relu_atanh": 1.0,
+          "relu_cbrt": 1.0,
+          "relu_div": 1.0
+        },
+        "relu_gelu": {
+          "leaky": 1.0
+        },
+        "relu_exp": {
+          "leaky": 1.0
+        },
+        "relu_elu": {
+          "leaky": 1.0
+        },
+        "relu_log10": {
+          "leaky": 1.0
+        },
+        "atan2": {
+          "relu": 1.0
+        },
+        "relu_sin": {
+          "leaky": 1.0
+        },
+        "relu_relu": {
+          "leaky": 1.0
+        },
+        "relu_logical_or": {
+          "leaky": 1.0
+        },
+        "relu_atanh": {
+          "leaky": 1.0
+        },
+        "gelu": {
+          "relu": 1.0
+        },
+        "add_N1_H8_W8_C8": {
+          "mul_N1_H8_W8_C8": 0.0
+        },
+        "mul_N1_H8_W8_C8": {
+          "add_N1_H8_W8_C8": 0.0
+        },
+        "equal": {
+          "relu": 1.0
+        },
+        "relu_cbrt": {
+          "leaky": 1.0
+        },
+        "relu_div": {
+          "leaky": 1.0
+        }
+      },
+      "error_analysis": {
+        "error_patterns": {},
+        "operation_errors": {}
+      },
+      "recommendations": {
+        "highly_compatible_operations": [
+          {
+            "operation": "relu",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "sqrt",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "leaky",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_gelu",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_exp",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_elu",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_log10",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "atan2",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_sin",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_relu",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_logical_or",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_atanh",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "gelu",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "equal",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_cbrt",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          },
+          {
+            "operation": "relu_div",
+            "compatibility_rate": 1.0,
+            "avg_score": 1.0
+          }
+        ],
+        "problematic_operations": [
+          {
+            "operation": "add_N1_H8_W8_C8",
+            "compatibility_rate": 0.0,
+            "avg_score": 0.0
+          },
+          {
+            "operation": "mul_N1_H8_W8_C8",
+            "compatibility_rate": 0.0,
+            "avg_score": 0.0
+          }
+        ],
+        "best_pairs": [
+          {
+            "pair": "relu_sqrt",
+            "operations": [
+              "relu",
+              "sqrt"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_gelu",
+            "operations": [
+              "leaky",
+              "relu_gelu"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_exp",
+            "operations": [
+              "leaky",
+              "relu_exp"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_elu",
+            "operations": [
+              "leaky",
+              "relu_elu"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_log10",
+            "operations": [
+              "leaky",
+              "relu_log10"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "relu_atan2",
+            "operations": [
+              "relu",
+              "atan2"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_sin",
+            "operations": [
+              "leaky",
+              "relu_sin"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_relu",
+            "operations": [
+              "leaky",
+              "relu_relu"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_logical_or",
+            "operations": [
+              "leaky",
+              "relu_logical_or"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_atanh",
+            "operations": [
+              "leaky",
+              "relu_atanh"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "relu_gelu",
+            "operations": [
+              "relu",
+              "gelu"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "relu_equal",
+            "operations": [
+              "relu",
+              "equal"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_cbrt",
+            "operations": [
+              "leaky",
+              "relu_cbrt"
+            ],
+            "score": 1.0
+          },
+          {
+            "pair": "leaky_relu_div",
+            "operations": [
+              "leaky",
+              "relu_div"
+            ],
+            "score": 1.0
+          }
+        ],
+        "avoid_pairs": [
+          {
+            "pair": "add_N1_H8_W8_C8_then_mul_N1_H8_W8_C8",
+            "operations": [
+              "add_N1_H8_W8_C8",
+              "mul_N1_H8_W8_C8"
+            ],
+            "score": 0.0
+          }
+        ],
+        "optimization_suggestions": []
+      }
+    }
+  },
+  "generation_info": {
+    "generated_at": "2025-09-14T23:16:33.870445",
+    "generator_version": "1.0",
+    "total_experiments": 4
+  }
+}

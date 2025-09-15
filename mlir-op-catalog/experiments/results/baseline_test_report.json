@@ -1,0 +1,587 @@
+{
+  "test_info": {
+    "timestamp": "2025-09-14T23:12:05.421648",
+    "test_type": "baseline_validation",
+    "total_tests": 63,
+    "passed_tests": 62,
+    "failed_tests": 1
+  },
+  "single_operations": {
+    "exp": {
+      "operation": "exp",
+      "mlir_file": "out/single/exp/exp_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/exp/exp_N1_H8_W8_C8/exp_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "mish": {
+      "operation": "mish",
+      "mlir_file": "out/single/mish/mish_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/mish/mish_N1_H8_W8_C8/mish_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "softsign": {
+      "operation": "softsign",
+      "mlir_file": "out/single/softsign/softsign_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/softsign/softsign_N1_H8_W8_C8/softsign_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "add": {
+      "operation": "add",
+      "mlir_file": "out/single/add/add_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/add/add_N1_H8_W8_C8/add_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "log2": {
+      "operation": "log2",
+      "mlir_file": "out/single/log2/log2_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/log2/log2_N1_H8_W8_C8/log2_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "greater": {
+      "operation": "greater",
+      "mlir_file": "out/single/greater/greater_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/greater/greater_N1_H8_W8_C8/greater_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "asin": {
+      "operation": "asin",
+      "mlir_file": "out/single/asin/asin_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/asin/asin_N1_H8_W8_C8/asin_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "logical_xor": {
+      "operation": "logical_xor",
+      "mlir_file": "out/single/logical_xor/logical_xor_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/logical_xor/logical_xor_N1_H8_W8_C8/logical_xor_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "cosh": {
+      "operation": "cosh",
+      "mlir_file": "out/single/cosh/cosh_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/cosh/cosh_N1_H8_W8_C8/cosh_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "sinh": {
+      "operation": "sinh",
+      "mlir_file": "out/single/sinh/sinh_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/sinh/sinh_N1_H8_W8_C8/sinh_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "log": {
+      "operation": "log",
+      "mlir_file": "out/single/log/log_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/log/log_N1_H8_W8_C8/log_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "greater_equal": {
+      "operation": "greater_equal",
+      "mlir_file": "out/single/greater_equal/greater_equal_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/greater_equal/greater_equal_N1_H8_W8_C8/greater_equal_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "equal": {
+      "operation": "equal",
+      "mlir_file": "out/single/equal/equal_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/equal/equal_N1_H8_W8_C8/equal_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "sigmoid": {
+      "operation": "sigmoid",
+      "mlir_file": "out/single/sigmoid/sigmoid_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/sigmoid/sigmoid_N1_H8_W8_C8/sigmoid_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "conv2d_nhwc_hwcf": {
+      "operation": "conv2d_nhwc_hwcf",
+      "mlir_file": "out/single/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8/conv2d_nhwc_hwcf_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "atan2": {
+      "operation": "atan2",
+      "mlir_file": "out/single/atan2/atan2_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/atan2/atan2_N1_H8_W8_C8/atan2_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "asinh": {
+      "operation": "asinh",
+      "mlir_file": "out/single/asinh/asinh_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/asinh/asinh_N1_H8_W8_C8/asinh_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "cos": {
+      "operation": "cos",
+      "mlir_file": "out/single/cos/cos_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/cos/cos_N1_H8_W8_C8/cos_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "cbrt": {
+      "operation": "cbrt",
+      "mlir_file": "out/single/cbrt/cbrt_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/cbrt/cbrt_N1_H8_W8_C8/cbrt_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "matmul": {
+      "operation": "matmul",
+      "mlir_file": "out/single/matmul/matmul_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/matmul/matmul_N1_H8_W8_C8/matmul_N1_H8_W8_C8.ll",
+      "mlir_valid": false,
+      "llvm_valid": false,
+      "optimization_valid": false,
+      "errors": [
+        "MLIR文件不存在",
+        "LLVM文件不存在"
+      ]
+    },
+    "sqrt": {
+      "operation": "sqrt",
+      "mlir_file": "out/single/sqrt/sqrt_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/sqrt/sqrt_N1_H8_W8_C8/sqrt_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "atan": {
+      "operation": "atan",
+      "mlir_file": "out/single/atan/atan_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/atan/atan_N1_H8_W8_C8/atan_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "clamp": {
+      "operation": "clamp",
+      "mlir_file": "out/single/clamp/clamp_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/clamp/clamp_N1_H8_W8_C8/clamp_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "reduce_sum": {
+      "operation": "reduce_sum",
+      "mlir_file": "out/single/reduce_sum/reduce_sum_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/reduce_sum/reduce_sum_N1_H8_W8_C8/reduce_sum_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "logical_not": {
+      "operation": "logical_not",
+      "mlir_file": "out/single/logical_not/logical_not_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/logical_not/logical_not_N1_H8_W8_C8/logical_not_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "mul": {
+      "operation": "mul",
+      "mlir_file": "out/single/mul/mul_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/mul/mul_N1_H8_W8_C8/mul_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "avgpool2d": {
+      "operation": "avgpool2d",
+      "mlir_file": "out/single/avgpool2d/avgpool2d_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/avgpool2d/avgpool2d_N1_H8_W8_C8/avgpool2d_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "acosh": {
+      "operation": "acosh",
+      "mlir_file": "out/single/acosh/acosh_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/acosh/acosh_N1_H8_W8_C8/acosh_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "less": {
+      "operation": "less",
+      "mlir_file": "out/single/less/less_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/less/less_N1_H8_W8_C8/less_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "tanh": {
+      "operation": "tanh",
+      "mlir_file": "out/single/tanh/tanh_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/tanh/tanh_N1_H8_W8_C8/tanh_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "less_equal": {
+      "operation": "less_equal",
+      "mlir_file": "out/single/less_equal/less_equal_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/less_equal/less_equal_N1_H8_W8_C8/less_equal_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "hard_sigmoid": {
+      "operation": "hard_sigmoid",
+      "mlir_file": "out/single/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/hard_sigmoid/hard_sigmoid_N1_H8_W8_C8/hard_sigmoid_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "atanh": {
+      "operation": "atanh",
+      "mlir_file": "out/single/atanh/atanh_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/atanh/atanh_N1_H8_W8_C8/atanh_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "mod": {
+      "operation": "mod",
+      "mlir_file": "out/single/mod/mod_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/mod/mod_N1_H8_W8_C8/mod_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "gelu": {
+      "operation": "gelu",
+      "mlir_file": "out/single/gelu/gelu_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/gelu/gelu_N1_H8_W8_C8/gelu_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "rsqrt": {
+      "operation": "rsqrt",
+      "mlir_file": "out/single/rsqrt/rsqrt_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/rsqrt/rsqrt_N1_H8_W8_C8/rsqrt_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "softplus": {
+      "operation": "softplus",
+      "mlir_file": "out/single/softplus/softplus_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/softplus/softplus_N1_H8_W8_C8/softplus_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "tan": {
+      "operation": "tan",
+      "mlir_file": "out/single/tan/tan_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/tan/tan_N1_H8_W8_C8/tan_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "log10": {
+      "operation": "log10",
+      "mlir_file": "out/single/log10/log10_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/log10/log10_N1_H8_W8_C8/log10_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "swish": {
+      "operation": "swish",
+      "mlir_file": "out/single/swish/swish_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/swish/swish_N1_H8_W8_C8/swish_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "acos": {
+      "operation": "acos",
+      "mlir_file": "out/single/acos/acos_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/acos/acos_N1_H8_W8_C8/acos_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "div": {
+      "operation": "div",
+      "mlir_file": "out/single/div/div_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/div/div_N1_H8_W8_C8/div_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "sub": {
+      "operation": "sub",
+      "mlir_file": "out/single/sub/sub_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/sub/sub_N1_H8_W8_C8/sub_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "pow": {
+      "operation": "pow",
+      "mlir_file": "out/single/pow/pow_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/pow/pow_N1_H8_W8_C8/pow_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "hard_tanh": {
+      "operation": "hard_tanh",
+      "mlir_file": "out/single/hard_tanh/hard_tanh_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/hard_tanh/hard_tanh_N1_H8_W8_C8/hard_tanh_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "not_equal": {
+      "operation": "not_equal",
+      "mlir_file": "out/single/not_equal/not_equal_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/not_equal/not_equal_N1_H8_W8_C8/not_equal_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "sin": {
+      "operation": "sin",
+      "mlir_file": "out/single/sin/sin_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/sin/sin_N1_H8_W8_C8/sin_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "relu": {
+      "operation": "relu",
+      "mlir_file": "out/single/relu/relu_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/relu/relu_N1_H8_W8_C8/relu_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "leaky_relu": {
+      "operation": "leaky_relu",
+      "mlir_file": "out/single/leaky_relu/leaky_relu_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/leaky_relu/leaky_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "logical_and": {
+      "operation": "logical_and",
+      "mlir_file": "out/single/logical_and/logical_and_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/logical_and/logical_and_N1_H8_W8_C8/logical_and_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "elu": {
+      "operation": "elu",
+      "mlir_file": "out/single/elu/elu_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/elu/elu_N1_H8_W8_C8/elu_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "logical_or": {
+      "operation": "logical_or",
+      "mlir_file": "out/single/logical_or/logical_or_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/logical_or/logical_or_N1_H8_W8_C8/logical_or_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    },
+    "maxpool2d": {
+      "operation": "maxpool2d",
+      "mlir_file": "out/single/maxpool2d/maxpool2d_N1_H8_W8_C8.mlir",
+      "llvm_file": "out/single_llvm/maxpool2d/maxpool2d_N1_H8_W8_C8/maxpool2d_N1_H8_W8_C8.ll",
+      "mlir_valid": true,
+      "llvm_valid": true,
+      "optimization_valid": true,
+      "errors": []
+    }
+  },
+  "pair_operations": {
+    "relu_less": {
+      "operation": "relu_less",
+      "llvm_files": [
+        "out/pairs_llvm/relu_less/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_less_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "leaky_relu_mish": {
+      "operation": "leaky_relu_mish",
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_mish/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_mish_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "leaky_relu_acos": {
+      "operation": "leaky_relu_acos",
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_acos/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acos_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "leaky_relu_greater_equal": {
+      "operation": "leaky_relu_greater_equal",
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_greater_equal/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_equal_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "leaky_relu_acosh": {
+      "operation": "leaky_relu_acosh",
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_acosh/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_acosh_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "relu_clamp": {
+      "operation": "relu_clamp",
+      "llvm_files": [
+        "out/pairs_llvm/relu_clamp/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_clamp_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "relu_atanh": {
+      "operation": "relu_atanh",
+      "llvm_files": [
+        "out/pairs_llvm/relu_atanh/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "leaky_relu_not_equal": {
+      "operation": "leaky_relu_not_equal",
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_not_equal/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_not_equal_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "relu_gelu": {
+      "operation": "relu_gelu",
+      "llvm_files": [
+        "out/pairs_llvm/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    },
+    "leaky_relu_greater": {
+      "operation": "leaky_relu_greater",
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_greater/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_greater_N1_H8_W8_C8.ll"
+      ],
+      "valid_files": 1,
+      "total_files": 1,
+      "errors": []
+    }
+  },
+  "errors": [
+    "MLIR文件不存在",
+    "LLVM文件不存在"
+  ]
+}

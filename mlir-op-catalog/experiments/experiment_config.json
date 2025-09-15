@@ -1,0 +1,76 @@
+{
+  "experiment_name": "LLM4IR_Preliminary",
+  "version": "1.0",
+  "description": "LLM4IR初步实验 - 基于43,006个IR文件",
+  "test_parameters": {
+    "single_operations": {
+      "enabled": true,
+      "sample_size": 10,
+      "operations": [
+        "add",
+        "relu",
+        "matmul",
+        "conv2d_nhwc_hwcf"
+      ]
+    },
+    "pair_operations": {
+      "enabled": true,
+      "sample_size": 5,
+      "combinations": [
+        "relu_gelu",
+        "add_sigmoid",
+        "matmul_tanh"
+      ]
+    },
+    "performance_test": {
+      "enabled": true,
+      "iterations": 100,
+      "warmup_iterations": 10
+    }
+  },
+  "optimization_passes": {
+    "basic": [
+      "convert-linalg-to-loops",
+      "lower-affine",
+      "convert-scf-to-cf"
+    ],
+    "advanced": [
+      "convert-linalg-to-loops",
+      "lower-affine",
+      "convert-scf-to-cf",
+      "convert-math-to-llvm",
+      "convert-arith-to-llvm",
+      "convert-func-to-llvm"
+    ],
+    "full": [
+      "one-shot-bufferize=bufferize-function-boundaries",
+      "arith-bufferize",
+      "tensor-bufferize",
+      "finalizing-bufferize",
+      "convert-linalg-to-loops",
+      "lower-affine",
+      "convert-scf-to-cf",
+      "convert-math-to-llvm",
+      "convert-arith-to-llvm",
+      "convert-func-to-llvm",
+      "memref-expand",
+      "convert-memref-to-llvm",
+      "reconcile-unrealized-casts"
+    ]
+  },
+  "tensor_configs": {
+    "small": "tensor<1x8x8x8xf32>",
+    "medium": "tensor<16x16xf32>",
+    "large": "tensor<32x32xf32>",
+    "conv_input": "tensor<1x8x8x8xf32>",
+    "conv_kernel": "tensor<3x3x8x8xf32>",
+    "conv_output": "tensor<1x6x6x8xf32>"
+  },
+  "metrics": {
+    "compilation_time": true,
+    "execution_time": true,
+    "memory_usage": true,
+    "code_size": true,
+    "optimization_effectiveness": true
+  }
+}

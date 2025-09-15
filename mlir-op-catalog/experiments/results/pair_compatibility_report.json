@@ -1,0 +1,696 @@
+{
+  "test_info": {
+    "timestamp": "2025-09-14T23:15:28.345321",
+    "test_type": "pair_compatibility",
+    "total_pairs": 15,
+    "tested_pairs": 15,
+    "compatible_pairs": 14,
+    "incompatible_pairs": 1
+  },
+  "pair_results": {
+    "relu_sqrt": {
+      "pair_name": "relu_sqrt",
+      "structure": {
+        "operation1": "relu",
+        "operation2": "sqrt",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/relu_sqrt/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_sqrt_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.005024433135986328
+      ]
+    },
+    "leaky_relu_gelu": {
+      "pair_name": "leaky_relu_gelu",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_gelu",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_gelu/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.003998994827270508
+      ]
+    },
+    "leaky_relu_exp": {
+      "pair_name": "leaky_relu_exp",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_exp",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_exp/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_exp_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.003916501998901367
+      ]
+    },
+    "leaky_relu_elu": {
+      "pair_name": "leaky_relu_elu",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_elu",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_elu/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_elu_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.004840850830078125
+      ]
+    },
+    "leaky_relu_log10": {
+      "pair_name": "leaky_relu_log10",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_log10",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_log10/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_log10_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.004078388214111328
+      ]
+    },
+    "relu_atan2": {
+      "pair_name": "relu_atan2",
+      "structure": {
+        "operation1": "relu",
+        "operation2": "atan2",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/relu_atan2/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_atan2_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.004080057144165039
+      ]
+    },
+    "leaky_relu_sin": {
+      "pair_name": "leaky_relu_sin",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_sin",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_sin/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_sin_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.004219532012939453
+      ]
+    },
+    "leaky_relu_relu": {
+      "pair_name": "leaky_relu_relu",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_relu",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_relu/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_relu_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.0039670467376708984
+      ]
+    },
+    "leaky_relu_logical_or": {
+      "pair_name": "leaky_relu_logical_or",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_logical_or",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_logical_or/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_logical_or_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.003946065902709961
+      ]
+    },
+    "leaky_relu_atanh": {
+      "pair_name": "leaky_relu_atanh",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_atanh",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_atanh/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_atanh_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.003835439682006836
+      ]
+    },
+    "relu_gelu": {
+      "pair_name": "relu_gelu",
+      "structure": {
+        "operation1": "relu",
+        "operation2": "gelu",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/relu_gelu/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_gelu_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.0038361549377441406
+      ]
+    },
+    "add_N1_H8_W8_C8_then_mul_N1_H8_W8_C8": {
+      "pair_name": "add_N1_H8_W8_C8_then_mul_N1_H8_W8_C8",
+      "structure": {
+        "operation1": "add_N1_H8_W8_C8",
+        "operation2": "mul_N1_H8_W8_C8",
+        "pair_type": "sequential"
+      },
+      "llvm_files": [],
+      "total_files": 0,
+      "valid_files": 0,
+      "invalid_files": 0,
+      "compatibility_score": 0.0,
+      "errors": [],
+      "test_times": []
+    },
+    "relu_equal": {
+      "pair_name": "relu_equal",
+      "structure": {
+        "operation1": "relu",
+        "operation2": "equal",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/relu_equal/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8/relu_N1_H8_W8_C8_then_equal_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.004101753234863281
+      ]
+    },
+    "leaky_relu_cbrt": {
+      "pair_name": "leaky_relu_cbrt",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_cbrt",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_cbrt/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_cbrt_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.004135608673095703
+      ]
+    },
+    "leaky_relu_div": {
+      "pair_name": "leaky_relu_div",
+      "structure": {
+        "operation1": "leaky",
+        "operation2": "relu_div",
+        "pair_type": "combined"
+      },
+      "llvm_files": [
+        "out/pairs_llvm/leaky_relu_div/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8/leaky_relu_N1_H8_W8_C8_then_div_N1_H8_W8_C8.ll"
+      ],
+      "total_files": 1,
+      "valid_files": 1,
+      "invalid_files": 0,
+      "compatibility_score": 1.0,
+      "errors": [],
+      "test_times": [
+        0.003847837448120117
+      ]
+    }
+  },
+  "compatibility_matrix": {
+    "relu": {
+      "total_pairs": 4,
+      "compatible_pairs": 4,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "sqrt": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "leaky": {
+      "total_pairs": 10,
+      "compatible_pairs": 10,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_gelu": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_exp": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_elu": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_log10": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "atan2": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_sin": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_relu": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_logical_or": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_atanh": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "gelu": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "add_N1_H8_W8_C8": {
+      "total_pairs": 1,
+      "compatible_pairs": 0,
+      "avg_score": 0.0,
+      "compatibility_rate": 0.0
+    },
+    "mul_N1_H8_W8_C8": {
+      "total_pairs": 1,
+      "compatible_pairs": 0,
+      "avg_score": 0.0,
+      "compatibility_rate": 0.0
+    },
+    "equal": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_cbrt": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    },
+    "relu_div": {
+      "total_pairs": 1,
+      "compatible_pairs": 1,
+      "avg_score": 1.0,
+      "compatibility_rate": 1.0
+    }
+  },
+  "operation_affinity": {
+    "relu": {
+      "sqrt": 1.0,
+      "atan2": 1.0,
+      "gelu": 1.0,
+      "equal": 1.0
+    },
+    "sqrt": {
+      "relu": 1.0
+    },
+    "leaky": {
+      "relu_gelu": 1.0,
+      "relu_exp": 1.0,
+      "relu_elu": 1.0,
+      "relu_log10": 1.0,
+      "relu_sin": 1.0,
+      "relu_relu": 1.0,
+      "relu_logical_or": 1.0,
+      "relu_atanh": 1.0,
+      "relu_cbrt": 1.0,
+      "relu_div": 1.0
+    },
+    "relu_gelu": {
+      "leaky": 1.0
+    },
+    "relu_exp": {
+      "leaky": 1.0
+    },
+    "relu_elu": {
+      "leaky": 1.0
+    },
+    "relu_log10": {
+      "leaky": 1.0
+    },
+    "atan2": {
+      "relu": 1.0
+    },
+    "relu_sin": {
+      "leaky": 1.0
+    },
+    "relu_relu": {
+      "leaky": 1.0
+    },
+    "relu_logical_or": {
+      "leaky": 1.0
+    },
+    "relu_atanh": {
+      "leaky": 1.0
+    },
+    "gelu": {
+      "relu": 1.0
+    },
+    "add_N1_H8_W8_C8": {
+      "mul_N1_H8_W8_C8": 0.0
+    },
+    "mul_N1_H8_W8_C8": {
+      "add_N1_H8_W8_C8": 0.0
+    },
+    "equal": {
+      "relu": 1.0
+    },
+    "relu_cbrt": {
+      "leaky": 1.0
+    },
+    "relu_div": {
+      "leaky": 1.0
+    }
+  },
+  "error_analysis": {
+    "error_patterns": {},
+    "operation_errors": {}
+  },
+  "recommendations": {
+    "highly_compatible_operations": [
+      {
+        "operation": "relu",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "sqrt",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "leaky",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_gelu",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_exp",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_elu",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_log10",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "atan2",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_sin",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_relu",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_logical_or",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_atanh",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "gelu",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "equal",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_cbrt",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      },
+      {
+        "operation": "relu_div",
+        "compatibility_rate": 1.0,
+        "avg_score": 1.0
+      }
+    ],
+    "problematic_operations": [
+      {
+        "operation": "add_N1_H8_W8_C8",
+        "compatibility_rate": 0.0,
+        "avg_score": 0.0
+      },
+      {
+        "operation": "mul_N1_H8_W8_C8",
+        "compatibility_rate": 0.0,
+        "avg_score": 0.0
+      }
+    ],
+    "best_pairs": [
+      {
+        "pair": "relu_sqrt",
+        "operations": [
+          "relu",
+          "sqrt"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_gelu",
+        "operations": [
+          "leaky",
+          "relu_gelu"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_exp",
+        "operations": [
+          "leaky",
+          "relu_exp"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_elu",
+        "operations": [
+          "leaky",
+          "relu_elu"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_log10",
+        "operations": [
+          "leaky",
+          "relu_log10"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "relu_atan2",
+        "operations": [
+          "relu",
+          "atan2"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_sin",
+        "operations": [
+          "leaky",
+          "relu_sin"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_relu",
+        "operations": [
+          "leaky",
+          "relu_relu"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_logical_or",
+        "operations": [
+          "leaky",
+          "relu_logical_or"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_atanh",
+        "operations": [
+          "leaky",
+          "relu_atanh"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "relu_gelu",
+        "operations": [
+          "relu",
+          "gelu"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "relu_equal",
+        "operations": [
+          "relu",
+          "equal"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_cbrt",
+        "operations": [
+          "leaky",
+          "relu_cbrt"
+        ],
+        "score": 1.0
+      },
+      {
+        "pair": "leaky_relu_div",
+        "operations": [
+          "leaky",
+          "relu_div"
+        ],
+        "score": 1.0
+      }
+    ],
+    "avoid_pairs": [
+      {
+        "pair": "add_N1_H8_W8_C8_then_mul_N1_H8_W8_C8",
+        "operations": [
+          "add_N1_H8_W8_C8",
+          "mul_N1_H8_W8_C8"
+        ],
+        "score": 0.0
+      }
+    ],
+    "optimization_suggestions": []
+  }
+}

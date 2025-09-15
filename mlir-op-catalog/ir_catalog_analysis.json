@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "total_mlir_files": 0,
+    "total_llvm_files": 19891,
+    "total_files": 19891,
+    "single_operations": 53,
+    "pair_operations": 106
+  },
+  "directory_stats": {
+    "single": {
+      "mlir_files": 53,
+      "llvm_files": 5,
+      "total_files": 58
+    },
+    "single_llvm": {
+      "mlir_files": 53,
+      "llvm_files": 53,
+      "total_files": 106
+    },
+    "single_complete": {
+      "mlir_files": 142,
+      "llvm_files": 0,
+      "total_files": 142
+    },
+    "single_complete_llvm": {
+      "mlir_files": 0,
+      "llvm_files": 142,
+      "total_files": 142
+    },
+    "pairs": {
+      "mlir_files": 2756,
+      "llvm_files": 0,
+      "total_files": 2756
+    },
+    "pairs_llvm": {
+      "mlir_files": 100,
+      "llvm_files": 96,
+      "total_files": 196
+    },
+    "pairs_complete": {
+      "mlir_files": 20164,
+      "llvm_files": 0,
+      "total_files": 20164
+    },
+    "pairs_complete_llvm": {
+      "mlir_files": 0,
+      "llvm_files": 19600,
+      "total_files": 19600
+    }
+  },
+  "operation_catalog": {
+    "single_operations": [
+      "exp",
+      "mish",
+      "softsign",
+      "add",
+      "log2",
+      "greater",
+      "asin",
+      "logical_xor",
+      "cosh",
+      "sinh",
+      "log",
+      "greater_equal",
+      "equal",
+      "sigmoid",
+      "conv2d_nhwc_hwcf",
+      "atan2",
+      "asinh",
+      "cos",
+      "cbrt",
+      "matmul",
+      "sqrt",
+      "atan",
+      "clamp",
+      "reduce_sum",
+      "logical_not",
+      "mul",
+      "avgpool2d",
+      "acosh",
+      "less",
+      "tanh",
+      "less_equal",
+      "hard_sigmoid",
+      "atanh",
+      "mod",
+      "gelu",
+      "rsqrt",
+      "softplus",
+      "tan",
+      "log10",
+      "swish",
+      "acos",
+      "div",
+      "sub",
+      "pow",
+      "hard_tanh",
+      "not_equal",
+      "sin",
+      "relu",
+      "leaky_relu",
+      "logical_and",
+      "elu",
+      "logical_or",
+      "maxpool2d"
+    ],
+    "pair_operations": [
+      "leaky_relu_greater_equal",
+      "leaky_relu_tanh",
+      "relu_softplus",
+      "relu_gelu",
+      "relu_logical_and",
+      "leaky_relu_mish",
+      "relu_less_equal",
+      "leaky_relu_greater",
+      "relu_equal",
+      "leaky_relu_asinh",
+      "leaky_relu_equal",
+      "leaky_relu_atan2",
+      "relu_asin",
+      "leaky_relu_softplus",
+      "leaky_relu_log2",
+      "leaky_relu_logical_xor",
+      "relu_leaky_relu",
+      "leaky_relu_less_equal",
+      "leaky_relu_sigmoid",
+      "relu_log10"
+    ]
+  },
+  "tensor_shapes": {
+    "1x8x8x8xf32": 0,
+    "16x16xf32": 0,
+    "3x3x8x8xf32": 0,
+    "1x6x6x8xf32": 0,
+    "1x4x4x8xf32": 0,
+    "1x8xf32": 0
+  }
+}

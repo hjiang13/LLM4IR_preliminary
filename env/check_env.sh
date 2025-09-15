@@ -32,7 +32,7 @@ fi
 
 # 检查Python包
 echo "📦 检查Python包..."
-packages=("jinja2" "pyyaml" "pandas")
+packages=("jinja2" "yaml" "pandas")
 for pkg in "${packages[@]}"; do
     if python3 -c "import $pkg" 2>/dev/null; then
         echo "✅ $pkg: 已安装"

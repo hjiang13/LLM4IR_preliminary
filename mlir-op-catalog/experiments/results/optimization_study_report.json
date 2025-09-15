@@ -1,0 +1,828 @@
+{
+  "study_info": {
+    "timestamp": "2025-09-14T23:14:18.204169",
+    "study_type": "optimization_effectiveness",
+    "total_operations": 12,
+    "analyzed_operations": 12
+  },
+  "pass_combinations": {
+    "minimal": {
+      "mean_time": 0.019503368271721735,
+      "median_time": 0.019360820452372234,
+      "mean_success_rate": 1.0,
+      "mean_output_size": 13.583333333333334,
+      "operations_tested": 12
+    },
+    "basic": {
+      "mean_time": 0.02013099855846829,
+      "median_time": 0.019892096519470215,
+      "mean_success_rate": 1.0,
+      "mean_output_size": 13.583333333333334,
+      "operations_tested": 12
+    },
+    "intermediate": {
+      "mean_time": 0.021797491444481742,
+      "median_time": 0.021632115046183266,
+      "mean_success_rate": 1.0,
+      "mean_output_size": 13.583333333333334,
+      "operations_tested": 12
+    },
+    "advanced": {
+      "mean_time": 0.022222359975179035,
+      "median_time": 0.02156233787536621,
+      "mean_success_rate": 1.0,
+      "mean_output_size": 13.583333333333334,
+      "operations_tested": 12
+    },
+    "full": {
+      "mean_time": 0.024481594562530518,
+      "median_time": 0.023855209350585938,
+      "mean_success_rate": 1.0,
+      "mean_output_size": 73.33333333333333,
+      "operations_tested": 12
+    }
+  },
+  "operation_results": {
+    "conv2d_nhwc_hwcf": {
+      "operation": "conv2d_nhwc_hwcf",
+      "mlir_file": "out/single/conv2d_nhwc_hwcf/conv2d_nhwc_hwcf_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.019464651743570965,
+          "median_time": 0.01939558982849121,
+          "min_time": 0.019110441207885742,
+          "max_time": 0.019887924194335938,
+          "std_time": 0.000393315534451337,
+          "mean_output_size": 9,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.02010488510131836,
+          "median_time": 0.019870758056640625,
+          "min_time": 0.019840002059936523,
+          "max_time": 0.02060389518737793,
+          "std_time": 0.000432428933265572,
+          "mean_output_size": 9,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.02150583267211914,
+          "median_time": 0.02131032943725586,
+          "min_time": 0.021284103393554688,
+          "max_time": 0.021923065185546875,
+          "std_time": 0.00036157181726176107,
+          "mean_output_size": 9,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.02202741305033366,
+          "median_time": 0.02229619026184082,
+          "min_time": 0.02148914337158203,
+          "max_time": 0.022296905517578125,
+          "std_time": 0.0004661553530693686,
+          "mean_output_size": 9,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.024857123692830402,
+          "median_time": 0.024773120880126953,
+          "min_time": 0.02436351776123047,
+          "max_time": 0.02543473243713379,
+          "std_time": 0.0005405252768134272,
+          "mean_output_size": 121,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -27.70392206498394,
+        "output_size_change": 112
+      }
+    },
+    "sqrt": {
+      "operation": "sqrt",
+      "mlir_file": "out/single/sqrt/sqrt_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.01926112174987793,
+          "median_time": 0.019570112228393555,
+          "min_time": 0.018494844436645508,
+          "max_time": 0.019718408584594727,
+          "std_time": 0.0006677451930913921,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.020067771275838215,
+          "median_time": 0.01998162269592285,
+          "min_time": 0.019771099090576172,
+          "max_time": 0.020450592041015625,
+          "std_time": 0.0003478417036387439,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.021843433380126953,
+          "median_time": 0.021900415420532227,
+          "min_time": 0.021648883819580078,
+          "max_time": 0.021981000900268555,
+          "std_time": 0.00017323583208395476,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.021906534830729168,
+          "median_time": 0.021990537643432617,
+          "min_time": 0.021578311920166016,
+          "max_time": 0.022150754928588867,
+          "std_time": 0.0002953220341925395,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.023480971654256184,
+          "median_time": 0.023583650588989258,
+          "min_time": 0.023189306259155273,
+          "max_time": 0.023669958114624023,
+          "std_time": 0.00025624943759904533,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -21.908640416568666,
+        "output_size_change": 55
+      }
+    },
+    "acosh": {
+      "operation": "acosh",
+      "mlir_file": "out/single/acosh/acosh_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.01957861582438151,
+          "median_time": 0.0195159912109375,
+          "min_time": 0.01912713050842285,
+          "max_time": 0.02009272575378418,
+          "std_time": 0.00048583425787284665,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.019600629806518555,
+          "median_time": 0.019440650939941406,
+          "min_time": 0.019009828567504883,
+          "max_time": 0.020351409912109375,
+          "std_time": 0.0006849489428863885,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.02112897237141927,
+          "median_time": 0.021091699600219727,
+          "min_time": 0.02060413360595703,
+          "max_time": 0.021691083908081055,
+          "std_time": 0.0005444329016752631,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.021277666091918945,
+          "median_time": 0.021305084228515625,
+          "min_time": 0.02085399627685547,
+          "max_time": 0.021673917770385742,
+          "std_time": 0.00041064781692960967,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.023211320241292317,
+          "median_time": 0.023124217987060547,
+          "min_time": 0.022907733917236328,
+          "max_time": 0.023602008819580078,
+          "std_time": 0.0003552386691019123,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -18.554449658218175,
+        "output_size_change": 55
+      }
+    },
+    "atan": {
+      "operation": "atan",
+      "mlir_file": "out/single/atan/atan_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.019449154535929363,
+          "median_time": 0.01907062530517578,
+          "min_time": 0.01870894432067871,
+          "max_time": 0.020567893981933594,
+          "std_time": 0.0009855895416810612,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.019397179285685223,
+          "median_time": 0.01923227310180664,
+          "min_time": 0.01912546157836914,
+          "max_time": 0.019833803176879883,
+          "std_time": 0.000381880206552049,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.02110004425048828,
+          "median_time": 0.021150827407836914,
+          "min_time": 0.02049708366394043,
+          "max_time": 0.0216522216796875,
+          "std_time": 0.0005792410168994783,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.02140156428019206,
+          "median_time": 0.021596193313598633,
+          "min_time": 0.020631074905395508,
+          "max_time": 0.02197742462158203,
+          "std_time": 0.0006939558595850794,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.023168166478474934,
+          "median_time": 0.023273944854736328,
+          "min_time": 0.022616863250732422,
+          "max_time": 0.023613691329956055,
+          "std_time": 0.0005067626205093879,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "basic",
+      "optimization_effectiveness": {
+        "time_improvement": -19.121715217364642,
+        "output_size_change": 55
+      }
+    },
+    "exp": {
+      "operation": "exp",
+      "mlir_file": "out/single/exp/exp_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.019272486368815105,
+          "median_time": 0.019618749618530273,
+          "min_time": 0.018539905548095703,
+          "max_time": 0.019658803939819336,
+          "std_time": 0.0006347496209750072,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.018966118494669598,
+          "median_time": 0.019084453582763672,
+          "min_time": 0.01869368553161621,
+          "max_time": 0.019120216369628906,
+          "std_time": 0.0002366105106490992,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.02117753028869629,
+          "median_time": 0.021244049072265625,
+          "min_time": 0.020873069763183594,
+          "max_time": 0.02141547203063965,
+          "std_time": 0.00027725190055439744,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.021021922429402668,
+          "median_time": 0.020917415618896484,
+          "min_time": 0.020650863647460938,
+          "max_time": 0.021497488021850586,
+          "std_time": 0.0004328792705931963,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.02427053451538086,
+          "median_time": 0.02403712272644043,
+          "min_time": 0.023722171783447266,
+          "max_time": 0.025052309036254883,
+          "std_time": 0.0006951093980366885,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "basic",
+      "optimization_effectiveness": {
+        "time_improvement": -25.93359284795302,
+        "output_size_change": 55
+      }
+    },
+    "cosh": {
+      "operation": "cosh",
+      "mlir_file": "out/single/cosh/cosh_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.02054460843404134,
+          "median_time": 0.020459413528442383,
+          "min_time": 0.020357131958007812,
+          "max_time": 0.020817279815673828,
+          "std_time": 0.000241614655357798,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.020830313364664715,
+          "median_time": 0.020289182662963867,
+          "min_time": 0.020190954208374023,
+          "max_time": 0.02201080322265625,
+          "std_time": 0.0010235132807826363,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.022231181462605793,
+          "median_time": 0.02172708511352539,
+          "min_time": 0.021718740463256836,
+          "max_time": 0.023247718811035156,
+          "std_time": 0.0008803570547572585,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.022070010503133137,
+          "median_time": 0.022280454635620117,
+          "min_time": 0.021460771560668945,
+          "max_time": 0.02246880531311035,
+          "std_time": 0.000535955279094183,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.023277839024861652,
+          "median_time": 0.023229598999023438,
+          "min_time": 0.022774934768676758,
+          "max_time": 0.023828983306884766,
+          "std_time": 0.0005286775059469273,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -13.30388262008193,
+        "output_size_change": 55
+      }
+    },
+    "sinh": {
+      "operation": "sinh",
+      "mlir_file": "out/single/sinh/sinh_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.019546349843343098,
+          "median_time": 0.019729137420654297,
+          "min_time": 0.018596649169921875,
+          "max_time": 0.020313262939453125,
+          "std_time": 0.0008727824369512397,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.02007007598876953,
+          "median_time": 0.019483089447021484,
+          "min_time": 0.019191265106201172,
+          "max_time": 0.021535873413085938,
+          "std_time": 0.0012777761651882776,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.021911223729451496,
+          "median_time": 0.02197885513305664,
+          "min_time": 0.020956754684448242,
+          "max_time": 0.02279806137084961,
+          "std_time": 0.0009225145437399873,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.02152736981709798,
+          "median_time": 0.021030426025390625,
+          "min_time": 0.020996570587158203,
+          "max_time": 0.022555112838745117,
+          "std_time": 0.0008902125232677675,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.023749272028605144,
+          "median_time": 0.023214340209960938,
+          "min_time": 0.022977590560913086,
+          "max_time": 0.025055885314941406,
+          "std_time": 0.0011377351665057677,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -21.502337873551546,
+        "output_size_change": 55
+      }
+    },
+    "mod": {
+      "operation": "mod",
+      "mlir_file": "out/single/mod/mod_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.019124507904052734,
+          "median_time": 0.019083261489868164,
+          "min_time": 0.018600940704345703,
+          "max_time": 0.019689321517944336,
+          "std_time": 0.0005453614845812998,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.019522666931152344,
+          "median_time": 0.019184112548828125,
+          "min_time": 0.01907515525817871,
+          "max_time": 0.020308732986450195,
+          "std_time": 0.0006829295756262566,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.021921237309773762,
+          "median_time": 0.02157735824584961,
+          "min_time": 0.02120494842529297,
+          "max_time": 0.02298140525817871,
+          "std_time": 0.0009368240644489362,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.02159730593363444,
+          "median_time": 0.021837711334228516,
+          "min_time": 0.020935773849487305,
+          "max_time": 0.0220184326171875,
+          "std_time": 0.0005799858354267152,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.02396114667256673,
+          "median_time": 0.023593425750732422,
+          "min_time": 0.023533344268798828,
+          "max_time": 0.024756669998168945,
+          "std_time": 0.0006895980476340825,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -25.2902652072373,
+        "output_size_change": 55
+      }
+    },
+    "elu": {
+      "operation": "elu",
+      "mlir_file": "out/single/elu/elu_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.01915852228800456,
+          "median_time": 0.01891040802001953,
+          "min_time": 0.01829695701599121,
+          "max_time": 0.02026820182800293,
+          "std_time": 0.0010087725435915117,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.0203857421875,
+          "median_time": 0.02010798454284668,
+          "min_time": 0.020076751708984375,
+          "max_time": 0.020972490310668945,
+          "std_time": 0.000508378690062317,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.025463104248046875,
+          "median_time": 0.021736621856689453,
+          "min_time": 0.020946741104125977,
+          "max_time": 0.033705949783325195,
+          "std_time": 0.007149430382181567,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.029742081960042317,
+          "median_time": 0.032944440841674805,
+          "min_time": 0.022166728973388672,
+          "max_time": 0.03411507606506348,
+          "std_time": 0.0065865071442200145,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.02365533510843913,
+          "median_time": 0.02364659309387207,
+          "min_time": 0.02331995964050293,
+          "max_time": 0.023999452590942383,
+          "std_time": 0.00033983081752284657,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -23.471605757663745,
+        "output_size_change": 55
+      }
+    },
+    "not_equal": {
+      "operation": "not_equal",
+      "mlir_file": "out/single/not_equal/not_equal_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.020763238271077473,
+          "median_time": 0.020315170288085938,
+          "min_time": 0.01966071128845215,
+          "max_time": 0.022313833236694336,
+          "std_time": 0.0013821496684866233,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.02383534113566081,
+          "median_time": 0.02040553092956543,
+          "min_time": 0.01992011070251465,
+          "max_time": 0.031180381774902344,
+          "std_time": 0.006365620526962772,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.021758397420247395,
+          "median_time": 0.021778106689453125,
+          "min_time": 0.021401166915893555,
+          "max_time": 0.022095918655395508,
+          "std_time": 0.00034779496309566557,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.021183252334594727,
+          "median_time": 0.021291017532348633,
+          "min_time": 0.02088141441345215,
+          "max_time": 0.0213773250579834,
+          "std_time": 0.00026493743643557407,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.02783648173014323,
+          "median_time": 0.024775981903076172,
+          "min_time": 0.023032188415527344,
+          "max_time": 0.03570127487182617,
+          "std_time": 0.006866690054378581,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -34.06618643354182,
+        "output_size_change": 55
+      }
+    },
+    "atanh": {
+      "operation": "atanh",
+      "mlir_file": "out/single/atanh/atanh_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.018938779830932617,
+          "median_time": 0.018799543380737305,
+          "min_time": 0.018674135208129883,
+          "max_time": 0.019342660903930664,
+          "std_time": 0.00035534735581360877,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.019716421763102215,
+          "median_time": 0.01976156234741211,
+          "min_time": 0.019492387771606445,
+          "max_time": 0.019895315170288086,
+          "std_time": 0.00020522153009849516,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.020955006281534832,
+          "median_time": 0.020993471145629883,
+          "min_time": 0.020715713500976562,
+          "max_time": 0.021155834197998047,
+          "std_time": 0.00022256732984438088,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.02111498514811198,
+          "median_time": 0.021127700805664062,
+          "min_time": 0.021041393280029297,
+          "max_time": 0.021175861358642578,
+          "std_time": 6.812989066278682e-05,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.027071158091227215,
+          "median_time": 0.022437334060668945,
+          "min_time": 0.02205681800842285,
+          "max_time": 0.036719322204589844,
+          "std_time": 0.008357721052134255,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -42.94034955204465,
+        "output_size_change": 55
+      }
+    },
+    "log2": {
+      "operation": "log2",
+      "mlir_file": "out/single/log2/log2_N1_H8_W8_C8.mlir",
+      "pass_results": {
+        "minimal": {
+          "success_rate": 1.0,
+          "mean_time": 0.018938382466634113,
+          "median_time": 0.0188446044921875,
+          "min_time": 0.018459796905517578,
+          "max_time": 0.019510746002197266,
+          "std_time": 0.000531713487059944,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "basic": {
+          "success_rate": 1.0,
+          "mean_time": 0.01907483736673991,
+          "median_time": 0.019100189208984375,
+          "min_time": 0.01881694793701172,
+          "max_time": 0.019307374954223633,
+          "std_time": 0.00024619443887247935,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "intermediate": {
+          "success_rate": 1.0,
+          "mean_time": 0.020573933919270832,
+          "median_time": 0.020442724227905273,
+          "min_time": 0.020374059677124023,
+          "max_time": 0.020905017852783203,
+          "std_time": 0.0002887752299038392,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "advanced": {
+          "success_rate": 1.0,
+          "mean_time": 0.021798213322957356,
+          "median_time": 0.022009611129760742,
+          "min_time": 0.021070241928100586,
+          "max_time": 0.022314786911010742,
+          "std_time": 0.0006486446085204682,
+          "mean_output_size": 14,
+          "samples": 3
+        },
+        "full": {
+          "success_rate": 1.0,
+          "mean_time": 0.02523978551228841,
+          "median_time": 0.025418519973754883,
+          "min_time": 0.024430513381958008,
+          "max_time": 0.025870323181152344,
+          "std_time": 0.0007363576374634751,
+          "mean_output_size": 69,
+          "samples": 3
+        }
+      },
+      "best_pass": "minimal",
+      "optimization_effectiveness": {
+        "time_improvement": -33.27318506084767,
+        "output_size_change": 55
+      }
+    }
+  },
+  "optimization_metrics": {
+    "time_efficiency": {
+      "minimal": 1,
+      "basic": 2,
+      "intermediate": 3,
+      "advanced": 4,
+      "full": 5
+    },
+    "success_reliability": {
+      "minimal": 1,
+      "basic": 2,
+      "intermediate": 3,
+      "advanced": 4,
+      "full": 5
+    },
+    "output_quality": {},
+    "overall_ranking": [
+      "minimal",
+      "basic",
+      "intermediate",
+      "advanced",
+      "full"
+    ]
+  },
+  "recommendations": {
+    "best_overall": "minimal",
+    "fastest": "minimal",
+    "most_reliable": "minimal",
+    "use_cases": {
+      "development": "basic",
+      "production": "advanced",
+      "maximum_optimization": "full",
+      "quick_testing": "minimal"
+    },
+    "operation_specific": {
+      "conv2d_nhwc_hwcf": "minimal",
+      "sqrt": "minimal",
+      "acosh": "minimal",
+      "atan": "basic",
+      "exp": "basic",
+      "cosh": "minimal",
+      "sinh": "minimal",
+      "mod": "minimal",
+      "elu": "minimal",
+      "not_equal": "minimal",
+      "atanh": "minimal",
+      "log2": "minimal"
+    }
+  }
+}
